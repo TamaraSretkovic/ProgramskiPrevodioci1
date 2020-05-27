@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1dec84fd-10f8-4a19-9feb-f5c5a0f855a2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cUBNghaH6rT0SysrkfGSukE8oI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1dec84fd-10f8-4a19-9feb-f5c5a0f855a2" name="Default Changelist" comment="" />
+      <created>1590573253220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590573253220</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="283" y="41" width="1024" height="839" key="SettingsEditor" timestamp="1590576108133">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="283" y="41" width="1024" height="839" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1590576108133" />
+    <state x="460" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1590573257588">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="460" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1590573257588" />
+    <state x="121" y="53" width="1347" height="814" key="new project wizard" timestamp="1590575322038">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="121" y="53" width="1347" height="814" key="new project wizard/0.27.1600.873@0.27.1600.873" timestamp="1590575322038" />
+  </component>
+</project>
