@@ -1,0 +1,273 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+
+
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message);
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null)
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+/* declaracija terminala i neterminala */
+
+
+terminal PROGRAM, LC_BRACE, RC_BRACE, SEMI, COMMA, CONST, CLASS, L_BRACE, R_BRACE, VOID;
+terminal R_PAREN, L_PAREN, IF, ELSE, READ, PRINT, FOR, BREAK, CONTINUE, RETURN, INC, DEC, EQUAL, DOT;
+terminal EQUALS, NOT_EQUALS, LESS, LESS_EQUALS, GREATER, GREATER_EQUALS, MINUS, PLUS, DIV, MUL, MOD, NEW, OR, AND;
+terminal MOD_ASSIGN, MUL_ASSIGN, DIV_ASSIGN, PLUS_ASSIGN, MINUS_ASSIGN, FOREACH, COLON;
+terminal String IDENT;
+terminal Integer NUMBER;
+terminal Character CHAR;
+terminal Integer  BOOL;
+
+non terminal Program, DeclarationList, MethodDeclarationList, VarDeclarationList, VarDeclaration;
+non terminal ConstDeclarationList, ConstDeclaration, ConstDeclarationActual, ClassDeclaration, Var, Type;
+non terminal ClassDeclarationList, MethodDeclaration, MethodDeclarationActual, FormalParams, StatementList;
+non terminal FormalParamList, Statement, DesignatorStatement, Designator, MethodCall;
+non terminal DesignatorStatementList, ElseStatement, Condition, Expression, Const, LeftSideAssign;
+non terminal  RelOp, AddOpRight, AddOpLeft, MulOpLeft, MulOpRight, AssignOps, AssignOp;
+non terminal Term, ConditionTerm, ConditionOptional, ConditionFact, ActualParams, Factor;
+non terminal TermDef, IdentAssignOp, DesignratorPart, Declaration, ClassMethodDeclarationList;
+
+precedence left ELSE;
+
+Program ::= (Program)  PROGRAM IDENT:progName DeclarationList LC_BRACE MethodDeclarationList RC_BRACE;
+
+DeclarationList ::=    (DeclarationListDeclaration) DeclarationList Declaration
+                   |   (NoDeclarationList) /* epsilon */;
+
+Declaration ::=   (DeclarationListVar) VarDeclaration
+              |   (DeclarationListConst) ConstDeclaration
+              |   (DeclarationListClass) ClassDeclaration;
+
+VarDeclaration ::=  (VarDeclarationV) Type:varType VarDeclarationList  SEMI
+                 |  (VarDeclarationError) error:e SEMI
+                          {:
+                              parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
+                                     " pri deklarisanju varijable, do ;", null);
+                          :};
+
+VarDeclarationList ::=     (VarDeclarationListVar) VarDeclarationList COMMA Var
+                      |    (VarDecl) Var
+                      |    (VarDeclError) error:e
+                            {:
+                                parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
+                                     " pri deklarisanju varijable do ,", null);
+                            :};
+
+Var ::=    (Ident) IDENT:name
+       |   (IdentArray) IDENT:name L_BRACE R_BRACE;
+
+Type ::=  (Type) IDENT:typeName;
+
+ConstDeclaration ::=     (ConstDeclarationTypeListSemi) CONST Type:constType ConstDeclarationList SEMI
+                    |    (ConstDeclarationError) CONST error:e SEMI
+                          {:
+                              parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
+                                   " pri definisanju konstante do ;", null);
+                          :};
+
+ConstDeclarationList ::=      (ConstDeclarationListComaActual) ConstDeclarationList COMMA ConstDeclarationActual
+                        |     (ConstDecl) ConstDeclarationActual
+                        |     (ConstDeclError) error:e
+                                        {:
+                                           parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
+                                                       " pri definisanju konstante do ,", null);
+                                        :};
+
+IdentAssignOp ::= (IdentAssignOp) IDENT:name AssignOp;
+
+ConstDeclarationActual ::=     (ConstDeclarationActual) IdentAssignOp Const;
+
+Const ::=   (NumberConst) NUMBER:val
+         |  (BoolConst) BOOL:val
+         |  (CharConst) CHAR:val;
+
+ClassDeclaration ::=  (ClassDeclaration) CLASS IDENT LC_BRACE ClassDeclarationList ClassMethodDeclarationList RC_BRACE;
+
+ClassMethodDeclarationList ::= (ClassMethodDecl) LC_BRACE MethodDeclarationList RC_BRACE
+                              | (NoClassMethodDecl) /* epsilon */;
+
+ClassDeclarationList ::=      (ClassDeclarationListVar) ClassDeclarationList VarDeclaration
+                         |    (ClassDeclarationListConst) ClassDeclarationList ConstDeclaration
+                         |    (NoClassDeclarationList) /* epsilon */;
+
+MethodDeclarationList ::=    (MethodDeclarationListMethod) MethodDeclarationList MethodDeclaration
+                        |    (NoMethodDeclarationList) /* epsilon */;
+
+MethodDeclaration ::=    (TypeMethodDeclaration) Type:retType MethodDeclarationActual
+                    |    (VoidMethodDeclaration) VOID MethodDeclarationActual;
+
+MethodDeclarationActual ::=  (MethodDeclarationActual) IDENT:methodName L_PAREN FormalParams R_PAREN
+                             ClassDeclarationList LC_BRACE StatementList RC_BRACE;
+
+FormalParams ::=         (FormalParamsList) FormalParamList:n
+                 |       (NoFormalParamsList) /* epsilon */
+                 |       (FormalParamErrorComma)  error:e COMMA FormalParamList:n
+                           {:
+                                parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
+                                          " u formalnim parametrima do ,", null);
+                           :}
+                 |       (FormalParamErrorParen) error:e
+                         {:
+                            parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
+                                      " u formalnim parametrima do )", null);
+                          :};
+
+FormalParamList ::=     (FormalParamListActual) FormalParamList COMMA Type Var
+                   |    (FormalParamVar) Type Var;
+
+StatementList ::=     (StatementListStatement) StatementList Statement
+                 |    (NoStatementList) /* epsilon */;
+
+
+Statement ::=           (IfStatement) IF L_PAREN Condition R_PAREN Statement ElseStatement
+                    |   (DesignatorStatementStatement) DesignatorStatement SEMI
+                    |   (ReadStatement) READ L_PAREN Designator R_PAREN SEMI
+                    |   (PrintExpressionStatement) PRINT L_PAREN Expression R_PAREN SEMI
+                    |   (PrintExpressionNumStatement) PRINT L_PAREN Expression COMMA NUMBER R_PAREN SEMI
+                    |   (ForStatement) FOR L_PAREN DesignatorStatementList SEMI ConditionOptional SEMI
+                                       DesignatorStatementList R_PAREN Statement
+                    |   (ForeachStatement) FOREACH L_PAREN IDENT COLON Designator R_PAREN Statement
+                    |   (BrakStatement) BREAK SEMI
+                    |   (ContinueStatement) CONTINUE SEMI
+                    |   (ReturnStatementEmpty) RETURN SEMI
+                    |   (ReturnStatementExpression) RETURN Expression SEMI
+                    |   (CurlyBraceStatement) LC_BRACE StatementList RC_BRACE
+                    |   (ErrorStatement) error:e SEMI
+                                        {:
+                                           parser.report_error("Uspesan oporavak od greske na liniji "
+                                                        + eleft + " u statement, do ; ", null);
+                                        :};
+
+ElseStatement ::= (ElseStatementStatement) ELSE Statement
+                | (NoElseStatement) /* epsilon */;
+
+
+DesignatorStatement ::=     (LeftDesignatorAssignExpression) LeftSideAssign AssignOps Expression
+                       |    (DesignatorStatementIncrement) Designator INC
+                       |    (DesignatorStatementDecrement) Designator DEC
+                       |    (DesignatorStatementMethodCall) MethodCall;
+
+LeftSideAssign::= (LeftSideAssignAssignOps) LeftSideAssign AssignOps Designator
+                | (LeftSideAssignVar) Designator;
+
+
+Designator ::=      (DesignatorMulti) Designator DesignratorPart
+            |       (DesignatorOnly) IDENT:ident;
+
+DesignratorPart ::=      (DesignratorPartDotIdent) DOT IDENT
+                   |     (DesignratorPartIdentBraces) L_BRACE Expression R_BRACE
+                   |     (DesignratorPartError) L_BRACE error:e R_BRACE
+                     		{:
+                     		 	 	parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
+                     		 	 	                    " pri indeksiranju niza", null);
+                     		:};
+
+DesignatorStatementList ::= (DesignatorStatementOnly) DesignatorStatement
+                           | (NoDesignatorStatementList) /* epsilon */;
+
+MethodCall ::=    (MethodCallActualParams) Designator L_PAREN ActualParams R_PAREN
+              |   (MethodCallNoParams) Designator L_PAREN R_PAREN;
+
+ActualParams ::=   (ActualParamsList) ActualParams COMMA Expression
+               |   (ActualParamsExpression) Expression;
+
+
+ConditionOptional ::= (ConditionOptionalCondition) Condition
+                    | (ForStatementError) error:e
+                                {:
+                                    parser.report_error("Uspesan oporavak od greske na liniji "
+                                    + eleft + " logicki iskaz u for petlji, do ; ", null);
+                                :}
+                    | (NoConditionOptional) /* epsilon */;
+
+Condition ::=      (ConditionListTerm) Condition OR ConditionTerm
+            |      (ConditionLastTerm) ConditionTerm;
+
+ConditionTerm ::=    (ConditionListFact) ConditionTerm AND ConditionFact
+                |    (ConditionLastFact) ConditionFact;
+
+
+ConditionFact ::=     (ConditionFactList) Expression RelOp Expression
+                |     (ConditionFactExpression) Expression;
+
+
+Expression ::=    (ExpressionAddopLeftList) Expression AddOpLeft Term
+              |   (ExpressionTermDef) TermDef;
+
+TermDef ::=   (MinusTerm) MINUS Term
+            | (OnlyTerm) Term;
+
+Term ::=    (TermMullOpLeftList) Term MulOpLeft Factor
+       |    (TermFactor) Factor;
+
+Factor ::=         (FactorConst) Const
+          |        (FactorMethodCall) MethodCall
+          |        (FactorDesignator) Designator
+          |        (FactorParenExoression) L_PAREN Expression R_PAREN
+          |        (FactorNewType) NEW Type
+          |        (FactorNewTypeExpression) NEW Type L_BRACE Expression R_BRACE;
+
+
+RelOp ::= (RelOpEquals) EQUALS
+        | (RelOpNotEquals) NOT_EQUALS
+        | (RelOpLess) LESS
+	    | (RelOpLessEqual) LESS_EQUALS
+	    | (RelOpGreater) GREATER
+	    | (RelOpGreaterEquals) GREATER_EQUALS;
+
+AddOpLeft ::= (AddOpLeftPlus) PLUS | (AddOpLeftMinus) MINUS;
+
+AddOpRight ::= (AddOpRightPlus) PLUS_ASSIGN | (AddOpRightMinus) MINUS_ASSIGN;
+
+MulOpLeft ::= (MulOpLeftMul) MUL | (MulOpLeftDiv) DIV | (MulOpLeftMod) MOD;
+
+MulOpRight ::= (MulOpRightMul) MUL_ASSIGN | (MulOpRightDiv) DIV_ASSIGN | (MulOpRightMod) MOD_ASSIGN;
+
+AssignOp ::= (AssignOp) EQUAL;
+
+AssignOps ::= (AssignOpEqual) AssignOp | (AssignOpAdd) AddOpRight | (AssignOpMul) MulOpRight;
+
+
+
+
+
+
+
+

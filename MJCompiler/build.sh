@@ -10,17 +10,18 @@ echo
 
 java -jar lib/JFlex.jar -d src/rs/ac/bg/etf/pp1/ spec/mjlexer.lex
 
-#echo
-#echo  ${brown} PARSER ${red}
-#echo
-#
-#java -jar lib/java-cup-11a.jar -destdir src/rs/ac/bg/etf/pp1/ -parser MJParser spec/mjparser.cup
-#
-#echo ${NC}
-#
+echo
+echo  ${brown} PARSER ${red}
+echo
 
-#echo
-#echo  ${brown} Compiling with javac ${red}
-# echo
+java -jar lib/cup_v10k.jar -destdir src/rs/ac/bg/etf/pp1/ -ast src.rs.ac.bg.etf.pp1.ast  -parser MJParser -buildtree spec/mjparser.cup
+sed -i 's/src.rs.ac.bg.etf.pp1.ast/rs.ac.bg.etf.pp1.ast/g' src/rs/ac/bg/etf/pp1/ast/*
 
-# javac -cp .:src:config:lib/java-cup-11a.jar:lib/mj-runtime.jar:lib/symboltable.jar:lib/log4j-1.2.17.jar src/rs/ac/bg/etf/pp1/*.java src/rs/ac/bg/etf/pp1/util/*.java
+echo ${NC}
+
+
+echo
+echo  ${brown} Compiling with javac ${red}
+echo
+
+javac -cp .:src:config:lib/cup_v10k.jar:lib/mj-runtime.jar:lib/log4j-1.2.17.jar -Xdiags:verbose src/rs/ac/bg/etf/pp1/*.java src/rs/ac/bg/etf/pp1/util/*.java
