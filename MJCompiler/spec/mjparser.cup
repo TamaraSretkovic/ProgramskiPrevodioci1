@@ -3,10 +3,12 @@ package rs.ac.bg.etf.pp1;
 import java_cup.runtime.*;
 import org.apache.log4j.*;
 import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.ast.*;
 
 
 parser code {:
 
+    boolean errorDetected;
 	Logger log = Logger.getLogger(getClass());
 
 
@@ -26,6 +28,7 @@ parser code {:
     }
 
     public void report_error(String message, Object info) {
+        errorDetected = true;
     	StringBuilder msg = new StringBuilder(message);
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
@@ -34,6 +37,9 @@ parser code {:
 
 :}
 
+init with {:
+	errorDetected = false;
+:}
 
 scan with {:
 	Symbol s = this.getScanner().next_token();
@@ -46,7 +52,7 @@ scan with {:
 /* declaracija terminala i neterminala */
 
 
-terminal PROGRAM, LC_BRACE, RC_BRACE, SEMI, COMMA, CONST, CLASS, L_BRACE, R_BRACE, VOID;
+terminal PROGRAM, LC_BRACE, RC_BRACE, SEMI, COMMA, CONST, L_BRACE, R_BRACE, VOID;
 terminal R_PAREN, L_PAREN, IF, ELSE, READ, PRINT, FOR, BREAK, CONTINUE, RETURN, INC, DEC, EQUAL, DOT;
 terminal EQUALS, NOT_EQUALS, LESS, LESS_EQUALS, GREATER, GREATER_EQUALS, MINUS, PLUS, DIV, MUL, MOD, NEW, OR, AND;
 terminal MOD_ASSIGN, MUL_ASSIGN, DIV_ASSIGN, PLUS_ASSIGN, MINUS_ASSIGN, FOREACH, COLON;
@@ -55,32 +61,39 @@ terminal Integer NUMBER;
 terminal Character CHAR;
 terminal Integer  BOOL;
 
-non terminal Program, DeclarationList, MethodDeclarationList, VarDeclarationList, VarDeclaration;
-non terminal ConstDeclarationList, ConstDeclaration, ConstDeclarationActual, ClassDeclaration, Var, Type;
-non terminal ClassDeclarationList, MethodDeclaration, MethodDeclarationActual, FormalParams, StatementList;
-non terminal FormalParamList, Statement, DesignatorStatement, Designator, MethodCall;
-non terminal DesignatorStatementList, ElseStatement, Condition, Expression, Const, LeftSideAssign;
-non terminal  RelOp, AddOpRight, AddOpLeft, MulOpLeft, MulOpRight, AssignOps, AssignOp;
-non terminal Term, ConditionTerm, ConditionOptional, ConditionFact, ActualParams, Factor;
-non terminal TermDef, IdentAssignOp, DesignratorPart, Declaration, ClassMethodDeclarationList;
+non terminal DeclarationList, MethodDeclarationList, VarDeclarationList, VarDeclaration;
+non terminal ConstDeclarationList, ConstDeclaration, ConstDeclarationActual, Var;
+non terminal MethodDeclaration, MethodDeclarationActual, FormalParams, StatementList;
+non terminal FormalParamList, Statement, DesignatorStatement;
+non terminal DesignatorStatementList, ElseStatement;
+non terminal AddOpRight, AddOpLeft, MulOpLeft, MulOpRight, AssignOps, AssignOp;
+non terminal ConditionOptional, ActualParams;
+non terminal Declaration;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarType, MethodTypeName, MethodVoidName, Designator, RelOp, LeftSideAssign;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Const, MethodCall, Factor, Expression, Term, TermDef, Condition, ConditionFact, ConditionTerm;
 
 precedence left ELSE;
 
-Program ::= (Program)  PROGRAM IDENT:progName DeclarationList LC_BRACE MethodDeclarationList RC_BRACE;
+Program ::= (Program)  PROGRAM ProgName DeclarationList LC_BRACE MethodDeclarationList RC_BRACE;
+
+ProgName ::= (ProgName) IDENT:progName;
 
 DeclarationList ::=    (DeclarationListDeclaration) DeclarationList Declaration
                    |   (NoDeclarationList) /* epsilon */;
 
 Declaration ::=   (DeclarationListVar) VarDeclaration
-              |   (DeclarationListConst) ConstDeclaration
-              |   (DeclarationListClass) ClassDeclaration;
+              |   (DeclarationListConst) ConstDeclaration;
 
-VarDeclaration ::=  (VarDeclarationV) Type:varType VarDeclarationList  SEMI
+VarDeclaration ::=  (VarDeclarationV) VarType VarDeclarationList  SEMI
                  |  (VarDeclarationError) error:e SEMI
                           {:
                               parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
                                      " pri deklarisanju varijable, do ;", null);
                           :};
+
+VarType ::= (VarType) Type:type;
 
 VarDeclarationList ::=     (VarDeclarationListVar) VarDeclarationList COMMA Var
                       |    (VarDecl) Var
@@ -95,7 +108,7 @@ Var ::=    (Ident) IDENT:name
 
 Type ::=  (Type) IDENT:typeName;
 
-ConstDeclaration ::=     (ConstDeclarationTypeListSemi) CONST Type:constType ConstDeclarationList SEMI
+ConstDeclaration ::=     (ConstDeclarationTypeListSemi) CONST VarType ConstDeclarationList SEMI
                     |    (ConstDeclarationError) CONST error:e SEMI
                           {:
                               parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
@@ -110,31 +123,26 @@ ConstDeclarationList ::=      (ConstDeclarationListComaActual) ConstDeclarationL
                                                        " pri definisanju konstante do ,", null);
                                         :};
 
-IdentAssignOp ::= (IdentAssignOp) IDENT:name AssignOp;
 
-ConstDeclarationActual ::=     (ConstDeclarationActual) IdentAssignOp Const;
+ConstDeclarationActual ::=     (ConstDeclarationActual) IDENT:name AssignOp Const;
 
 Const ::=   (NumberConst) NUMBER:val
          |  (BoolConst) BOOL:val
          |  (CharConst) CHAR:val;
 
-ClassDeclaration ::=  (ClassDeclaration) CLASS IDENT LC_BRACE ClassDeclarationList ClassMethodDeclarationList RC_BRACE;
-
-ClassMethodDeclarationList ::= (ClassMethodDecl) LC_BRACE MethodDeclarationList RC_BRACE
-                              | (NoClassMethodDecl) /* epsilon */;
-
-ClassDeclarationList ::=      (ClassDeclarationListVar) ClassDeclarationList VarDeclaration
-                         |    (ClassDeclarationListConst) ClassDeclarationList ConstDeclaration
-                         |    (NoClassDeclarationList) /* epsilon */;
 
 MethodDeclarationList ::=    (MethodDeclarationListMethod) MethodDeclarationList MethodDeclaration
                         |    (NoMethodDeclarationList) /* epsilon */;
 
-MethodDeclaration ::=    (TypeMethodDeclaration) Type:retType MethodDeclarationActual
-                    |    (VoidMethodDeclaration) VOID MethodDeclarationActual;
+MethodDeclaration ::=    (TypeMethodDeclaration) MethodTypeName MethodDeclarationActual
+                    |    (VoidMethodDeclaration) MethodVoidName MethodDeclarationActual;
 
-MethodDeclarationActual ::=  (MethodDeclarationActual) IDENT:methodName L_PAREN FormalParams R_PAREN
-                             ClassDeclarationList LC_BRACE StatementList RC_BRACE;
+MethodTypeName ::= (MethodTypeName) Type:retType IDENT:methodName;
+
+MethodVoidName ::= (MethodVoidName) VOID IDENT:methodName;
+
+MethodDeclarationActual ::=  (MethodDeclarationActual) L_PAREN FormalParams R_PAREN
+                             DeclarationList LC_BRACE StatementList RC_BRACE;
 
 FormalParams ::=         (FormalParamsList) FormalParamList:n
                  |       (NoFormalParamsList) /* epsilon */
@@ -179,25 +187,17 @@ ElseStatement ::= (ElseStatementStatement) ELSE Statement
                 | (NoElseStatement) /* epsilon */;
 
 
-DesignatorStatement ::=     (LeftDesignatorAssignExpression) LeftSideAssign AssignOps Expression
+DesignatorStatement ::=     (LeftDesignatorAssignExpression) LeftSideAssign:dest AssignOps Expression:e
                        |    (DesignatorStatementIncrement) Designator INC
                        |    (DesignatorStatementDecrement) Designator DEC
                        |    (DesignatorStatementMethodCall) MethodCall;
 
-LeftSideAssign::= (LeftSideAssignAssignOps) LeftSideAssign AssignOps Designator
-                | (LeftSideAssignVar) Designator;
+LeftSideAssign::= (LeftSideAssignAssignOps) LeftSideAssign:dest AssignOps Designator:d
+                | (LeftSideAssignVar) Designator:d;
 
 
-Designator ::=      (DesignatorMulti) Designator DesignratorPart
-            |       (DesignatorOnly) IDENT:ident;
-
-DesignratorPart ::=      (DesignratorPartDotIdent) DOT IDENT
-                   |     (DesignratorPartIdentBraces) L_BRACE Expression R_BRACE
-                   |     (DesignratorPartError) L_BRACE error:e R_BRACE
-                     		{:
-                     		 	 	parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
-                     		 	 	                    " pri indeksiranju niza", null);
-                     		:};
+Designator ::=      (DesignatorArray) IDENT:name L_BRACE Expression R_BRACE
+            |       (DesignatorOnly) IDENT:name;
 
 DesignatorStatementList ::= (DesignatorStatementOnly) DesignatorStatement
                            | (NoDesignatorStatementList) /* epsilon */;
@@ -217,40 +217,39 @@ ConditionOptional ::= (ConditionOptionalCondition) Condition
                                 :}
                     | (NoConditionOptional) /* epsilon */;
 
-Condition ::=      (ConditionListTerm) Condition OR ConditionTerm
-            |      (ConditionLastTerm) ConditionTerm;
+Condition ::=      (ConditionListTerm) Condition:te OR ConditionTerm:t
+            |      (ConditionLastTerm) ConditionTerm:t;
 
-ConditionTerm ::=    (ConditionListFact) ConditionTerm AND ConditionFact
-                |    (ConditionLastFact) ConditionFact;
-
-
-ConditionFact ::=     (ConditionFactList) Expression RelOp Expression
-                |     (ConditionFactExpression) Expression;
+ConditionTerm ::=    (ConditionListFact) ConditionTerm:te AND ConditionFact:t
+                |    (ConditionLastFact) ConditionFact:t;
 
 
-Expression ::=    (ExpressionAddopLeftList) Expression AddOpLeft Term
-              |   (ExpressionTermDef) TermDef;
+ConditionFact ::=     (ConditionFactList) Expression:te RelOp Expression:t
+                |     (ConditionFactExpression) Expression:t;
 
-TermDef ::=   (MinusTerm) MINUS Term
-            | (OnlyTerm) Term;
 
-Term ::=    (TermMullOpLeftList) Term MulOpLeft Factor
-       |    (TermFactor) Factor;
+Expression ::=    (ExpressionAddopLeftList) Expression:te AddOpLeft Term:t
+              |   (ExpressionTermDef) TermDef:t;
 
-Factor ::=         (FactorConst) Const
-          |        (FactorMethodCall) MethodCall
-          |        (FactorDesignator) Designator
-          |        (FactorParenExoression) L_PAREN Expression R_PAREN
-          |        (FactorNewType) NEW Type
+TermDef ::=   (MinusTerm) MINUS Term:t
+            | (OnlyTerm) Term:t;
+
+Term ::=    (TermMullOpLeftList) Term:te MulOpLeft Factor:t
+       |    (TermFactor) Factor:t;
+
+Factor ::=         (FactorConst) Const:t
+          |        (FactorMethodCall) MethodCall:t
+          |        (FactorDesignator) Designator:t
+          |        (FactorParenExoression) L_PAREN Expression:t R_PAREN
           |        (FactorNewTypeExpression) NEW Type L_BRACE Expression R_BRACE;
 
 
-RelOp ::= (RelOpEquals) EQUALS
-        | (RelOpNotEquals) NOT_EQUALS
-        | (RelOpLess) LESS
-	    | (RelOpLessEqual) LESS_EQUALS
-	    | (RelOpGreater) GREATER
-	    | (RelOpGreaterEquals) GREATER_EQUALS;
+RelOp ::= (RelOpEquals) EQUALS:rel
+        | (RelOpNotEquals) NOT_EQUALS:rel
+        | (RelOpLess) LESS:rel
+	    | (RelOpLessEqual) LESS_EQUALS:rel
+	    | (RelOpGreater) GREATER:rel
+	    | (RelOpGreaterEquals) GREATER_EQUALS:rel;
 
 AddOpLeft ::= (AddOpLeftPlus) PLUS | (AddOpLeftMinus) MINUS;
 

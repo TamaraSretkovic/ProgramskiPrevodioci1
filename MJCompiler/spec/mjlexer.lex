@@ -38,7 +38,6 @@ import java_cup.runtime.Symbol;
 "\f" 	{ }
 
 "program"   { return new_symbol(sym.PROGRAM, yytext());}
-"class"     { return new_symbol(sym.CLASS, yytext());}
 "new"       { return new_symbol(sym.NEW, yytext());}
 "return" 	{ return new_symbol(sym.RETURN, yytext()); }
 

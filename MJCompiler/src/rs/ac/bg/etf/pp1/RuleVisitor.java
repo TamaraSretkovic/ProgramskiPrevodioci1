@@ -19,10 +19,6 @@ public class RuleVisitor extends VisitorAdaptor{
         constDeclCount++;
     }
 
-    public void visit(ClassDeclaration classdecl) {
-        classDeclCount++;
-    }
-
     public void visit(PrintExpressionStatement print) {
         printCallCount++;
     }

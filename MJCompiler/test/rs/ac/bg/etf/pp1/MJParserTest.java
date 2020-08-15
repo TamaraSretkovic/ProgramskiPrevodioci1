@@ -1,11 +1,8 @@
 package rs.ac.bg.etf.pp1;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import java_cup.runtime.Symbol;
 
@@ -14,6 +11,10 @@ import org.apache.log4j.xml.DOMConfigurator;
 
 import rs.ac.bg.etf.pp1.ast.Program;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class MJParserTest {
 
@@ -28,7 +29,7 @@ public class MJParserTest {
 
         Reader br = null;
         try {
-            File sourceCode = new File("test/program.mj");
+            File sourceCode = new File(args[0]);
             log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 
             br = new BufferedReader(new FileReader(sourceCode));
@@ -38,24 +39,51 @@ public class MJParserTest {
             Symbol s = p.parse();  //pocetak parsiranja
 
             Program prog = (Program)(s.value);
+
+            Tab.init(); // Universe scope
+            Tab.currentScope().addToLocals(new Obj (Obj.Type, "bool", new Struct(Struct.Bool)));
+
             // ispis sintaksnog stabla
             log.info(prog.toString(""));
             log.info("===================================");
 
             // ispis prepoznatih programskih konstrukcija
-            RuleVisitor v = new RuleVisitor();
+            SemanticPass v = new SemanticPass();
             prog.traverseBottomUp(v);
 
-            log.info(" Print count calls = " + v.printCallCount);
+            Tab.dump();
 
-            log.info(" Deklarisanih promenljivih ima = " + v.varDeclCount);
+            if(v.passed()){
+                log.info("Parsiranje uspesno zavrseno!");
 
-            log.info(" Deklarisanih konstanti ima = " + v.constDeclCount);
+                // Generisanje koda
+                File outputFile;
+                if (args.length == 1)
+                {
+                    Path path = Paths.get(args[0]);
+                    String  sFile= path.getFileName().toString();
+                    int dotPos = sFile.lastIndexOf('.');
+                    String sFileName = (dotPos != -1) ? sFile.substring(0, dotPos) : sFile;
+                    outputFile = new File("out/" + sFileName + ".obj");
+                }
+                else
+                {
+                    outputFile = new File(args[1]);
+                }
 
-            log.info(" Deklarisanih clasa ima = " + v.classDeclCount);
+                if (outputFile.exists())
+                {
+                    outputFile.delete();
+                }
 
-            log.info(" Poziva metoda ima = " + v.methCallCount);
-
+                CodeGenerator codeGenerator = new CodeGenerator();
+                prog.traverseBottomUp(codeGenerator);
+                Code.dataSize = v.nVars;
+                Code.mainPc = codeGenerator.getMainPc();
+                Code.write(new FileOutputStream(outputFile));
+            }else{
+                log.error("Parsiranje NIJE uspesno zavrseno!");
+            }
         }
         finally {
             if (br != null) try { br.close(); } catch (IOException e1) { log.error(e1.getMessage(), e1); }

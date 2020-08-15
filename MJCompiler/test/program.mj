@@ -1,6 +1,15 @@
-program P
+program test301
+int x[]; int y;
 {
-void main() {
-x+=;
+    int k() int c; {
+    c = 2;
+    return c + 2;
+    }
+	void main()
+	{
+	    x = new int[2];
+	    x[0] = 3;
+	    print(x[0]);
+	}
 }
-}
+
