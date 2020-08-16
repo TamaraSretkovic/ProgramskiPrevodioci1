@@ -6,11 +6,31 @@ import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
+import java.util.Stack;
+
 
 public class CodeGenerator extends VisitorAdaptor {
     private int mainPc;
 
     private boolean returned = false;
+    private Stack<String> assignments = new Stack<String>();
+
+    private void storeDesignator(Obj designatorObj){
+        if (designatorObj.getKind() != Obj.Elem)
+            Code.store(designatorObj);
+        else if (designatorObj.getType() == Tab.intType)
+            Code.put(Code.astore);
+        else
+            Code.put(Code.bastore);
+    }
+    private void loadDesignator(Obj designatorObj){
+        if (designatorObj.getKind() != Obj.Elem)
+            Code.load(designatorObj);
+        else if (designatorObj.getType() == Tab.intType)
+            Code.put(Code.aload);
+        else
+            Code.put(Code.baload);
+    }
 
     public int getMainPc(){
         return mainPc;
@@ -26,15 +46,13 @@ public class CodeGenerator extends VisitorAdaptor {
         }
     }
     public void visit(PrintExpressionNumStatement printNumStmt){
-        if(printNumStmt.getExpression().struct == Tab.intType
-                || printNumStmt.getExpression().struct.getKind() == Struct.Bool){
-            Code.loadConst(5);
-            Code.put(Code.print);
-        }else if(printNumStmt.getExpression().struct == Tab.charType){
-            Code.loadConst(1);
+        Code.load(new Obj(Obj.Con, "", Tab.intType, printNumStmt.getN(), 0));
+        if(printNumStmt.getExpression().struct == Tab.charType){
             Code.put(Code.bprint);
+        } else {
+            Code.put(Code.print);
         }
-    } // ???
+    }
     public void visit(ReadStatement readStatement){
         if (readStatement.getDesignator().obj.getType() == Tab.charType) {
             Code.put(Code.bread);
@@ -42,7 +60,7 @@ public class CodeGenerator extends VisitorAdaptor {
         else {
             Code.put(Code.read);
         }
-        Code.store(readStatement.getDesignator().obj);
+        storeDesignator(readStatement.getDesignator().obj);
     }
 
     // load const
@@ -83,61 +101,66 @@ public class CodeGenerator extends VisitorAdaptor {
         }
     }
 
-    // load designator
-
+    // assignments
     public void visit(LeftDesignatorAssignExpression ldAssignExpression){
-        // TODO koji assign?
-
-        //if(ldAssignExpression.getLeftSideAssign().obj.getKind() == Obj.Elem){
-        //    ldAssignExpression.getLeftSideAssign().obj = new Obj(Obj.Elem, "",
-        //            ldAssignExpression.getLeftSideAssign().obj.getType().getElemType());
-        //    if(ldAssignExpression.getLeftSideAssign().obj.getType().getElemType() == Tab.charType) {
-        //        Code.put(Code.bastore);
-        //    } else Code.put(Code.astore);
-        //} else
-            Code.store(ldAssignExpression.getLeftSideAssign().obj);
+        // TODO ovo je poslednji asign a ovi u medju koracima?
+        switch (ldAssignExpression.getAssignOps().obj.getName()) {
+            case "=": {storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
+                Code.put(Code.pop); break;}
+            case "+=": {
+                Code.put(Code.add);
+                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
+                break;}
+            case "-=": {
+                Code.put(Code.sub);
+                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
+                break;}
+            case "*=": {
+                Code.put(Code.mul);
+                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
+                break;}
+            case "/=": {
+                Code.put(Code.div);
+                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
+                break;}
+            case "%=": {
+                Code.put(Code.rem);
+                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
+                break;}
+        }
+    }
+    public void visit(LeftSideAssignVar leftSideAssignVar){
+        loadDesignator(leftSideAssignVar.obj);
     }
     public void visit(DesignatorStatementIncrement dStatementIncrement){
         if(dStatementIncrement.getDesignator().obj.getKind() == Obj.Elem){
             Code.put(Code.dup2);
         }
-        Code.load(dStatementIncrement.getDesignator().obj);
+        loadDesignator(dStatementIncrement.getDesignator().obj);
         Code.loadConst(1);
         Code.put(Code.add);
-        Code.store(dStatementIncrement.getDesignator().obj);
+        storeDesignator(dStatementIncrement.getDesignator().obj);
     }
     public void visit(DesignatorStatementDecrement dStatementDecrement){
         if(dStatementDecrement.getDesignator().obj.getKind() == Obj.Elem){
             Code.put(Code.dup2);
         }
-        Code.load(dStatementDecrement.getDesignator().obj);
+        loadDesignator(dStatementDecrement.getDesignator().obj);
         Code.loadConst(1);
         Code.put(Code.sub);
-        Code.store(dStatementDecrement.getDesignator().obj);
+        storeDesignator(dStatementDecrement.getDesignator().obj);
     }
-    public void visit(DesignatorOnly designatorOnly){
-       // Code.load(designatorOnly.obj);
-    }
-    public void visit(DesignatorArray designatorArray){
-        designatorArray.obj = Tab.find(designatorArray.getName());
-        Code.load(designatorArray.obj);
-    }
+
     // factor
     public void visit(MinusTerm minusTerm){
         Code.put(Code.neg);
     }
     public void visit(FactorDesignator fDesignator){
-        //if(fDesignator.getDesignator().obj.getKind() == Obj.Elem){
-        //    fDesignator.getDesignator().obj = new Obj(Obj.Elem, "",
-        //            fDesignator.getDesignator().obj.getType().getElemType());
-        //    if(fDesignator.getDesignator().obj.getType().getElemType() == Tab.charType) {
-        //        Code.put(Code.baload);
-        //    } else Code.put(Code.aload);
-        //} else
-        Code.load(fDesignator.getDesignator().obj);
+        loadDesignator(fDesignator.getDesignator().obj);
     }
-
-
+    public void visit(ArrayAccess arrayAccess){
+        loadDesignator(arrayAccess.obj);
+    }
     // ops
     public void visit(TermMullOpLeftList termMullOpLeftList){
         if(termMullOpLeftList.getMulOpLeft().getClass() == MulOpLeftMul.class){
@@ -239,5 +262,4 @@ public class CodeGenerator extends VisitorAdaptor {
             Code.put(1);
         }
     }
-    // pomocne fje
 }

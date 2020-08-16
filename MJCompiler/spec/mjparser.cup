@@ -66,11 +66,12 @@ non terminal ConstDeclarationList, ConstDeclaration, ConstDeclarationActual, Var
 non terminal MethodDeclaration, MethodDeclarationActual, FormalParams, StatementList;
 non terminal FormalParamList, Statement, DesignatorStatement;
 non terminal DesignatorStatementList, ElseStatement;
-non terminal AddOpRight, AddOpLeft, MulOpLeft, MulOpRight, AssignOps, AssignOp;
+non terminal AddOpLeft, MulOpLeft;
 non terminal ConditionOptional, ActualParams;
 non terminal Declaration;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarType, MethodTypeName, MethodVoidName, Designator, RelOp, LeftSideAssign;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarType, MethodTypeName, MethodVoidName, Designator,
+ ArrayAccess, RelOp, LeftSideAssign, AddOpRight, MulOpRight, AssignOp, AssignOps;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Const, MethodCall, Factor, Expression, Term, TermDef, Condition, ConditionFact, ConditionTerm;
 
@@ -168,7 +169,7 @@ Statement ::=           (IfStatement) IF L_PAREN Condition R_PAREN Statement Els
                     |   (DesignatorStatementStatement) DesignatorStatement SEMI
                     |   (ReadStatement) READ L_PAREN Designator R_PAREN SEMI
                     |   (PrintExpressionStatement) PRINT L_PAREN Expression R_PAREN SEMI
-                    |   (PrintExpressionNumStatement) PRINT L_PAREN Expression COMMA NUMBER R_PAREN SEMI
+                    |   (PrintExpressionNumStatement) PRINT L_PAREN Expression COMMA NUMBER:n R_PAREN SEMI
                     |   (ForStatement) FOR L_PAREN DesignatorStatementList SEMI ConditionOptional SEMI
                                        DesignatorStatementList R_PAREN Statement
                     |   (ForeachStatement) FOREACH L_PAREN IDENT COLON Designator R_PAREN Statement
@@ -196,8 +197,10 @@ LeftSideAssign::= (LeftSideAssignAssignOps) LeftSideAssign:dest AssignOps Design
                 | (LeftSideAssignVar) Designator:d;
 
 
-Designator ::=      (DesignatorArray) IDENT:name L_BRACE Expression R_BRACE
+Designator ::=      (DesignatorArray) ArrayAccess Expression R_BRACE
             |       (DesignatorOnly) IDENT:name;
+
+ArrayAccess ::= (ArrayAccess) IDENT:name L_BRACE;
 
 DesignatorStatementList ::= (DesignatorStatementOnly) DesignatorStatement
                            | (NoDesignatorStatementList) /* epsilon */;
