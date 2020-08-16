@@ -13,9 +13,12 @@ public class CodeGenerator extends VisitorAdaptor {
     private int mainPc;
 
     private boolean returned = false;
-    private Stack<String> assignments = new Stack<String>();
+    private Stack<Obj> assignments = new Stack<Obj>();
+    private Stack<Obj> designators = new Stack<Obj>();
 
     private void storeDesignator(Obj designatorObj){
+        System.out.println("store");
+        System.out.println(designatorObj.getName());
         if (designatorObj.getKind() != Obj.Elem)
             Code.store(designatorObj);
         else if (designatorObj.getType() == Tab.intType)
@@ -24,6 +27,8 @@ public class CodeGenerator extends VisitorAdaptor {
             Code.put(Code.bastore);
     }
     private void loadDesignator(Obj designatorObj){
+        System.out.println("load");
+        System.out.println(designatorObj.getName());
         if (designatorObj.getKind() != Obj.Elem)
             Code.load(designatorObj);
         else if (designatorObj.getType() == Tab.intType)
@@ -31,7 +36,30 @@ public class CodeGenerator extends VisitorAdaptor {
         else
             Code.put(Code.baload);
     }
-
+    private void doAssign(Obj asgn, Obj dst){
+        switch (asgn.getName()) {
+            case "+=": {
+                Code.put(Code.add);
+                break;}
+            case "-=": {
+                Code.put(Code.sub);
+                break;}
+            case "*=": {
+                Code.put(Code.mul);
+                break;}
+            case "/=": {
+                Code.put(Code.div);
+                break;}
+            case "%=": {
+                Code.put(Code.rem);
+                break;}
+        }
+        if(dst.getKind() != Obj.Elem) Code.put(Code.dup);
+        else Code.put(Code.dup_x2);
+        storeDesignator(dst);
+        if(asgn.getName().equals("=") && dst.getType().getKind() != Struct.Array && dst.getKind() != Obj.Elem)
+            Code.put(Code.pop);
+    }
     public int getMainPc(){
         return mainPc;
     }
@@ -104,33 +132,39 @@ public class CodeGenerator extends VisitorAdaptor {
     // assignments
     public void visit(LeftDesignatorAssignExpression ldAssignExpression){
         // TODO ovo je poslednji asign a ovi u medju koracima?
-        switch (ldAssignExpression.getAssignOps().obj.getName()) {
-            case "=": {storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
-                Code.put(Code.pop); break;}
-            case "+=": {
-                Code.put(Code.add);
-                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
-                break;}
-            case "-=": {
-                Code.put(Code.sub);
-                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
-                break;}
-            case "*=": {
-                Code.put(Code.mul);
-                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
-                break;}
-            case "/=": {
-                Code.put(Code.div);
-                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
-                break;}
-            case "%=": {
-                Code.put(Code.rem);
-                storeDesignator(ldAssignExpression.getLeftSideAssign().obj);
-                break;}
+        System.out.println("last");
+        System.out.println(ldAssignExpression.getLeftSideAssign().obj.getName());
+        doAssign(ldAssignExpression.getAssignOps().obj, designators.pop());
+        while (!assignments.empty()){
+            System.out.println("final");
+            System.out.println(designators.peek().getName());
+            System.out.println(assignments.peek().getName());
+            //loadDesignator(designators.pop());
+            doAssign(assignments.pop(),designators.pop());
         }
+        if(!designators.empty()) designators.pop();
+        Code.put(Code.pop);
+    }
+    public void visit(LeftSideAssignAssignOps leftSideAssignAssignOps){
+        assignments.push(leftSideAssignAssignOps.getAssignOps().obj);
+        designators.push(leftSideAssignAssignOps.getDesignator().obj);
+        if(leftSideAssignAssignOps.getDesignator().obj.getKind() == Obj.Elem) Code.put(Code.dup2);
+        loadDesignator(leftSideAssignAssignOps.getDesignator().obj);
+        System.out.println("lsaops");
+        System.out.println(leftSideAssignAssignOps.getDesignator().obj.getName());
     }
     public void visit(LeftSideAssignVar leftSideAssignVar){
+        if(leftSideAssignVar.obj.getKind() == Obj.Elem) Code.put(Code.dup2);
         loadDesignator(leftSideAssignVar.obj);
+        designators.push(leftSideAssignVar.obj);
+        System.out.println("lsavar");
+        System.out.println(leftSideAssignVar.obj.getName());
+    }
+    public void visit(AssignOpEqual assignOpEqual){
+        if(assignOpEqual.getParent().getClass() == LeftSideAssignAssignOps.class ||
+                assignOpEqual.getParent().getClass() == LeftDesignatorAssignExpression.class){
+            if(designators.peek().getKind() == Obj.Elem) Code.put(Code.pop);
+        }
     }
     public void visit(DesignatorStatementIncrement dStatementIncrement){
         if(dStatementIncrement.getDesignator().obj.getKind() == Obj.Elem){
