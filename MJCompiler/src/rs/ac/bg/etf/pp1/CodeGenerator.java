@@ -17,8 +17,6 @@ public class CodeGenerator extends VisitorAdaptor {
     private Stack<Obj> designators = new Stack<Obj>();
 
     private void storeDesignator(Obj designatorObj){
-        System.out.println("store");
-        System.out.println(designatorObj.getName());
         if (designatorObj.getKind() != Obj.Elem)
             Code.store(designatorObj);
         else if (designatorObj.getType() == Tab.intType)
@@ -27,8 +25,6 @@ public class CodeGenerator extends VisitorAdaptor {
             Code.put(Code.bastore);
     }
     private void loadDesignator(Obj designatorObj){
-        System.out.println("load");
-        System.out.println(designatorObj.getName());
         if (designatorObj.getKind() != Obj.Elem)
             Code.load(designatorObj);
         else if (designatorObj.getType() == Tab.intType)
@@ -131,14 +127,8 @@ public class CodeGenerator extends VisitorAdaptor {
 
     // assignments
     public void visit(LeftDesignatorAssignExpression ldAssignExpression){
-        // TODO ovo je poslednji asign a ovi u medju koracima?
-        System.out.println("last");
-        System.out.println(ldAssignExpression.getLeftSideAssign().obj.getName());
         doAssign(ldAssignExpression.getAssignOps().obj, designators.pop());
         while (!assignments.empty()){
-            System.out.println("final");
-            System.out.println(designators.peek().getName());
-            System.out.println(assignments.peek().getName());
             //loadDesignator(designators.pop());
             doAssign(assignments.pop(),designators.pop());
         }
@@ -150,15 +140,11 @@ public class CodeGenerator extends VisitorAdaptor {
         designators.push(leftSideAssignAssignOps.getDesignator().obj);
         if(leftSideAssignAssignOps.getDesignator().obj.getKind() == Obj.Elem) Code.put(Code.dup2);
         loadDesignator(leftSideAssignAssignOps.getDesignator().obj);
-        System.out.println("lsaops");
-        System.out.println(leftSideAssignAssignOps.getDesignator().obj.getName());
     }
     public void visit(LeftSideAssignVar leftSideAssignVar){
         if(leftSideAssignVar.obj.getKind() == Obj.Elem) Code.put(Code.dup2);
         loadDesignator(leftSideAssignVar.obj);
         designators.push(leftSideAssignVar.obj);
-        System.out.println("lsavar");
-        System.out.println(leftSideAssignVar.obj.getName());
     }
     public void visit(AssignOpEqual assignOpEqual){
         if(assignOpEqual.getParent().getClass() == LeftSideAssignAssignOps.class ||

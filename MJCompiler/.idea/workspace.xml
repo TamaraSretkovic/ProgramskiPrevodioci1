@@ -2,28 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dec84fd-10f8-4a19-9feb-f5c5a0f855a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JFlex.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mj_runtime_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/symboltable_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mj-runtime-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/symboltable-1-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/mjparser.cup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/RuleVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/cup_v10k.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/cup_v10k.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/util/TableVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MJCompiler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MJCompiler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/mjlexer.lex" beforeDir="false" afterPath="$PROJECT_DIR$/spec/mjlexer.lex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/MJParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/MJParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/RuleVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/Yylex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/Yylex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/sym.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/program.mj" beforeDir="false" afterPath="$PROJECT_DIR$/test/program.mj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="240" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="MJCompiler" />
@@ -46,6 +42,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/symboltable-1-1.jar!/" />
@@ -62,10 +59,11 @@
       <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MJParserTest">
+  <component name="RunManager" selected="Shell Script.run.sh (1)">
     <configuration name="MJParserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rs.ac.bg.etf.pp1.MJParserTest" />
       <module name="MJCompiler" />
+      <option name="PROGRAM_PARAMETERS" value="test/program.mj test/program.obj" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="rs.ac.bg.etf.pp1.*" />
@@ -97,11 +95,36 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="disasm.sh (1)" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/disasm.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run.sh (1)" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.MJParserTest" />
+      <item itemvalue="Shell Script.disasm.sh (1)" />
+      <item itemvalue="Shell Script.run.sh (1)" />
+      <item itemvalue="Shell Script.build.sh" />
+      <item itemvalue="Application.MJTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.run.sh (1)" />
         <item itemvalue="Application.MJParserTest" />
-        <item itemvalue="Shell Script.build.sh" />
         <item itemvalue="Application.MJTest" />
+        <item itemvalue="Shell Script.disasm.sh (1)" />
+        <item itemvalue="Shell Script.build.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -134,69 +157,117 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cup" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="621" y="220" width="668" height="660" key="#MJParserTest" timestamp="1592751319385">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="621" y="220" width="668" height="660" key="#MJParserTest/0.27.1920.1053@0.27.1920.1053" timestamp="1592751319385" />
     <state x="395" y="125" width="800" height="671" key="#Project_Structure" timestamp="1590581352100">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="395" y="125" width="800" height="671" key="#Project_Structure/0.27.1600.873@0.27.1600.873" timestamp="1590581352100" />
-    <state x="499" y="268" width="607" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590606838137">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592767351229">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1592767351229" />
+    <state x="599" y="318" width="573" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592751991421">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="499" y="268" width="607" height="385" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1600.873@0.27.1600.873" timestamp="1590606838137" />
+    <state x="599" y="318" width="573" height="385" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1592751991421" />
+    <state x="743" y="261" width="424" height="578" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1592751467895">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="261" width="424" height="578" key="#com.intellij.ide.macro.MacrosDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1592751467895" />
+    <state x="608" y="175" width="374" height="571" key="#com.intellij.ide.util.MemberChooser" timestamp="1597664982504">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="608" y="175" width="374" height="571" key="#com.intellij.ide.util.MemberChooser/0.27.1600.873@0.27.1600.873" timestamp="1597664982504" />
     <state x="628" y="174" width="324" height="566" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1591045965725">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="628" y="174" width="324" height="566" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.27.1600.873@0.27.1600.873" timestamp="1591045965725" />
-    <state x="230" y="57" width="1129" height="807" key="CommitChangelistDialog2" timestamp="1591260300729">
+    <state x="634" y="290" width="641" height="521" key="#disasm.sh" timestamp="1592750007273">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="634" y="290" width="641" height="521" key="#disasm.sh/0.27.1920.1053@0.27.1920.1053" timestamp="1592750007273" />
+    <state x="230" y="57" width="1150" height="807" key="CommitChangelistDialog2" timestamp="1597572021701">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="230" y="57" width="1129" height="807" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1591260300729" />
+    <state x="230" y="57" width="1129" height="807" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1597572021701" />
+    <state x="276" y="63" width="1150" height="807" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1592776449850" />
     <state x="430" y="203" width="884" height="466" key="FileChooserDialogImpl" timestamp="1591273574395">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="430" y="203" width="884" height="466" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1591273574395" />
-    <state width="1554" height="269" key="GridCell.Tab.0.bottom" timestamp="1591281410485">
+    <state width="1554" height="152" key="GridCell.Tab.0.bottom" timestamp="1597672883206">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="269" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1591281410485" />
-    <state width="1554" height="269" key="GridCell.Tab.0.center" timestamp="1591281410484">
+    <state width="1554" height="152" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1597672883206" />
+    <state width="1874" height="318" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1592776509739" />
+    <state width="1554" height="152" key="GridCell.Tab.0.center" timestamp="1597672883205">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="269" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1591281410484" />
-    <state width="1554" height="269" key="GridCell.Tab.0.left" timestamp="1591281410484">
+    <state width="1554" height="152" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1597672883205" />
+    <state width="1874" height="318" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1592776509739" />
+    <state width="1554" height="152" key="GridCell.Tab.0.left" timestamp="1597672883204">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="269" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1591281410484" />
-    <state width="1554" height="269" key="GridCell.Tab.0.right" timestamp="1591281410484">
+    <state width="1554" height="152" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1597672883204" />
+    <state width="1874" height="318" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1592776509738" />
+    <state width="1554" height="152" key="GridCell.Tab.0.right" timestamp="1597672883205">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="269" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1591281410484" />
-    <state width="1554" height="273" key="GridCell.Tab.1.bottom" timestamp="1591272915185">
+    <state width="1554" height="152" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1597672883205" />
+    <state width="1874" height="318" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1592776509739" />
+    <state width="1554" height="273" key="GridCell.Tab.1.bottom" timestamp="1597513180186">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="273" key="GridCell.Tab.1.bottom/0.27.1600.873@0.27.1600.873" timestamp="1591272915185" />
-    <state width="1554" height="273" key="GridCell.Tab.1.center" timestamp="1591272915185">
+    <state width="1554" height="273" key="GridCell.Tab.1.bottom/0.27.1600.873@0.27.1600.873" timestamp="1597513180186" />
+    <state width="1554" height="273" key="GridCell.Tab.1.center" timestamp="1597513180185">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="273" key="GridCell.Tab.1.center/0.27.1600.873@0.27.1600.873" timestamp="1591272915185" />
-    <state width="1554" height="273" key="GridCell.Tab.1.left" timestamp="1591272915185">
+    <state width="1554" height="273" key="GridCell.Tab.1.center/0.27.1600.873@0.27.1600.873" timestamp="1597513180185" />
+    <state width="1554" height="273" key="GridCell.Tab.1.left" timestamp="1597513180185">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="273" key="GridCell.Tab.1.left/0.27.1600.873@0.27.1600.873" timestamp="1591272915185" />
-    <state width="1554" height="273" key="GridCell.Tab.1.right" timestamp="1591272915185">
+    <state width="1554" height="273" key="GridCell.Tab.1.left/0.27.1600.873@0.27.1600.873" timestamp="1597513180185" />
+    <state width="1554" height="273" key="GridCell.Tab.1.right" timestamp="1597513180185">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="273" key="GridCell.Tab.1.right/0.27.1600.873@0.27.1600.873" timestamp="1591272915185" />
-    <state x="342" y="41" width="965" height="839" key="SettingsEditor" timestamp="1591273580725">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state width="1554" height="273" key="GridCell.Tab.1.right/0.27.1600.873@0.27.1600.873" timestamp="1597513180185" />
+    <state x="410" y="44" width="965" height="839" key="SettingsEditor" timestamp="1592750235219">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="342" y="41" width="965" height="839" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1591273580725" />
-    <state x="460" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1591217600069">
+    <state x="410" y="44" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1592750235219" />
+    <state x="460" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1597508981760">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="460" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1591217600069" />
+    <state x="460" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1597508981760" />
+    <state x="552" y="345" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1597397882899" />
     <state x="121" y="53" width="1347" height="814" key="new project wizard" timestamp="1590575322038">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="121" y="53" width="1347" height="814" key="new project wizard/0.27.1600.873@0.27.1600.873" timestamp="1590575322038" />
+    <state x="464" y="210" key="run.anything.popup" timestamp="1591496256135">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="464" y="210" key="run.anything.popup/0.27.1600.873@0.27.1600.873" timestamp="1591496256135" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.java</url>
+          <line>350</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MJCompiler$MJParserTest.ic" NAME="MJParserTest Coverage Results" MODIFIED="1592751294974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>rs.ac.bg.etf.pp1.*</FILTER>
+    </SUITE>
   </component>
 </project>

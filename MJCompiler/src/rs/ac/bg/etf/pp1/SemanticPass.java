@@ -41,6 +41,49 @@ public class SemanticPass extends VisitorAdaptor {
         log.info(msg.toString());
     }
 
+    public static String printObj(Obj tableEntry) {
+        StringBuilder output = new StringBuilder();
+        switch (tableEntry.getKind()) {
+            case Obj.Con:
+                output.append("Con ");
+                break;
+            case Obj.Var:
+                output.append("Var ");
+                break;
+            case Obj.Meth:
+                output.append("Meth ");
+                break;
+        }
+
+        output.append(tableEntry.getName());
+        output.append(": ");
+
+        switch (tableEntry.getType().getKind()) {
+            case Struct.Bool:
+                output.append("bool ");
+                break;
+            case Struct.Array:
+                output.append("array");
+                break;
+            case Struct.Char:
+                output.append("char");
+                break;
+            case Struct.Int:
+                output.append("int");
+                break;
+            case Struct.None:
+                output.append("none");
+                break;
+        }
+
+        output.append(", ");
+        output.append(tableEntry.getAdr());
+        output.append(", ");
+        output.append(tableEntry.getLevel() + " ");
+
+        return output.toString();
+    }
+
     // obrada programa
     public void visit(ProgName progName){
         progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
@@ -65,7 +108,7 @@ public class SemanticPass extends VisitorAdaptor {
                 Obj varNode = Tab.insert(Obj.Var, ident.getName(), declarationTypeNode);
                 // set adress
                 // varNode.setLevel(0);
-                report_info("Deklarisana promenljiva " + ident.getName(), ident);
+                report_info("Deklarisana promenljiva " + ident.getName() + "(" + printObj(varNode) + ")", ident);
             }else {
                 report_error("Pronadjena varijabla sa imenom " + ident.getName() + " u tabeli simbola! ", null);
             }
@@ -76,7 +119,7 @@ public class SemanticPass extends VisitorAdaptor {
             if(!tableHasIdent(identArray.getName())) {
                 Struct arrayStruct = new Struct(Struct.Array, declarationTypeNode);
                 Obj array = Tab.insert(Obj.Var, identArray.getName(), arrayStruct);
-                report_info("Deklarisan niz "+ identArray.getName(), identArray);
+                report_info("Deklarisan niz "+ identArray.getName() + "(" + printObj(array) + ")", identArray);
             } else {
                 report_error("Pronadjena varijabla sa imenom " + identArray.getName() + " u tabeli simbola! ", null);
             }
@@ -93,20 +136,20 @@ public class SemanticPass extends VisitorAdaptor {
                 report_error("Tip identifikatora konstante i tip izraza koji se dodeljuje se ne poklapaju", null);
             }
             boolean defaultCase = false;
-
+            Obj con = null;
             switch (declarationTypeNode.getKind()){
                 case Struct.Bool: {
-                        Obj con = Tab.insert(Obj.Con, constDeclarationActual.getName(), declarationTypeNode);
+                        con = Tab.insert(Obj.Con, constDeclarationActual.getName(), declarationTypeNode);
                         con.setAdr(constBool?1:0);
                     break;
                 }
                 case Struct.Char: {
-                        Obj con = Tab.insert(Obj.Con, constDeclarationActual.getName(), declarationTypeNode);
+                        con = Tab.insert(Obj.Con, constDeclarationActual.getName(), declarationTypeNode);
                         con.setAdr(constChar);
                     break;
                 }
                 case Struct.Int: {
-                        Obj con = Tab.insert(Obj.Con, constDeclarationActual.getName(), declarationTypeNode);
+                        con = Tab.insert(Obj.Con, constDeclarationActual.getName(), declarationTypeNode);
                         con.setAdr(constNum);
                     break;
                 }
@@ -116,8 +159,9 @@ public class SemanticPass extends VisitorAdaptor {
                     break;
                 }
             }
-            if(!defaultCase)
-            report_info("Deklarisana konstanta " + constDeclarationActual.getName(), constDeclarationActual);
+            if(!defaultCase){
+                report_info("Deklarisana konstanta " + constDeclarationActual.getName() + "(" + printObj(con) + ")", constDeclarationActual);
+            }
             declarationTypeNode = null;
         } else {
             report_error("Ime " + constDeclarationActual.getName() + " vec postoji u tabeli simbola! ", null);
@@ -144,14 +188,14 @@ public class SemanticPass extends VisitorAdaptor {
         currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethodName(), methodTypeName.getType().struct);
         methodTypeName.obj = currentMethod;
         Tab.openScope();
-        report_info("Obradjuje se funkcija " + methodTypeName.getMethodName(), methodTypeName);
+        report_info("Obradjuje se funkcija " + methodTypeName.getMethodName() + "(" + printObj(currentMethod) + ")", methodTypeName);
     }
     public void visit(MethodVoidName methodVoidName){
         currentMethod = Tab.insert(Obj.Meth, methodVoidName.getMethodName(), Tab.noType);
         methodVoidName.obj = currentMethod;
         if(methodVoidName.getMethodName().equals("main")){ mainMethodFound = true; }
         Tab.openScope();
-        report_info("Obradjuje se funkcija " + methodVoidName.getMethodName(), methodVoidName);
+        report_info("Obradjuje se funkcija " + methodVoidName.getMethodName() + "(" + printObj(currentMethod) + ")", methodVoidName);
     }
     public void visit(MethodDeclarationActual methodDeclarationActual) {
         if(!returnFound && currentMethod.getType() != Tab.noType){
@@ -194,7 +238,7 @@ public class SemanticPass extends VisitorAdaptor {
         if(obj == Tab.noObj){
             report_error("Greska na liniji " + designatorOnly.getLine()+ " : ime "+designatorOnly.getName()+" nije deklarisano! ", null);
         }
-        report_info("Koriscenje  " + designatorOnly.getName() + " na liniji "+ designatorOnly.getLine(), null);
+        report_info("Koriscenje  " + designatorOnly.getName()  + "(" + printObj(obj) + ")" + " na liniji "+ designatorOnly.getLine(), null);
         designatorOnly.obj = obj;
     }
     public void visit(DesignatorArray designatorArray){
@@ -206,7 +250,7 @@ public class SemanticPass extends VisitorAdaptor {
         } else if(designatorArray.obj.getType().getKind()!=Struct.Array){
             report_error("Greska na liniji " + designatorArray.getLine()+ " : ime "+designatorArray.obj.getName()+" nije niz! ", null);
         }
-        report_info("Koriscenje  niza " + designatorArray.obj.getName() + " na liniji "+ designatorArray.getLine(), null);
+        report_info("Koriscenje elementa niza " + designatorArray.obj.getName() + "(" + printObj(designatorArray.obj) + ")" + " na liniji "+ designatorArray.getLine(), null);
         designatorArray.obj = new Obj(Obj.Elem, designatorArray.obj.getName(), designatorArray.obj.getType().getElemType());
     }
     public void visit(ArrayAccess arrayAccess) {
@@ -215,7 +259,7 @@ public class SemanticPass extends VisitorAdaptor {
     public void visit(MethodCallActualParams methodCallActualParams){
         Obj func = methodCallActualParams.getDesignator().obj;
         if(Obj.Meth == func.getKind()){
-            report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + methodCallActualParams.getLine(), null);
+            report_info("Pronadjen poziv funkcije " + func.getName() + "(" + printObj(func) + ")" + " na liniji " + methodCallActualParams.getLine(), null);
             methodCallActualParams.struct = func.getType();
         }else{
             report_error("Greska na liniji " + methodCallActualParams.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
@@ -230,7 +274,7 @@ public class SemanticPass extends VisitorAdaptor {
     public void visit(MethodCallNoParams methodCallNoParams){
         Obj func = methodCallNoParams.getDesignator().obj;
         if(Obj.Meth == func.getKind()){
-            report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + methodCallNoParams.getLine(), null);
+            report_info("Pronadjen poziv funkcije " + func.getName() + "(" + printObj(func) + ")" + " na liniji " + methodCallNoParams.getLine(), null);
             methodCallNoParams.struct = func.getType();
         }else{
             report_error("Greska na liniji " + methodCallNoParams.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
@@ -248,6 +292,7 @@ public class SemanticPass extends VisitorAdaptor {
                     designatorStatementIncrement.getDesignator().obj.getName() + " nije tipa int!", null);
         } else {
             report_info("Pronadjeno inkrementiranje promenljive " + designatorStatementIncrement.getDesignator().obj.getName()
+                    + "(" + printObj(designatorStatementIncrement.getDesignator().obj) + ")"
                     + " na liniji " + designatorStatementIncrement.getLine(), null);
         }
     }
@@ -257,6 +302,7 @@ public class SemanticPass extends VisitorAdaptor {
                     designatorStatementDecrement.getDesignator().obj.getName() + " nije tipa int!", null);
         } else {
             report_info("Pronadjeno dekrementiranje promenljive " + designatorStatementDecrement.getDesignator().obj.getName()
+                    + "(" + printObj(designatorStatementDecrement.getDesignator().obj) + ")"
                     + " na liniji " + designatorStatementDecrement.getLine(), null);
         }
     }
