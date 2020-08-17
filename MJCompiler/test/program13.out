@@ -1,0 +1,405 @@
+INFO  01:15:56,890 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program13.mj
+INFO  01:15:56,914 - #2 program
+INFO  01:15:56,914 - #46 test302
+INFO  01:15:56,914 - #46 int
+INFO  01:15:56,915 - #46 d
+INFO  01:15:56,915 - #5 ;
+INFO  01:15:56,915 - #7 const
+INFO  01:15:56,916 - #46 char
+INFO  01:15:56,916 - #46 c
+INFO  01:15:56,916 - #23 =
+INFO  01:15:56,916 - #48 a
+INFO  01:15:56,916 - #5 ;
+INFO  01:15:56,917 - #7 const
+INFO  01:15:56,917 - #46 bool
+INFO  01:15:56,917 - #46 cond
+INFO  01:15:56,917 - #23 =
+INFO  01:15:56,917 - #49 1
+INFO  01:15:56,918 - #5 ;
+INFO  01:15:56,918 - #46 char
+INFO  01:15:56,918 - #46 niz1
+INFO  01:15:56,918 - #8 [
+INFO  01:15:56,918 - #9 ]
+INFO  01:15:56,918 - #5 ;
+INFO  01:15:56,918 - #46 char
+INFO  01:15:56,918 - #46 niz2
+INFO  01:15:56,918 - #8 [
+INFO  01:15:56,918 - #9 ]
+INFO  01:15:56,918 - #5 ;
+INFO  01:15:56,918 - #3 {
+INFO  01:15:56,918 - #10 void
+INFO  01:15:56,919 - #46 func
+INFO  01:15:56,919 - #12 (
+INFO  01:15:56,919 - #46 int
+INFO  01:15:56,919 - #46 a
+INFO  01:15:56,919 - #6 ,
+INFO  01:15:56,920 - #46 char
+INFO  01:15:56,920 - #46 c
+INFO  01:15:56,920 - #11 )
+INFO  01:15:56,920 - #3 {
+INFO  01:15:56,920 - #4 }
+INFO  01:15:56,920 - #10 void
+INFO  01:15:56,921 - #46 main
+INFO  01:15:56,921 - #12 (
+INFO  01:15:56,921 - #11 )
+INFO  01:15:56,922 - #3 {
+INFO  01:15:56,922 - #46 d
+INFO  01:15:56,922 - #23 =
+INFO  01:15:56,922 - #46 c
+INFO  01:15:56,922 - #34 *
+INFO  01:15:56,922 - #46 c
+INFO  01:15:56,923 - #5 ;
+INFO  01:15:56,923 - #46 d
+INFO  01:15:56,924 - #23 =
+INFO  01:15:56,924 - #49 1
+INFO  01:15:56,924 - #34 *
+INFO  01:15:56,924 - #47 2
+INFO  01:15:56,924 - #5 ;
+INFO  01:15:56,924 - #46 d
+INFO  01:15:56,924 - #23 =
+INFO  01:15:56,924 - #46 niz1
+INFO  01:15:56,924 - #8 [
+INFO  01:15:56,924 - #47 0
+INFO  01:15:56,925 - #9 ]
+INFO  01:15:56,925 - #34 *
+INFO  01:15:56,925 - #46 niz2
+INFO  01:15:56,925 - #8 [
+INFO  01:15:56,925 - #47 0
+INFO  01:15:56,925 - #9 ]
+INFO  01:15:56,925 - #5 ;
+INFO  01:15:56,925 - #4 }
+INFO  01:15:56,925 - #4 }
+INFO  01:15:56,929 - ==================SINTAKSNO STABLO==================
+INFO  01:15:56,931 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        DeclarationListDeclaration(
+          DeclarationListDeclaration(
+            NoDeclarationList(
+            ) [NoDeclarationList]
+            DeclarationListVar(
+              VarDeclarationV(
+                VarType(
+                  Type(
+                   int
+                  ) [Type]
+                ) [VarType]
+                VarDecl(
+                  Ident(
+                   d
+                  ) [Ident]
+                ) [VarDecl]
+              ) [VarDeclarationV]
+            ) [DeclarationListVar]
+          ) [DeclarationListDeclaration]
+          DeclarationListConst(
+            ConstDeclarationTypeListSemi(
+              VarType(
+                Type(
+                 char
+                ) [Type]
+              ) [VarType]
+              ConstDecl(
+                ConstDeclarationActual(
+                 c
+                  AssignOp(
+                  ) [AssignOp]
+                  CharConst(
+                   a
+                  ) [CharConst]
+                ) [ConstDeclarationActual]
+              ) [ConstDecl]
+            ) [ConstDeclarationTypeListSemi]
+          ) [DeclarationListConst]
+        ) [DeclarationListDeclaration]
+        DeclarationListConst(
+          ConstDeclarationTypeListSemi(
+            VarType(
+              Type(
+               bool
+              ) [Type]
+            ) [VarType]
+            ConstDecl(
+              ConstDeclarationActual(
+               cond
+                AssignOp(
+                ) [AssignOp]
+                BoolConst(
+                 1
+                ) [BoolConst]
+              ) [ConstDeclarationActual]
+            ) [ConstDecl]
+          ) [ConstDeclarationTypeListSemi]
+        ) [DeclarationListConst]
+      ) [DeclarationListDeclaration]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             char
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            IdentArray(
+             niz1
+            ) [IdentArray]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           char
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          IdentArray(
+           niz2
+          ) [IdentArray]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    MethodDeclarationListMethod(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      VoidMethodDeclaration(
+        MethodVoidName(
+         func
+        ) [MethodVoidName]
+        MethodDeclarationActual(
+          FormalParamsList(
+            FormalParamListActual(
+              FormalParamVar(
+                Type(
+                 int
+                ) [Type]
+                Ident(
+                 a
+                ) [Ident]
+              ) [FormalParamVar]
+              Type(
+               char
+              ) [Type]
+              Ident(
+               c
+              ) [Ident]
+            ) [FormalParamListActual]
+          ) [FormalParamsList]
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          NoStatementList(
+          ) [NoStatementList]
+        ) [MethodDeclarationActual]
+      ) [VoidMethodDeclaration]
+    ) [MethodDeclarationListMethod]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            StatementListStatement(
+              NoStatementList(
+              ) [NoStatementList]
+              DesignatorStatementStatement(
+                LeftDesignatorAssignExpression(
+                  LeftSideAssignVar(
+                    DesignatorOnly(
+                     d
+                    ) [DesignatorOnly]
+                  ) [LeftSideAssignVar]
+                  AssignOpEqual(
+                    AssignOp(
+                    ) [AssignOp]
+                  ) [AssignOpEqual]
+                  ExpressionTermDef(
+                    OnlyTerm(
+                      TermMullOpLeftList(
+                        TermFactor(
+                          FactorDesignator(
+                            DesignatorOnly(
+                             c
+                            ) [DesignatorOnly]
+                          ) [FactorDesignator]
+                        ) [TermFactor]
+                        MulOpLeftMul(
+                        ) [MulOpLeftMul]
+                        FactorDesignator(
+                          DesignatorOnly(
+                           c
+                          ) [DesignatorOnly]
+                        ) [FactorDesignator]
+                      ) [TermMullOpLeftList]
+                    ) [OnlyTerm]
+                  ) [ExpressionTermDef]
+                ) [LeftDesignatorAssignExpression]
+              ) [DesignatorStatementStatement]
+            ) [StatementListStatement]
+            DesignatorStatementStatement(
+              LeftDesignatorAssignExpression(
+                LeftSideAssignVar(
+                  DesignatorOnly(
+                   d
+                  ) [DesignatorOnly]
+                ) [LeftSideAssignVar]
+                AssignOpEqual(
+                  AssignOp(
+                  ) [AssignOp]
+                ) [AssignOpEqual]
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermMullOpLeftList(
+                      TermFactor(
+                        FactorConst(
+                          BoolConst(
+                           1
+                          ) [BoolConst]
+                        ) [FactorConst]
+                      ) [TermFactor]
+                      MulOpLeftMul(
+                      ) [MulOpLeftMul]
+                      FactorConst(
+                        NumberConst(
+                         2
+                        ) [NumberConst]
+                      ) [FactorConst]
+                    ) [TermMullOpLeftList]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+              ) [LeftDesignatorAssignExpression]
+            ) [DesignatorStatementStatement]
+          ) [StatementListStatement]
+          DesignatorStatementStatement(
+            LeftDesignatorAssignExpression(
+              LeftSideAssignVar(
+                DesignatorOnly(
+                 d
+                ) [DesignatorOnly]
+              ) [LeftSideAssignVar]
+              AssignOpEqual(
+                AssignOp(
+                ) [AssignOp]
+              ) [AssignOpEqual]
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermMullOpLeftList(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorArray(
+                          ArrayAccess(
+                           niz1
+                          ) [ArrayAccess]
+                          ExpressionTermDef(
+                            OnlyTerm(
+                              TermFactor(
+                                FactorConst(
+                                  NumberConst(
+                                   0
+                                  ) [NumberConst]
+                                ) [FactorConst]
+                              ) [TermFactor]
+                            ) [OnlyTerm]
+                          ) [ExpressionTermDef]
+                        ) [DesignatorArray]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                    MulOpLeftMul(
+                    ) [MulOpLeftMul]
+                    FactorDesignator(
+                      DesignatorArray(
+                        ArrayAccess(
+                         niz2
+                        ) [ArrayAccess]
+                        ExpressionTermDef(
+                          OnlyTerm(
+                            TermFactor(
+                              FactorConst(
+                                NumberConst(
+                                 0
+                                ) [NumberConst]
+                              ) [FactorConst]
+                            ) [TermFactor]
+                          ) [OnlyTerm]
+                        ) [ExpressionTermDef]
+                      ) [DesignatorArray]
+                    ) [FactorDesignator]
+                  ) [TermMullOpLeftList]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [LeftDesignatorAssignExpression]
+          ) [DesignatorStatementStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  01:15:56,931 - ==================SEMANTICKA OBRADA==================
+INFO  01:15:56,933 - Deklarisana promenljiva d(Var d: int, 0, 0 ) na liniji 5
+INFO  01:15:56,934 - Deklarisana konstanta c(Con c: char, 97, 0 ) na liniji 6
+ERROR 01:15:56,934 - Tip identifikatora konstante i tip izraza koji se dodeljuje se ne poklapaju
+INFO  01:15:56,934 - Deklarisana konstanta cond(Con cond: bool , 1, 0 ) na liniji 7
+INFO  01:15:56,934 - Deklarisan niz niz1(Var niz1: array, 1, 0 ) na liniji 8
+INFO  01:15:56,934 - Deklarisan niz niz2(Var niz2: array, 2, 0 ) na liniji 9
+INFO  01:15:56,934 - Obradjuje se funkcija func(Meth func: none, 0, 0 ) na liniji 11
+INFO  01:15:56,934 - Obradjuje se funkcija main(Meth main: none, 0, 0 ) na liniji 15
+INFO  01:15:56,934 - Koriscenje  d(Var d: int, 0, 0 ) na liniji 16
+INFO  01:15:56,934 - Koriscenje  c(Con c: char, 97, 0 ) na liniji 16
+INFO  01:15:56,934 - Koriscenje  c(Con c: char, 97, 0 ) na liniji 16
+ERROR 01:15:56,934 - Greska na liniji 16 : nekompatibilni tipovi u izrazu za mnozenje.
+ERROR 01:15:56,935 - Greska na liniji 16 : nije moguca dodela2!
+INFO  01:15:56,935 - Koriscenje  d(Var d: int, 0, 0 ) na liniji 17
+ERROR 01:15:56,935 - Greska na liniji 17 : nekompatibilni tipovi u izrazu za mnozenje.
+ERROR 01:15:56,935 - Greska na liniji 17 : nije moguca dodela2!
+INFO  01:15:56,935 - Koriscenje  d(Var d: int, 0, 0 ) na liniji 18
+INFO  01:15:56,935 - Koriscenje elementa niza niz1(Var niz1: array, 1, 0 ) na liniji 18
+INFO  01:15:56,935 - Koriscenje elementa niza niz2(Var niz2: array, 2, 0 ) na liniji 18
+ERROR 01:15:56,935 - Greska na liniji 18 : nekompatibilni tipovi u izrazu za mnozenje.
+ERROR 01:15:56,935 - Greska na liniji 18 : nije moguca dodela2!
+INFO  01:15:56,935 - ==================SEMANTICKA ANALIZA==============
+INFO  01:15:56,936 - 2  methods in the program
+INFO  01:15:56,936 - 1  global variables
+INFO  01:15:56,936 - 2  global constants
+INFO  01:15:56,936 - 2  global arrays
+INFO  01:15:56,936 - 0  local variables in main
+INFO  01:15:56,936 - 3  statements in main
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, 0, 1 
+Prog test302: notype, 0, 1 
+   Var d: int, 0, 0 
+   Con c: char, 97, 0 
+   Con cond: bool, 1, 0 
+   Var niz1: Arr of char, 1, 0 
+   Var niz2: Arr of char, 2, 0 
+   Meth func: notype, 0, 1 
+
+   Meth main: notype, 0, 0 
+
+
+
+ERROR 01:15:56,937 - Program nije semanticki ispravan!

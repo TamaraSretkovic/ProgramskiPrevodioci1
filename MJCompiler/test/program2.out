@@ -1,0 +1,25 @@
+INFO  01:15:53,574 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program2.mj
+INFO  01:15:53,602 - #2 program
+INFO  01:15:53,602 - #46 test302
+INFO  01:15:53,602 - #46 int
+INFO  01:15:53,603 - #46 aa
+INFO  01:15:53,603 - #6 ,
+INFO  01:15:53,604 - #46 c
+INFO  01:15:53,604 - #5 ;
+INFO  01:15:53,604 - #3 {
+INFO  01:15:53,604 - #10 void
+INFO  01:15:53,605 - #46 main
+INFO  01:15:53,605 - #12 (
+INFO  01:15:53,605 - #11 )
+INFO  01:15:53,605 - #3 {
+INFO  01:15:53,605 - #46 aa
+INFO  01:15:53,606 - #23 =
+INFO  01:15:53,606 - #47 5
+INFO  01:15:53,606 - #32 +
+INFO  01:15:53,607 - #5 ;
+ERROR 01:15:53,607 - 
+Sintaksna greska na liniji 7
+INFO  01:15:53,607 - #4 }
+INFO  01:15:53,607 - #4 }
+ERROR 01:15:53,608 - Uspesan oporavak od greske pri dodeli na liniji 13, do ; 
+ERROR 01:15:53,609 - Parsiranje NIJE uspesno zavrseno!

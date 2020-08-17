@@ -1,0 +1,241 @@
+INFO  01:15:55,047 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program7.mj
+INFO  01:15:55,071 - #2 program
+INFO  01:15:55,071 - #46 test302
+INFO  01:15:55,071 - #46 int
+INFO  01:15:55,072 - #46 a
+INFO  01:15:55,072 - #5 ;
+INFO  01:15:55,073 - #7 const
+INFO  01:15:55,073 - #46 int
+INFO  01:15:55,073 - #46 b
+INFO  01:15:55,073 - #23 =
+INFO  01:15:55,073 - #47 2
+INFO  01:15:55,074 - #5 ;
+INFO  01:15:55,074 - #46 char
+INFO  01:15:55,074 - #46 ch
+INFO  01:15:55,074 - #5 ;
+INFO  01:15:55,075 - #3 {
+INFO  01:15:55,075 - #10 void
+INFO  01:15:55,075 - #46 main
+INFO  01:15:55,075 - #12 (
+INFO  01:15:55,075 - #11 )
+INFO  01:15:55,076 - #3 {
+INFO  01:15:55,076 - #46 a
+INFO  01:15:55,076 - #23 =
+INFO  01:15:55,076 - #47 0
+INFO  01:15:55,077 - #5 ;
+INFO  01:15:55,077 - #46 ch
+INFO  01:15:55,077 - #23 =
+INFO  01:15:55,077 - #48 a
+INFO  01:15:55,078 - #5 ;
+INFO  01:15:55,078 - #46 a
+INFO  01:15:55,078 - #21 ++
+INFO  01:15:55,078 - #5 ;
+INFO  01:15:55,078 - #46 b
+INFO  01:15:55,078 - #21 ++
+INFO  01:15:55,078 - #5 ;
+INFO  01:15:55,078 - #46 ch
+INFO  01:15:55,078 - #21 ++
+INFO  01:15:55,078 - #5 ;
+INFO  01:15:55,078 - #4 }
+INFO  01:15:55,078 - #4 }
+INFO  01:15:55,083 - ==================SINTAKSNO STABLO==================
+INFO  01:15:55,084 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        DeclarationListVar(
+          VarDeclarationV(
+            VarType(
+              Type(
+               int
+              ) [Type]
+            ) [VarType]
+            VarDecl(
+              Ident(
+               a
+              ) [Ident]
+            ) [VarDecl]
+          ) [VarDeclarationV]
+        ) [DeclarationListVar]
+      ) [DeclarationListDeclaration]
+      DeclarationListConst(
+        ConstDeclarationTypeListSemi(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          ConstDecl(
+            ConstDeclarationActual(
+             b
+              AssignOp(
+              ) [AssignOp]
+              NumberConst(
+               2
+              ) [NumberConst]
+            ) [ConstDeclarationActual]
+          ) [ConstDecl]
+        ) [ConstDeclarationTypeListSemi]
+      ) [DeclarationListConst]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           char
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          Ident(
+           ch
+          ) [Ident]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            StatementListStatement(
+              StatementListStatement(
+                StatementListStatement(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  DesignatorStatementStatement(
+                    LeftDesignatorAssignExpression(
+                      LeftSideAssignVar(
+                        DesignatorOnly(
+                         a
+                        ) [DesignatorOnly]
+                      ) [LeftSideAssignVar]
+                      AssignOpEqual(
+                        AssignOp(
+                        ) [AssignOp]
+                      ) [AssignOpEqual]
+                      ExpressionTermDef(
+                        OnlyTerm(
+                          TermFactor(
+                            FactorConst(
+                              NumberConst(
+                               0
+                              ) [NumberConst]
+                            ) [FactorConst]
+                          ) [TermFactor]
+                        ) [OnlyTerm]
+                      ) [ExpressionTermDef]
+                    ) [LeftDesignatorAssignExpression]
+                  ) [DesignatorStatementStatement]
+                ) [StatementListStatement]
+                DesignatorStatementStatement(
+                  LeftDesignatorAssignExpression(
+                    LeftSideAssignVar(
+                      DesignatorOnly(
+                       ch
+                      ) [DesignatorOnly]
+                    ) [LeftSideAssignVar]
+                    AssignOpEqual(
+                      AssignOp(
+                      ) [AssignOp]
+                    ) [AssignOpEqual]
+                    ExpressionTermDef(
+                      OnlyTerm(
+                        TermFactor(
+                          FactorConst(
+                            CharConst(
+                             a
+                            ) [CharConst]
+                          ) [FactorConst]
+                        ) [TermFactor]
+                      ) [OnlyTerm]
+                    ) [ExpressionTermDef]
+                  ) [LeftDesignatorAssignExpression]
+                ) [DesignatorStatementStatement]
+              ) [StatementListStatement]
+              DesignatorStatementStatement(
+                DesignatorStatementIncrement(
+                  DesignatorOnly(
+                   a
+                  ) [DesignatorOnly]
+                ) [DesignatorStatementIncrement]
+              ) [DesignatorStatementStatement]
+            ) [StatementListStatement]
+            DesignatorStatementStatement(
+              DesignatorStatementIncrement(
+                DesignatorOnly(
+                 b
+                ) [DesignatorOnly]
+              ) [DesignatorStatementIncrement]
+            ) [DesignatorStatementStatement]
+          ) [StatementListStatement]
+          DesignatorStatementStatement(
+            DesignatorStatementIncrement(
+              DesignatorOnly(
+               ch
+              ) [DesignatorOnly]
+            ) [DesignatorStatementIncrement]
+          ) [DesignatorStatementStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  01:15:55,084 - ==================SEMANTICKA OBRADA==================
+INFO  01:15:55,086 - Deklarisana promenljiva a(Var a: int, 0, 0 ) na liniji 6
+INFO  01:15:55,087 - Deklarisana konstanta b(Con b: int, 2, 0 ) na liniji 7
+INFO  01:15:55,087 - Deklarisana promenljiva ch(Var ch: char, 1, 0 ) na liniji 8
+INFO  01:15:55,087 - Obradjuje se funkcija main(Meth main: none, 0, 0 ) na liniji 10
+INFO  01:15:55,087 - Koriscenje  a(Var a: int, 0, 0 ) na liniji 11
+INFO  01:15:55,087 - Koriscenje  ch(Var ch: char, 1, 0 ) na liniji 12
+INFO  01:15:55,087 - Koriscenje  a(Var a: int, 0, 0 ) na liniji 13
+INFO  01:15:55,087 - Pronadjeno inkrementiranje promenljive a(Var a: int, 0, 0 ) na liniji 13
+INFO  01:15:55,087 - Koriscenje  b(Con b: int, 2, 0 ) na liniji 14
+INFO  01:15:55,087 - Pronadjeno inkrementiranje promenljive b(Con b: int, 2, 0 ) na liniji 14
+INFO  01:15:55,087 - Koriscenje  ch(Var ch: char, 1, 0 ) na liniji 15
+ERROR 01:15:55,088 - Greska na liniji 15 : designator ch nije tipa int!
+INFO  01:15:55,088 - ==================SEMANTICKA ANALIZA==============
+INFO  01:15:55,088 - 1  methods in the program
+INFO  01:15:55,088 - 2  global variables
+INFO  01:15:55,088 - 1  global constants
+INFO  01:15:55,088 - 0  global arrays
+INFO  01:15:55,088 - 0  local variables in main
+INFO  01:15:55,088 - 5  statements in main
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, 0, 1 
+Prog test302: notype, 0, 1 
+   Var a: int, 0, 0 
+   Con b: int, 2, 0 
+   Var ch: char, 1, 0 
+   Meth main: notype, 0, 0 
+
+
+
+ERROR 01:15:55,089 - Program nije semanticki ispravan!

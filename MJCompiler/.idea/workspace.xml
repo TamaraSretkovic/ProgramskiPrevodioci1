@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1dec84fd-10f8-4a19-9feb-f5c5a0f855a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/mjparser.cup" beforeDir="false" afterPath="$PROJECT_DIR$/spec/mjparser.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/mjparser_astbuild.cup" beforeDir="false" afterPath="$PROJECT_DIR$/spec/mjparser_astbuild.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CUP$MJParser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CUP$MJParser$actions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CodeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mj-test.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mj-test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/MJParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/MJParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalyzerCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/RuleVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/Yylex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/Yylex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParamsExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParamsExpression.java" afterDir="false" />
@@ -155,14 +152,26 @@
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationListVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationListVar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Visitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VisitorAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VisitorAdaptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VoidMethodDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VoidMethodDeclaration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/sym.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/program.mj" beforeDir="false" afterPath="$PROJECT_DIR$/test/program.mj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/Compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz1.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz1.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz10.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz10.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz11.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz11.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz12.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz12.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz13.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz13.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz14.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz14.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz15.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz15.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz2.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz2.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz3.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz3.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz4.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz4.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz5.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz5.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz6.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz6.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz7.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz7.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz8.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz8.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/izlaz9.out" beforeDir="false" afterPath="$PROJECT_DIR$/test/izlaz9.out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +219,7 @@
       <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Compiler">
+  <component name="RunManager" selected="Shell Script.test.sh">
     <configuration name="Compiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rs.ac.bg.etf.pp1.Compiler" />
       <module name="MJCompiler" />
@@ -239,19 +248,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MJTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rs.ac.bg.etf.pp1.MJTest" />
-      <module name="MJCompiler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rs.ac.bg.etf.pp1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="build.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/build.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
@@ -268,20 +264,28 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/test.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.MJParserTest" />
-      <item itemvalue="Application.MJTest" />
       <item itemvalue="Application.Compiler" />
       <item itemvalue="Shell Script.run.sh (1)" />
       <item itemvalue="Shell Script.build.sh" />
+      <item itemvalue="Shell Script.test.sh" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Compiler" />
+        <item itemvalue="Shell Script.test.sh" />
         <item itemvalue="Shell Script.build.sh" />
+        <item itemvalue="Application.Compiler" />
         <item itemvalue="Shell Script.run.sh (1)" />
         <item itemvalue="Application.MJParserTest" />
-        <item itemvalue="Application.MJTest" />
       </list>
     </recent_temporary>
   </component>
