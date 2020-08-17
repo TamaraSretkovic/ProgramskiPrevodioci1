@@ -1,0 +1,109 @@
+INFO  16:25:32,122 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  16:25:32,157 - #2 program
+INFO  16:25:32,157 - #47 P
+INFO  16:25:32,157 - #47 int
+INFO  16:25:32,158 - #47 f
+INFO  16:25:32,158 - #6 ,
+INFO  16:25:32,159 - #48 2
+ERROR 16:25:32,159 - 
+Sintaksna greska na liniji 2
+INFO  16:25:32,159 - #6 ,
+INFO  16:25:32,159 - #47 x
+INFO  16:25:32,159 - #5 ;
+INFO  16:25:32,160 - #7 const
+ERROR 16:25:32,160 - Uspesan oporavak od greske na liniji 2 pri deklarisanju varijable do ,
+INFO  16:25:32,161 - #47 int
+INFO  16:25:32,161 - #47 c
+INFO  16:25:32,162 - #24 =
+INFO  16:25:32,162 - #48 2
+INFO  16:25:32,163 - #6 ,
+INFO  16:25:32,164 - #47 x
+INFO  16:25:32,164 - #24 =
+INFO  16:25:32,164 - #6 ,
+ERROR 16:25:32,164 - 
+Sintaksna greska na liniji 3
+INFO  16:25:32,164 - #47 b
+INFO  16:25:32,164 - #24 =
+INFO  16:25:32,164 - #48 2
+ERROR 16:25:32,164 - Uspesan oporavak od greske na liniji 3 pri definisanju konstante do ,
+INFO  16:25:32,165 - #6 ,
+INFO  16:25:32,165 - #47 y
+INFO  16:25:32,166 - #24 =
+INFO  16:25:32,166 - #5 ;
+ERROR 16:25:32,166 - 
+Sintaksna greska na liniji 3
+INFO  16:25:32,166 - #3 {
+INFO  16:25:32,166 - #11 void
+INFO  16:25:32,166 - #47 main
+ERROR 16:25:32,166 - Uspesan oporavak od greske na liniji 3 pri definisanju konstante do ,
+INFO  16:25:32,167 - #13 (
+INFO  16:25:32,167 - #12 )
+INFO  16:25:32,168 - #3 {
+INFO  16:25:32,168 - #47 x
+INFO  16:25:32,169 - #43 +=
+INFO  16:25:32,169 - #48 2
+INFO  16:25:32,170 - #24 =
+ERROR 16:25:32,171 - 
+Sintaksna greska na liniji 8
+INFO  16:25:32,171 - #48 3
+INFO  16:25:32,171 - #5 ;
+INFO  16:25:32,171 - #4 }
+INFO  16:25:32,171 - #4 }
+ERROR 16:25:32,171 - Uspesan oporavak od greske na liniji 0 u statement, do ; 
+INFO  16:25:32,174 - Program(
+ P
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListVar(
+        VarDeclarationV(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationListVar(
+            VarDeclError(
+            ) [VarDeclError]
+            Ident(
+             x
+            ) [Ident]
+          ) [VarDeclarationListVar]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListConst(
+      ConstDeclarationTypeListSemi(
+        Type(
+         int
+        ) [Type]
+        ConstDeclError(
+        ) [ConstDeclError]
+      ) [ConstDeclarationTypeListSemi]
+    ) [DeclarationListConst]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          ErrorStatement(
+          ) [ErrorStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  16:25:32,174 - ===================================
+INFO  16:25:32,176 -  Print count calls = 0
+INFO  16:25:32,176 -  Deklarisanih promenljivih ima = 1
+INFO  16:25:32,176 -  Deklarisanih konstanti ima = 0
+INFO  16:25:32,176 -  Deklarisanih clasa ima = 0
+INFO  16:25:32,176 -  Poziva metoda ima = 0

@@ -1,0 +1,115 @@
+INFO  00:47:14,408 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  00:47:14,440 - #2 program
+INFO  00:47:14,441 - #46 test302
+INFO  00:47:14,441 - #46 int
+INFO  00:47:14,442 - #46 niz
+INFO  00:47:14,443 - #8 [
+INFO  00:47:14,443 - #9 ]
+INFO  00:47:14,443 - #5 ;
+INFO  00:47:14,443 - #46 int
+INFO  00:47:14,444 - #46 niz2
+INFO  00:47:14,444 - #8 [
+INFO  00:47:14,444 - #9 ]
+INFO  00:47:14,444 - #5 ;
+INFO  00:47:14,445 - #3 {
+INFO  00:47:14,445 - #10 void
+INFO  00:47:14,445 - #46 main
+INFO  00:47:14,445 - #12 (
+INFO  00:47:14,446 - #11 )
+INFO  00:47:14,447 - #3 {
+INFO  00:47:14,447 - #46 niz2
+INFO  00:47:14,447 - #23 =
+INFO  00:47:14,448 - #46 niz
+INFO  00:47:14,448 - #5 ;
+INFO  00:47:14,449 - #4 }
+INFO  00:47:14,450 - #4 }
+INFO  00:47:14,459 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            IdentArray(
+             niz
+            ) [IdentArray]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          IdentArray(
+           niz2
+          ) [IdentArray]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          DesignatorStatementStatement(
+            LeftDesignatorAssignExpression(
+              LeftSideAssignVar(
+                DesignatorOnly(
+                 niz2
+                ) [DesignatorOnly]
+              ) [LeftSideAssignVar]
+              AssignOpEqual(
+                AssignOp(
+                ) [AssignOp]
+              ) [AssignOpEqual]
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorOnly(
+                       niz
+                      ) [DesignatorOnly]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [LeftDesignatorAssignExpression]
+          ) [DesignatorStatementStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  00:47:14,459 - ===================================
+INFO  00:47:14,464 - Deklarisan niz niz na liniji 5
+INFO  00:47:14,464 - Deklarisan niz niz2 na liniji 6
+INFO  00:47:14,464 - Obradjuje se funkcija main na liniji 9
+INFO  00:47:14,464 - Koriscenje  niz2 na liniji 11
+INFO  00:47:14,464 - Koriscenje  niz na liniji 11
+ERROR 00:47:14,464 - Greska na liniji 11 : nije moguca dodela2!
+ERROR 00:47:14,466 - Parsiranje NIJE uspesno zavrseno!

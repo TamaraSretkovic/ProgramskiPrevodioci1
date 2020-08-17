@@ -1,0 +1,12 @@
+INFO  01:15:42,022 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  01:15:42,053 - #2 program
+INFO  01:15:42,053 - #47 Program
+INFO  01:15:42,053 - #8 class
+INFO  01:15:42,054 - #47 A
+INFO  01:15:42,054 - #3 {
+INFO  01:15:42,055 - #47 int
+INFO  01:15:42,055 - #47 x
+INFO  01:15:42,056 - #9 [
+ERROR 01:15:42,056 - 
+Sintaksna greska na liniji 3
+ERROR 01:15:42,056 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3

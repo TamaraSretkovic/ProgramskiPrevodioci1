@@ -1,0 +1,86 @@
+INFO  23:22:35,539 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  23:22:35,582 - #2 program
+INFO  23:22:35,582 - #47 P
+INFO  23:22:35,582 - #47 int
+INFO  23:22:35,583 - #47 x
+INFO  23:22:35,584 - #5 ;
+INFO  23:22:35,585 - #3 {
+INFO  23:22:35,585 - #11 void
+INFO  23:22:35,586 - #47 main
+INFO  23:22:35,586 - #13 (
+INFO  23:22:35,586 - #12 )
+INFO  23:22:35,587 - #3 {
+INFO  23:22:35,587 - #47 x
+INFO  23:22:35,588 - #43 +=
+INFO  23:22:35,588 - #48 3
+INFO  23:22:35,589 - #5 ;
+INFO  23:22:35,589 - #4 }
+INFO  23:22:35,590 - #4 }
+INFO  23:22:35,596 - Program(
+  ProgName(
+   P
+  ) [ProgName]
+  DeclarationListDeclaration(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          Ident(
+           x
+          ) [Ident]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          DesignatorStatementStatement(
+            LeftDesignatorAssignExpression(
+              LeftSideAssignVar(
+                DesignatorOnly(
+                 x
+                ) [DesignatorOnly]
+              ) [LeftSideAssignVar]
+              AssignOpAdd(
+                AddOpRightPlus(
+                ) [AddOpRightPlus]
+              ) [AssignOpAdd]
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermFactor(
+                    FactorConst(
+                      NumberConst(
+                       3
+                      ) [NumberConst]
+                    ) [FactorConst]
+                  ) [TermFactor]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [LeftDesignatorAssignExpression]
+          ) [DesignatorStatementStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  23:22:35,596 - ===================================
+INFO  23:22:35,598 - Deklarisana promenljiva x na liniji 2

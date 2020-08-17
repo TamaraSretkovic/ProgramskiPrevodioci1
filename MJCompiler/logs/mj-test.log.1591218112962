@@ -1,0 +1,54 @@
+INFO  23:01:10,539 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  23:01:10,590 - #2 program
+INFO  23:01:10,590 - #47 Program
+INFO  23:01:10,591 - #3 {
+INFO  23:01:10,591 - #11 void
+INFO  23:01:10,592 - #47 main
+INFO  23:01:10,593 - #13 (
+INFO  23:01:10,593 - #12 )
+INFO  23:01:10,594 - #3 {
+INFO  23:01:10,594 - #17 print
+INFO  23:01:10,595 - #13 (
+INFO  23:01:10,595 - #48 2
+INFO  23:01:10,595 - #12 )
+INFO  23:01:10,596 - #5 ;
+INFO  23:01:10,596 - #4 }
+INFO  23:01:10,597 - #4 }
+INFO  23:01:10,600 - Program(
+ Program
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          PrintExpressionStatement(
+            ExpressionTermDef(
+              OnlyTerm(
+                TermFactor(
+                  FactorConst(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [FactorConst]
+                ) [TermFactor]
+              ) [OnlyTerm]
+            ) [ExpressionTermDef]
+          ) [PrintExpressionStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  23:01:10,600 - ===================================
+INFO  23:01:10,603 -  Print count calls = 1
+INFO  23:01:10,603 -  Deklarisanih promenljivih ima = 0

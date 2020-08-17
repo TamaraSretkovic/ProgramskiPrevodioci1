@@ -1,0 +1,566 @@
+INFO  11:06:09,603 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  11:06:09,636 - #2 program
+INFO  11:06:09,636 - #47 Program
+INFO  11:06:09,636 - #8 class
+INFO  11:06:09,637 - #47 A
+INFO  11:06:09,637 - #3 {
+INFO  11:06:09,637 - #47 int
+INFO  11:06:09,637 - #47 getValue
+INFO  11:06:09,638 - #13 (
+ERROR 11:06:09,638 - 
+Sintaksna greska na liniji 4
+INFO  11:06:09,638 - #47 int
+INFO  11:06:09,638 - #47 a
+INFO  11:06:09,638 - #12 )
+INFO  11:06:09,639 - #5 ;
+INFO  11:06:09,639 - #4 }
+INFO  11:06:09,639 - #7 const
+INFO  11:06:09,639 - #47 int
+ERROR 11:06:09,640 - Uspesan oporavak od greske na liniji 4 pri deklarisanju varijable
+INFO  11:06:09,641 - #47 pi
+INFO  11:06:09,641 - #24 =
+INFO  11:06:09,641 - #48 3
+INFO  11:06:09,642 - #6 ,
+INFO  11:06:09,643 - #47 e
+INFO  11:06:09,643 - #24 =
+INFO  11:06:09,643 - #48 2
+INFO  11:06:09,643 - #5 ;
+INFO  11:06:09,643 - #8 class
+INFO  11:06:09,643 - #47 B
+INFO  11:06:09,643 - #3 {
+INFO  11:06:09,643 - #47 int
+INFO  11:06:09,644 - #47 i
+INFO  11:06:09,644 - #5 ;
+INFO  11:06:09,644 - #3 {
+INFO  11:06:09,644 - #47 int
+INFO  11:06:09,644 - #47 getValue
+INFO  11:06:09,645 - #13 (
+INFO  11:06:09,645 - #47 int
+INFO  11:06:09,645 - #47 a
+ERROR 11:06:09,645 - 
+Sintaksna greska na liniji 10
+INFO  11:06:09,645 - #12 )
+INFO  11:06:09,645 - #47 int
+INFO  11:06:09,645 - #47 b
+INFO  11:06:09,645 - #5 ;
+ERROR 11:06:09,645 - Uspesan oporavak od greske na liniji 10 u formalnim parametrima do )
+INFO  11:06:09,646 - #47 bool
+INFO  11:06:09,646 - #47 c
+INFO  11:06:09,646 - #5 ;
+INFO  11:06:09,646 - #3 {
+INFO  11:06:09,646 - #21 return
+INFO  11:06:09,647 - #47 this
+ERROR 11:06:09,647 - 
+Sintaksna greska na liniji 10
+INFO  11:06:09,647 - #25 .
+INFO  11:06:09,647 - #47 i
+INFO  11:06:09,647 - #33 +
+INFO  11:06:09,648 - #47 this
+INFO  11:06:09,648 - #25 .
+INFO  11:06:09,648 - #47 x
+INFO  11:06:09,648 - #9 [
+INFO  11:06:09,648 - #48 0
+INFO  11:06:09,648 - #10 ]
+INFO  11:06:09,648 - #33 +
+INFO  11:06:09,648 - #47 a
+INFO  11:06:09,648 - #5 ;
+INFO  11:06:09,648 - #4 }
+INFO  11:06:09,648 - #11 void
+INFO  11:06:09,649 - #47 m
+ERROR 11:06:09,649 - Uspesan oporavak od greske na liniji 34u statement, do ; 
+INFO  11:06:09,650 - #13 (
+INFO  11:06:09,650 - #12 )
+INFO  11:06:09,651 - #3 {
+INFO  11:06:09,651 - #4 }
+INFO  11:06:09,651 - #4 }
+INFO  11:06:09,651 - #4 }
+INFO  11:06:09,651 - #8 class
+INFO  11:06:09,651 - #47 C
+INFO  11:06:09,651 - #3 {
+INFO  11:06:09,651 - #47 B
+INFO  11:06:09,651 - #47 theA
+INFO  11:06:09,651 - #5 ;
+INFO  11:06:09,651 - #47 int
+INFO  11:06:09,651 - #47 a
+INFO  11:06:09,652 - #5 ;
+INFO  11:06:09,652 - #4 }
+INFO  11:06:09,652 - #3 {
+INFO  11:06:09,652 - #11 void
+INFO  11:06:09,652 - #47 main
+INFO  11:06:09,652 - #13 (
+INFO  11:06:09,652 - #12 )
+INFO  11:06:09,652 - #47 B
+INFO  11:06:09,652 - #47 b
+INFO  11:06:09,652 - #5 ;
+INFO  11:06:09,652 - #47 C
+INFO  11:06:09,652 - #47 c
+INFO  11:06:09,652 - #5 ;
+INFO  11:06:09,652 - #47 int
+INFO  11:06:09,652 - #47 i
+INFO  11:06:09,652 - #5 ;
+INFO  11:06:09,653 - #47 int
+INFO  11:06:09,653 - #47 x
+INFO  11:06:09,653 - #9 [
+INFO  11:06:09,653 - #10 ]
+INFO  11:06:09,653 - #5 ;
+INFO  11:06:09,653 - #3 {
+INFO  11:06:09,653 - #47 b
+INFO  11:06:09,653 - #24 =
+INFO  11:06:09,653 - #37 new
+INFO  11:06:09,653 - #47 B
+INFO  11:06:09,653 - #5 ;
+INFO  11:06:09,654 - #47 b
+INFO  11:06:09,654 - #25 .
+ERROR 11:06:09,654 - 
+Sintaksna greska na liniji 18
+INFO  11:06:09,654 - #47 x
+INFO  11:06:09,654 - #24 =
+INFO  11:06:09,654 - #37 new
+INFO  11:06:09,654 - #47 int
+INFO  11:06:09,654 - #9 [
+INFO  11:06:09,654 - #48 5
+INFO  11:06:09,654 - #10 ]
+INFO  11:06:09,654 - #5 ;
+INFO  11:06:09,655 - #47 b
+INFO  11:06:09,655 - #25 .
+INFO  11:06:09,655 - #47 y
+INFO  11:06:09,655 - #24 =
+INFO  11:06:09,655 - #37 new
+INFO  11:06:09,655 - #47 int
+INFO  11:06:09,655 - #9 [
+INFO  11:06:09,655 - #48 5
+INFO  11:06:09,655 - #10 ]
+INFO  11:06:09,662 - #5 ;
+INFO  11:06:09,662 - #47 c
+INFO  11:06:09,662 - #24 =
+INFO  11:06:09,663 - #37 new
+ERROR 11:06:09,663 - Uspesan oporavak od greske na liniji 37u statement, do ; 
+INFO  11:06:09,663 - #47 C
+INFO  11:06:09,663 - #5 ;
+INFO  11:06:09,663 - #48 9
+ERROR 11:06:09,663 - 
+Sintaksna greska na liniji 21
+INFO  11:06:09,663 - #34 /
+INFO  11:06:09,663 - #48 12
+INFO  11:06:09,663 - #47 c
+INFO  11:06:09,663 - #25 .
+INFO  11:06:09,663 - #47 theA
+INFO  11:06:09,663 - #24 =
+INFO  11:06:09,663 - #47 b
+INFO  11:06:09,663 - #5 ;
+INFO  11:06:09,663 - #47 c
+INFO  11:06:09,663 - #25 .
+INFO  11:06:09,663 - #47 x
+INFO  11:06:09,664 - #24 =
+INFO  11:06:09,664 - #37 new
+INFO  11:06:09,664 - #47 int
+INFO  11:06:09,664 - #9 [
+INFO  11:06:09,664 - #48 5
+INFO  11:06:09,664 - #10 ]
+INFO  11:06:09,664 - #5 ;
+INFO  11:06:09,664 - #47 x
+INFO  11:06:09,664 - #24 =
+INFO  11:06:09,664 - #37 new
+ERROR 11:06:09,664 - Uspesan oporavak od greske na liniji 37u statement, do ; 
+INFO  11:06:09,664 - #47 int
+INFO  11:06:09,664 - #9 [
+INFO  11:06:09,664 - #48 3
+INFO  11:06:09,665 - #10 ]
+INFO  11:06:09,665 - #5 ;
+INFO  11:06:09,665 - #16 read
+INFO  11:06:09,665 - #13 (
+INFO  11:06:09,665 - #47 c
+ERROR 11:06:09,665 - 
+Sintaksna greska na liniji 25
+INFO  11:06:09,665 - #25 .
+INFO  11:06:09,665 - #47 i
+INFO  11:06:09,665 - #12 )
+INFO  11:06:09,665 - #5 ;
+INFO  11:06:09,665 - #18 for
+INFO  11:06:09,665 - #13 (
+INFO  11:06:09,665 - #47 i
+ERROR 11:06:09,666 - Uspesan oporavak od greske na liniji 37u statement, do ; 
+INFO  11:06:09,666 - #24 =
+INFO  11:06:09,666 - #48 0
+INFO  11:06:09,666 - #5 ;
+INFO  11:06:09,666 - #47 i
+ERROR 11:06:09,666 - 
+Sintaksna greska na liniji 26
+INFO  11:06:09,666 - #28 <
+INFO  11:06:09,666 - #48 5
+INFO  11:06:09,666 - #5 ;
+INFO  11:06:09,666 - #47 i
+INFO  11:06:09,666 - #22 ++
+INFO  11:06:09,666 - #12 )
+INFO  11:06:09,666 - #3 {
+INFO  11:06:09,666 - #16 read
+INFO  11:06:09,667 - #13 (
+INFO  11:06:09,667 - #47 c
+INFO  11:06:09,667 - #25 .
+INFO  11:06:09,667 - #47 x
+INFO  11:06:09,667 - #9 [
+INFO  11:06:09,667 - #47 i
+INFO  11:06:09,667 - #10 ]
+INFO  11:06:09,667 - #12 )
+INFO  11:06:09,667 - #5 ;
+INFO  11:06:09,667 - #16 read
+INFO  11:06:09,667 - #13 (
+INFO  11:06:09,667 - #47 c
+ERROR 11:06:09,667 - Uspesan oporavak od greske na liniji 37u statement, do ; 
+ERROR 11:06:09,667 - 
+Sintaksna greska na liniji 27
+INFO  11:06:09,667 - #25 .
+INFO  11:06:09,667 - #47 theA
+INFO  11:06:09,667 - #25 .
+INFO  11:06:09,667 - #47 x
+INFO  11:06:09,667 - #9 [
+INFO  11:06:09,668 - #47 i
+INFO  11:06:09,668 - #10 ]
+INFO  11:06:09,668 - #12 )
+INFO  11:06:09,668 - #5 ;
+INFO  11:06:09,668 - #4 }
+INFO  11:06:09,668 - #17 print
+INFO  11:06:09,668 - #13 (
+INFO  11:06:09,668 - #47 c
+INFO  11:06:09,668 - #25 .
+INFO  11:06:09,668 - #47 getValue
+INFO  11:06:09,668 - #13 (
+INFO  11:06:09,668 - #47 c
+INFO  11:06:09,668 - #25 .
+INFO  11:06:09,668 - #47 theA
+INFO  11:06:09,668 - #25 .
+INFO  11:06:09,668 - #47 x
+INFO  11:06:09,668 - #9 [
+INFO  11:06:09,668 - #48 0
+INFO  11:06:09,668 - #10 ]
+INFO  11:06:09,668 - #12 )
+INFO  11:06:09,669 - #12 )
+INFO  11:06:09,669 - #5 ;
+INFO  11:06:09,669 - #47 c
+INFO  11:06:09,669 - #25 .
+INFO  11:06:09,669 - #47 m
+INFO  11:06:09,669 - #13 (
+INFO  11:06:09,669 - #12 )
+INFO  11:06:09,669 - #5 ;
+INFO  11:06:09,669 - #4 }
+INFO  11:06:09,669 - #4 }
+ERROR 11:06:09,669 - Uspesan oporavak od greske na liniji 37u statement, do ; 
+INFO  11:06:09,671 - Program(
+ Program
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        DeclarationListDeclaration(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          DeclarationListClass(
+            ClassDeclaration(
+             A
+              ClassDeclarationListVar(
+                NoClassDeclarationList(
+                ) [NoClassDeclarationList]
+                VarDeclarationError(
+                ) [VarDeclarationError]
+              ) [ClassDeclarationListVar]
+              NoClassMethodDecl(
+              ) [NoClassMethodDecl]
+            ) [ClassDeclaration]
+          ) [DeclarationListClass]
+        ) [DeclarationListDeclaration]
+        DeclarationListConst(
+          ConstDeclarationTypeListSemi(
+            Type(
+             int
+            ) [Type]
+            ConstDeclarationListComaActual(
+              ConstDecl(
+                ConstDeclarationActual(
+                  IdentAssignOp(
+                   pi
+                    AssignOp(
+                    ) [AssignOp]
+                  ) [IdentAssignOp]
+                  NumberConst(
+                   3
+                  ) [NumberConst]
+                ) [ConstDeclarationActual]
+              ) [ConstDecl]
+              ConstDeclarationActual(
+                IdentAssignOp(
+                 e
+                  AssignOp(
+                  ) [AssignOp]
+                ) [IdentAssignOp]
+                NumberConst(
+                 2
+                ) [NumberConst]
+              ) [ConstDeclarationActual]
+            ) [ConstDeclarationListComaActual]
+          ) [ConstDeclarationTypeListSemi]
+        ) [DeclarationListConst]
+      ) [DeclarationListDeclaration]
+      DeclarationListClass(
+        ClassDeclaration(
+         B
+          ClassDeclarationListVar(
+            NoClassDeclarationList(
+            ) [NoClassDeclarationList]
+            VarDeclarationV(
+              Type(
+               int
+              ) [Type]
+              VarDecl(
+                Ident(
+                 i
+                ) [Ident]
+              ) [VarDecl]
+            ) [VarDeclarationV]
+          ) [ClassDeclarationListVar]
+          ClassMethodDecl(
+            MethodDeclarationListMethod(
+              MethodDeclarationListMethod(
+                NoMethodDeclarationList(
+                ) [NoMethodDeclarationList]
+                TypeMethodDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                  MethodDeclarationActual(
+                   getValue
+                    FormalParamErrorParen(
+                    ) [FormalParamErrorParen]
+                    ClassDeclarationListVar(
+                      ClassDeclarationListVar(
+                        NoClassDeclarationList(
+                        ) [NoClassDeclarationList]
+                        VarDeclarationV(
+                          Type(
+                           int
+                          ) [Type]
+                          VarDecl(
+                            Ident(
+                             b
+                            ) [Ident]
+                          ) [VarDecl]
+                        ) [VarDeclarationV]
+                      ) [ClassDeclarationListVar]
+                      VarDeclarationV(
+                        Type(
+                         bool
+                        ) [Type]
+                        VarDecl(
+                          Ident(
+                           c
+                          ) [Ident]
+                        ) [VarDecl]
+                      ) [VarDeclarationV]
+                    ) [ClassDeclarationListVar]
+                    StatementListStatement(
+                      NoStatementList(
+                      ) [NoStatementList]
+                      ErrorStatement(
+                      ) [ErrorStatement]
+                    ) [StatementListStatement]
+                  ) [MethodDeclarationActual]
+                ) [TypeMethodDeclaration]
+              ) [MethodDeclarationListMethod]
+              VoidMethodDeclaration(
+                MethodDeclarationActual(
+                 m
+                  NoFormalParamsList(
+                  ) [NoFormalParamsList]
+                  NoClassDeclarationList(
+                  ) [NoClassDeclarationList]
+                  NoStatementList(
+                  ) [NoStatementList]
+                ) [MethodDeclarationActual]
+              ) [VoidMethodDeclaration]
+            ) [MethodDeclarationListMethod]
+          ) [ClassMethodDecl]
+        ) [ClassDeclaration]
+      ) [DeclarationListClass]
+    ) [DeclarationListDeclaration]
+    DeclarationListClass(
+      ClassDeclaration(
+       C
+        ClassDeclarationListVar(
+          ClassDeclarationListVar(
+            NoClassDeclarationList(
+            ) [NoClassDeclarationList]
+            VarDeclarationV(
+              Type(
+               B
+              ) [Type]
+              VarDecl(
+                Ident(
+                 theA
+                ) [Ident]
+              ) [VarDecl]
+            ) [VarDeclarationV]
+          ) [ClassDeclarationListVar]
+          VarDeclarationV(
+            Type(
+             int
+            ) [Type]
+            VarDecl(
+              Ident(
+               a
+              ) [Ident]
+            ) [VarDecl]
+          ) [VarDeclarationV]
+        ) [ClassDeclarationListVar]
+        NoClassMethodDecl(
+        ) [NoClassMethodDecl]
+      ) [ClassDeclaration]
+    ) [DeclarationListClass]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        ClassDeclarationListVar(
+          ClassDeclarationListVar(
+            ClassDeclarationListVar(
+              ClassDeclarationListVar(
+                NoClassDeclarationList(
+                ) [NoClassDeclarationList]
+                VarDeclarationV(
+                  Type(
+                   B
+                  ) [Type]
+                  VarDecl(
+                    Ident(
+                     b
+                    ) [Ident]
+                  ) [VarDecl]
+                ) [VarDeclarationV]
+              ) [ClassDeclarationListVar]
+              VarDeclarationV(
+                Type(
+                 C
+                ) [Type]
+                VarDecl(
+                  Ident(
+                   c
+                  ) [Ident]
+                ) [VarDecl]
+              ) [VarDeclarationV]
+            ) [ClassDeclarationListVar]
+            VarDeclarationV(
+              Type(
+               int
+              ) [Type]
+              VarDecl(
+                Ident(
+                 i
+                ) [Ident]
+              ) [VarDecl]
+            ) [VarDeclarationV]
+          ) [ClassDeclarationListVar]
+          VarDeclarationV(
+            Type(
+             int
+            ) [Type]
+            VarDecl(
+              IdentArray(
+               x
+              ) [IdentArray]
+            ) [VarDecl]
+          ) [VarDeclarationV]
+        ) [ClassDeclarationListVar]
+        StatementListStatement(
+          StatementListStatement(
+            StatementListStatement(
+              StatementListStatement(
+                StatementListStatement(
+                  StatementListStatement(
+                    StatementListStatement(
+                      NoStatementList(
+                      ) [NoStatementList]
+                      DesignatorStatementStatement(
+                        LeftDesignatorAssignExpression(
+                          LeftSideAssignVar(
+                            Ident(
+                             b
+                            ) [Ident]
+                          ) [LeftSideAssignVar]
+                          AssignOpEqual(
+                            AssignOp(
+                            ) [AssignOp]
+                          ) [AssignOpEqual]
+                          ExpressionTermDef(
+                            OnlyTerm(
+                              TermFactor(
+                                FactorNewType(
+                                  Type(
+                                   B
+                                  ) [Type]
+                                ) [FactorNewType]
+                              ) [TermFactor]
+                            ) [OnlyTerm]
+                          ) [ExpressionTermDef]
+                        ) [LeftDesignatorAssignExpression]
+                      ) [DesignatorStatementStatement]
+                    ) [StatementListStatement]
+                    ErrorStatement(
+                    ) [ErrorStatement]
+                  ) [StatementListStatement]
+                  ErrorStatement(
+                  ) [ErrorStatement]
+                ) [StatementListStatement]
+                DesignatorStatementStatement(
+                  LeftDesignatorAssignExpression(
+                    LeftSideAssignVar(
+                      Ident(
+                       x
+                      ) [Ident]
+                    ) [LeftSideAssignVar]
+                    AssignOpEqual(
+                      AssignOp(
+                      ) [AssignOp]
+                    ) [AssignOpEqual]
+                    ExpressionTermDef(
+                      OnlyTerm(
+                        TermFactor(
+                          FactorNewTypeExpression(
+                            Type(
+                             int
+                            ) [Type]
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermFactor(
+                                  FactorConst(
+                                    NumberConst(
+                                     3
+                                    ) [NumberConst]
+                                  ) [FactorConst]
+                                ) [TermFactor]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                          ) [FactorNewTypeExpression]
+                        ) [TermFactor]
+                      ) [OnlyTerm]
+                    ) [ExpressionTermDef]
+                  ) [LeftDesignatorAssignExpression]
+                ) [DesignatorStatementStatement]
+              ) [StatementListStatement]
+              ErrorStatement(
+              ) [ErrorStatement]
+            ) [StatementListStatement]
+            ErrorStatement(
+            ) [ErrorStatement]
+          ) [StatementListStatement]
+          ErrorStatement(
+          ) [ErrorStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  11:06:09,671 - ===================================
+INFO  11:06:09,674 -  Print count calls = 0
+INFO  11:06:09,674 -  Deklarisanih promenljivih ima = 9

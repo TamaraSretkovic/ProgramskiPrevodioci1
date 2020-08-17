@@ -1,0 +1,182 @@
+INFO  00:28:20,753 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  00:28:20,789 - #2 program
+INFO  00:28:20,790 - #46 test302
+INFO  00:28:20,790 - #46 int
+INFO  00:28:20,791 - #46 niz
+INFO  00:28:20,792 - #8 [
+INFO  00:28:20,792 - #9 ]
+INFO  00:28:20,792 - #5 ;
+INFO  00:28:20,792 - #46 int
+INFO  00:28:20,793 - #46 niz2
+INFO  00:28:20,793 - #8 [
+INFO  00:28:20,793 - #9 ]
+INFO  00:28:20,793 - #5 ;
+INFO  00:28:20,794 - #46 int
+INFO  00:28:20,794 - #46 i
+INFO  00:28:20,794 - #5 ;
+INFO  00:28:20,794 - #3 {
+INFO  00:28:20,794 - #10 void
+INFO  00:28:20,795 - #46 main
+INFO  00:28:20,795 - #12 (
+INFO  00:28:20,795 - #11 )
+INFO  00:28:20,796 - #3 {
+INFO  00:28:20,796 - #46 niz2
+INFO  00:28:20,797 - #23 =
+INFO  00:28:20,797 - #46 niz
+INFO  00:28:20,798 - #8 [
+INFO  00:28:20,798 - #47 2
+INFO  00:28:20,798 - #9 ]
+INFO  00:28:20,799 - #5 ;
+INFO  00:28:20,799 - #46 niz2
+INFO  00:28:20,800 - #23 =
+INFO  00:28:20,800 - #46 niz
+INFO  00:28:20,800 - #5 ;
+INFO  00:28:20,800 - #4 }
+INFO  00:28:20,800 - #4 }
+INFO  00:28:20,809 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        DeclarationListVar(
+          VarDeclarationV(
+            VarType(
+              Type(
+               int
+              ) [Type]
+            ) [VarType]
+            VarDecl(
+              IdentArray(
+               niz
+              ) [IdentArray]
+            ) [VarDecl]
+          ) [VarDeclarationV]
+        ) [DeclarationListVar]
+      ) [DeclarationListDeclaration]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            IdentArray(
+             niz2
+            ) [IdentArray]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          Ident(
+           i
+          ) [Ident]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            DesignatorStatementStatement(
+              LeftDesignatorAssignExpression(
+                LeftSideAssignVar(
+                  DesignatorOnly(
+                   niz2
+                  ) [DesignatorOnly]
+                ) [LeftSideAssignVar]
+                AssignOpEqual(
+                  AssignOp(
+                  ) [AssignOp]
+                ) [AssignOpEqual]
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorArray(
+                         niz
+                          ExpressionTermDef(
+                            OnlyTerm(
+                              TermFactor(
+                                FactorConst(
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
+                                ) [FactorConst]
+                              ) [TermFactor]
+                            ) [OnlyTerm]
+                          ) [ExpressionTermDef]
+                        ) [DesignatorArray]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+              ) [LeftDesignatorAssignExpression]
+            ) [DesignatorStatementStatement]
+          ) [StatementListStatement]
+          DesignatorStatementStatement(
+            LeftDesignatorAssignExpression(
+              LeftSideAssignVar(
+                DesignatorOnly(
+                 niz2
+                ) [DesignatorOnly]
+              ) [LeftSideAssignVar]
+              AssignOpEqual(
+                AssignOp(
+                ) [AssignOp]
+              ) [AssignOpEqual]
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorOnly(
+                       niz
+                      ) [DesignatorOnly]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [LeftDesignatorAssignExpression]
+          ) [DesignatorStatementStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  00:28:20,809 - ===================================
+INFO  00:28:20,812 - Deklarisan niz niz na liniji 5
+INFO  00:28:20,812 - Deklarisan niz niz2 na liniji 6
+INFO  00:28:20,812 - Deklarisana promenljiva i na liniji 7
+INFO  00:28:20,812 - Obradjuje se funkcija main na liniji 10
+INFO  00:28:20,812 - Koriscenje  niz2 na liniji 12
+INFO  00:28:20,813 - Koriscenje  niza niz na liniji 12
+ERROR 00:28:20,813 - Greska na liniji 12 : nije moguca dodela2!
+INFO  00:28:20,813 - Koriscenje  niz2 na liniji 13
+INFO  00:28:20,813 - Koriscenje  niz na liniji 13
+ERROR 00:28:20,813 - Greska na liniji 13 : nije moguca dodela2!
+ERROR 00:28:20,814 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,44 @@
+INFO  10:55:33,251 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  10:55:33,288 - #2 program
+INFO  10:55:33,288 - #3 Program
+INFO  10:55:33,289 - #4 {
+INFO  10:55:33,289 - #15 void
+INFO  10:55:33,290 - #3 main
+INFO  10:55:33,290 - #17 (
+INFO  10:55:33,290 - #16 )
+INFO  10:55:33,291 - #4 {
+INFO  10:55:33,291 - #21 print
+INFO  10:55:33,292 - #17 (
+INFO  10:55:33,293 - #10 2
+ERROR 10:55:33,293 - 
+Sintaksna greska na liniji 5
+INFO  10:55:33,293 - #16 )
+INFO  10:55:33,293 - #6 ;
+INFO  10:55:33,293 - #5 }
+INFO  10:55:33,294 - #5 }
+ERROR 10:55:33,294 - Uspesan oporavak od greske na liniji 11
+INFO  10:55:33,297 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          ErrorStatement(
+          ) [ErrorStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  10:55:33,297 - ===================================
+INFO  10:55:33,299 -  Print count calls = 0
+INFO  10:55:33,299 -  Deklarisanih promenljivih ima = 0

@@ -1,0 +1,91 @@
+INFO  22:24:07,731 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  22:24:07,771 - #2 program
+INFO  22:24:07,772 - #46 test302
+INFO  22:24:07,772 - #46 int
+INFO  22:24:07,773 - #46 i
+INFO  22:24:07,774 - #5 ;
+INFO  22:24:07,774 - #3 {
+INFO  22:24:07,774 - #10 void
+INFO  22:24:07,775 - #46 main
+INFO  22:24:07,775 - #12 (
+INFO  22:24:07,776 - #11 )
+INFO  22:24:07,776 - #3 {
+INFO  22:24:07,776 - #46 i
+INFO  22:24:07,777 - #23 =
+INFO  22:24:07,777 - #46 null
+INFO  22:24:07,778 - #5 ;
+INFO  22:24:07,778 - #4 }
+INFO  22:24:07,779 - #4 }
+INFO  22:24:07,787 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          Ident(
+           i
+          ) [Ident]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          DesignatorStatementStatement(
+            LeftDesignatorAssignExpression(
+              LeftSideAssignVar(
+                DesignatorOnly(
+                 i
+                ) [DesignatorOnly]
+              ) [LeftSideAssignVar]
+              AssignOpEqual(
+                AssignOp(
+                ) [AssignOp]
+              ) [AssignOpEqual]
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorOnly(
+                       null
+                      ) [DesignatorOnly]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [LeftDesignatorAssignExpression]
+          ) [DesignatorStatementStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  22:24:07,788 - ===================================
+INFO  22:24:07,791 - Deklarisana promenljiva i na liniji 5
+INFO  22:24:07,791 - Obradjuje se funkcija main na liniji 8
+INFO  22:24:07,791 - Koriscenje  i na liniji 10
+INFO  22:24:07,791 - Koriscenje  null na liniji 10
+ERROR 22:24:07,791 - Greska na liniji 10 : nije moguca dodela!
+ERROR 22:24:07,792 - Parsiranje NIJE uspesno zavrseno!

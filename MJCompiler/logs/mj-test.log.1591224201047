@@ -1,0 +1,13 @@
+INFO  00:42:58,966 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  00:42:59,007 - #2 program
+INFO  00:42:59,008 - #47 Program
+INFO  00:42:59,008 - #47 char
+INFO  00:42:59,008 - #47 a
+INFO  00:42:59,009 - #24 =
+ERROR 00:42:59,009 - 
+Sintaksna greska na liniji 2
+INFO  00:42:59,009 - #49 s
+INFO  00:42:59,009 - #5 ;
+INFO  00:42:59,010 - #7 const
+INFO  00:42:59,010 - #47 int
+INFO  00:42:59,010 - #47 x

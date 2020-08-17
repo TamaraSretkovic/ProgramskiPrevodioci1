@@ -1,0 +1,140 @@
+INFO  00:58:43,709 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  00:58:43,744 - #2 program
+INFO  00:58:43,744 - #47 Program
+INFO  00:58:43,744 - #47 char
+INFO  00:58:43,745 - #47 a
+INFO  00:58:43,746 - #5 ;
+INFO  00:58:43,746 - #7 const
+INFO  00:58:43,747 - #47 int
+INFO  00:58:43,747 - #47 x
+INFO  00:58:43,747 - #24 =
+INFO  00:58:43,748 - #48 3
+INFO  00:58:43,749 - #6 ,
+INFO  00:58:43,750 - #47 xx
+INFO  00:58:43,750 - #24 =
+INFO  00:58:43,750 - #48 4
+INFO  00:58:43,750 - #5 ;
+INFO  00:58:43,750 - #47 int
+INFO  00:58:43,751 - #47 z
+INFO  00:58:43,751 - #6 ,
+INFO  00:58:43,751 - #47 y
+INFO  00:58:43,751 - #9 [
+INFO  00:58:43,751 - #10 ]
+INFO  00:58:43,751 - #5 ;
+INFO  00:58:43,751 - #3 {
+INFO  00:58:43,752 - #11 void
+INFO  00:58:43,752 - #47 main
+INFO  00:58:43,752 - #13 (
+INFO  00:58:43,752 - #12 )
+INFO  00:58:43,753 - #3 {
+INFO  00:58:43,753 - #14 if
+INFO  00:58:43,753 - #13 (
+INFO  00:58:43,754 - #47 x
+ERROR 00:58:43,754 - 
+Sintaksna greska na liniji 7
+INFO  00:58:43,754 - #30 >
+INFO  00:58:43,754 - #48 2
+INFO  00:58:43,754 - #12 )
+INFO  00:58:43,755 - #3 {
+INFO  00:58:43,755 - #4 }
+INFO  00:58:43,755 - #17 print
+INFO  00:58:43,755 - #13 (
+INFO  00:58:43,755 - #48 2
+INFO  00:58:43,755 - #12 )
+INFO  00:58:43,755 - #5 ;
+INFO  00:58:43,755 - #4 }
+INFO  00:58:43,755 - #4 }
+ERROR 00:58:43,756 - Uspesan oporavak od greske na liniji 11
+INFO  00:58:43,759 - Program(
+ Program
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        DeclarationListVar(
+          VarDeclarationV(
+            Type(
+             char
+            ) [Type]
+            VarDecl(
+              Ident(
+               a
+              ) [Ident]
+            ) [VarDecl]
+          ) [VarDeclarationV]
+        ) [DeclarationListVar]
+      ) [DeclarationListDeclaration]
+      DeclarationListConst(
+        ConstDeclarationTypeListSemi(
+          Type(
+           int
+          ) [Type]
+          ConstDeclarationListComaActual(
+            ConstDecl(
+              ConstDeclarationActual(
+                IdentAssignOp(
+                 x
+                  AssignOp(
+                  ) [AssignOp]
+                ) [IdentAssignOp]
+                NumberConst(
+                 3
+                ) [NumberConst]
+              ) [ConstDeclarationActual]
+            ) [ConstDecl]
+            ConstDeclarationActual(
+              IdentAssignOp(
+               xx
+                AssignOp(
+                ) [AssignOp]
+              ) [IdentAssignOp]
+              NumberConst(
+               4
+              ) [NumberConst]
+            ) [ConstDeclarationActual]
+          ) [ConstDeclarationListComaActual]
+        ) [ConstDeclarationTypeListSemi]
+      ) [DeclarationListConst]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationListVar(
+          VarDecl(
+            Ident(
+             z
+            ) [Ident]
+          ) [VarDecl]
+          IdentArray(
+           y
+          ) [IdentArray]
+        ) [VarDeclarationListVar]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          ErrorStatement(
+          ) [ErrorStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  00:58:43,759 - ===================================
+INFO  00:58:43,766 -  Print count calls = 0
+INFO  00:58:43,767 -  Deklarisanih promenljivih ima = 2

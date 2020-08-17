@@ -1,0 +1,76 @@
+INFO  10:45:19,760 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  10:45:19,794 - #2 program
+INFO  10:45:19,794 - #47 Program
+INFO  10:45:19,794 - #8 class
+INFO  10:45:19,794 - #47 A
+INFO  10:45:19,795 - #3 {
+INFO  10:45:19,795 - #47 int
+INFO  10:45:19,796 - #47 getValue
+INFO  10:45:19,796 - #13 (
+INFO  10:45:19,796 - #47 int
+INFO  10:45:19,797 - #47 a
+ERROR 10:45:19,797 - 
+Sintaksna greska na liniji 4
+INFO  10:45:19,797 - #12 )
+INFO  10:45:19,797 - #5 ;
+INFO  10:45:19,797 - #4 }
+INFO  10:45:19,798 - #7 const
+INFO  10:45:19,798 - #47 int
+INFO  10:45:19,798 - #47 pi
+INFO  10:45:19,798 - #24 =
+INFO  10:45:19,798 - #48 3
+INFO  10:45:19,798 - #6 ,
+INFO  10:45:19,798 - #47 e
+INFO  10:45:19,798 - #24 =
+INFO  10:45:19,799 - #48 2
+INFO  10:45:19,799 - #5 ;
+INFO  10:45:19,799 - #8 class
+INFO  10:45:19,799 - #47 B
+INFO  10:45:19,799 - #3 {
+INFO  10:45:19,799 - #47 int
+INFO  10:45:19,799 - #47 i
+INFO  10:45:19,799 - #5 ;
+INFO  10:45:19,799 - #3 {
+INFO  10:45:19,800 - #47 int
+INFO  10:45:19,800 - #47 getValue
+INFO  10:45:19,800 - #13 (
+INFO  10:45:19,800 - #47 int
+INFO  10:45:19,800 - #47 a
+INFO  10:45:19,800 - #12 )
+INFO  10:45:19,800 - #47 int
+INFO  10:45:19,800 - #47 b
+INFO  10:45:19,800 - #5 ;
+ERROR 10:45:19,801 - Uspesan oporavak od greske na liniji 4 u formalnim parametrima do )
+INFO  10:45:19,802 - #47 bool
+INFO  10:45:19,802 - #47 c
+INFO  10:45:19,802 - #5 ;
+INFO  10:45:19,802 - #3 {
+INFO  10:45:19,802 - #21 return
+INFO  10:45:19,803 - #47 this
+ERROR 10:45:19,803 - 
+Sintaksna greska na liniji 10
+INFO  10:45:19,803 - #25 .
+INFO  10:45:19,803 - #47 i
+INFO  10:45:19,803 - #33 +
+INFO  10:45:19,804 - #47 this
+INFO  10:45:19,804 - #25 .
+INFO  10:45:19,804 - #47 x
+INFO  10:45:19,804 - #9 [
+INFO  10:45:19,804 - #48 0
+INFO  10:45:19,804 - #10 ]
+INFO  10:45:19,804 - #33 +
+INFO  10:45:19,804 - #47 a
+INFO  10:45:19,804 - #5 ;
+INFO  10:45:19,804 - #4 }
+INFO  10:45:19,805 - #11 void
+INFO  10:45:19,805 - #47 m
+ERROR 10:45:19,805 - Uspesan oporavak od greske na liniji 34
+INFO  10:45:19,807 - #13 (
+INFO  10:45:19,807 - #12 )
+INFO  10:45:19,807 - #3 {
+INFO  10:45:19,807 - #4 }
+INFO  10:45:19,807 - #4 }
+INFO  10:45:19,808 - #4 }
+ERROR 10:45:19,808 - 
+Sintaksna greska na liniji 13
+ERROR 10:45:19,808 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 13

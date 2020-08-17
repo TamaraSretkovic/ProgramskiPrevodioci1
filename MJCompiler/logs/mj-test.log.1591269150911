@@ -1,0 +1,148 @@
+INFO  12:20:41,494 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  12:20:41,528 - #2 program
+INFO  12:20:41,529 - #47 Program
+INFO  12:20:41,529 - #8 class
+INFO  12:20:41,531 - #47 A
+INFO  12:20:41,531 - #3 {
+INFO  12:20:41,531 - #47 int
+INFO  12:20:41,532 - #47 x
+INFO  12:20:41,533 - #6 ,
+INFO  12:20:41,533 - #47 y
+INFO  12:20:41,533 - #5 ;
+INFO  12:20:41,533 - #4 }
+INFO  12:20:41,534 - #7 const
+INFO  12:20:41,535 - #47 int
+INFO  12:20:41,535 - #47 pi
+INFO  12:20:41,535 - #24 =
+INFO  12:20:41,535 - #48 3
+INFO  12:20:41,536 - #6 ,
+INFO  12:20:41,537 - #47 e
+INFO  12:20:41,537 - #24 =
+INFO  12:20:41,537 - #48 2
+INFO  12:20:41,537 - #5 ;
+INFO  12:20:41,537 - #3 {
+INFO  12:20:41,537 - #11 void
+INFO  12:20:41,538 - #47 main
+INFO  12:20:41,538 - #13 (
+INFO  12:20:41,538 - #12 )
+INFO  12:20:41,538 - #3 {
+INFO  12:20:41,539 - #17 print
+INFO  12:20:41,539 - #13 (
+INFO  12:20:41,539 - #48 2
+INFO  12:20:41,539 - #12 )
+INFO  12:20:41,540 - #5 ;
+INFO  12:20:41,540 - #16 read
+INFO  12:20:41,540 - #13 (
+INFO  12:20:41,540 - #47 x
+ERROR 12:20:41,540 - 
+Sintaksna greska na liniji 9
+INFO  12:20:41,541 - #12 )
+INFO  12:20:41,541 - #5 ;
+INFO  12:20:41,541 - #4 }
+INFO  12:20:41,541 - #4 }
+ERROR 12:20:41,541 - Uspesan oporavak od greske na liniji 12u statement, do ; 
+INFO  12:20:41,544 - Program(
+ Program
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListClass(
+        ClassDeclaration(
+         A
+          ClassDeclarationListVar(
+            NoClassDeclarationList(
+            ) [NoClassDeclarationList]
+            VarDeclarationV(
+              Type(
+               int
+              ) [Type]
+              VarDeclarationListVar(
+                VarDecl(
+                  Ident(
+                   x
+                  ) [Ident]
+                ) [VarDecl]
+                Ident(
+                 y
+                ) [Ident]
+              ) [VarDeclarationListVar]
+            ) [VarDeclarationV]
+          ) [ClassDeclarationListVar]
+          NoClassMethodDecl(
+          ) [NoClassMethodDecl]
+        ) [ClassDeclaration]
+      ) [DeclarationListClass]
+    ) [DeclarationListDeclaration]
+    DeclarationListConst(
+      ConstDeclarationTypeListSemi(
+        Type(
+         int
+        ) [Type]
+        ConstDeclarationListComaActual(
+          ConstDecl(
+            ConstDeclarationActual(
+              IdentAssignOp(
+               pi
+                AssignOp(
+                ) [AssignOp]
+              ) [IdentAssignOp]
+              NumberConst(
+               3
+              ) [NumberConst]
+            ) [ConstDeclarationActual]
+          ) [ConstDecl]
+          ConstDeclarationActual(
+            IdentAssignOp(
+             e
+              AssignOp(
+              ) [AssignOp]
+            ) [IdentAssignOp]
+            NumberConst(
+             2
+            ) [NumberConst]
+          ) [ConstDeclarationActual]
+        ) [ConstDeclarationListComaActual]
+      ) [ConstDeclarationTypeListSemi]
+    ) [DeclarationListConst]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            PrintExpressionStatement(
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermFactor(
+                    FactorConst(
+                      NumberConst(
+                       2
+                      ) [NumberConst]
+                    ) [FactorConst]
+                  ) [TermFactor]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [PrintExpressionStatement]
+          ) [StatementListStatement]
+          ErrorStatement(
+          ) [ErrorStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  12:20:41,544 - ===================================
+INFO  12:20:41,546 -  Print count calls = 1
+INFO  12:20:41,546 -  Deklarisanih promenljivih ima = 2
+INFO  12:20:41,546 -  Deklarisanih konstanti ima = 2
+INFO  12:20:41,546 -  Deklarisanih clasa ima = 1

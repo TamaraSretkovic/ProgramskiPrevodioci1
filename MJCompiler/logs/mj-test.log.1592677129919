@@ -1,0 +1,431 @@
+INFO  20:17:42,547 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  20:17:42,581 - #2 program
+INFO  20:17:42,582 - #46 test302
+INFO  20:17:42,582 - #46 int
+INFO  20:17:42,582 - #46 niz
+INFO  20:17:42,583 - #8 [
+INFO  20:17:42,583 - #9 ]
+INFO  20:17:42,583 - #5 ;
+INFO  20:17:42,584 - #46 int
+INFO  20:17:42,584 - #46 niz2
+INFO  20:17:42,584 - #8 [
+INFO  20:17:42,584 - #9 ]
+INFO  20:17:42,585 - #5 ;
+INFO  20:17:42,585 - #46 int
+INFO  20:17:42,585 - #46 i
+INFO  20:17:42,585 - #5 ;
+INFO  20:17:42,585 - #3 {
+INFO  20:17:42,585 - #10 void
+INFO  20:17:42,586 - #46 main
+INFO  20:17:42,586 - #12 (
+INFO  20:17:42,587 - #11 )
+INFO  20:17:42,587 - #3 {
+INFO  20:17:42,587 - #46 i
+INFO  20:17:42,588 - #23 =
+INFO  20:17:42,588 - #46 null
+INFO  20:17:42,588 - #5 ;
+INFO  20:17:42,589 - #47 5
+ERROR 20:17:42,589 - 
+Sintaksna greska na liniji 13
+INFO  20:17:42,589 - #42 +=
+INFO  20:17:42,589 - #47 3
+INFO  20:17:42,589 - #5 ;
+INFO  20:17:42,590 - #46 niz
+INFO  20:17:42,590 - #23 =
+INFO  20:17:42,590 - #36 new
+ERROR 20:17:42,590 - Uspesan oporavak od greske na liniji 1 u statement, do ; 
+INFO  20:17:42,591 - #46 int
+INFO  20:17:42,591 - #8 [
+INFO  20:17:42,591 - #49 1
+INFO  20:17:42,591 - #9 ]
+INFO  20:17:42,592 - #5 ;
+INFO  20:17:42,592 - #46 niz2
+INFO  20:17:42,592 - #23 =
+INFO  20:17:42,592 - #46 null
+INFO  20:17:42,592 - #5 ;
+INFO  20:17:42,592 - #46 niz2
+INFO  20:17:42,593 - #23 =
+INFO  20:17:42,593 - #46 niz
+INFO  20:17:42,593 - #5 ;
+INFO  20:17:42,593 - #17 for
+INFO  20:17:42,593 - #12 (
+INFO  20:17:42,593 - #46 i
+INFO  20:17:42,593 - #23 =
+INFO  20:17:42,593 - #47 0
+INFO  20:17:42,594 - #5 ;
+INFO  20:17:42,594 - #46 i
+INFO  20:17:42,594 - #27 <
+INFO  20:17:42,594 - #47 6
+INFO  20:17:42,596 - #5 ;
+INFO  20:17:42,596 - #46 i
+INFO  20:17:42,596 - #21 ++
+INFO  20:17:42,596 - #11 )
+INFO  20:17:42,597 - #3 {
+INFO  20:17:42,597 - #46 niz
+INFO  20:17:42,597 - #8 [
+INFO  20:17:42,597 - #46 i
+INFO  20:17:42,597 - #9 ]
+INFO  20:17:42,597 - #23 =
+INFO  20:17:42,597 - #46 niz2
+INFO  20:17:42,597 - #8 [
+INFO  20:17:42,598 - #46 i
+INFO  20:17:42,598 - #32 +
+INFO  20:17:42,598 - #47 1
+INFO  20:17:42,599 - #9 ]
+INFO  20:17:42,599 - #5 ;
+INFO  20:17:42,599 - #4 }
+INFO  20:17:42,599 - #44 foreach
+INFO  20:17:42,600 - #12 (
+INFO  20:17:42,600 - #46 i
+INFO  20:17:42,600 - #45 :
+INFO  20:17:42,600 - #46 niz
+INFO  20:17:42,600 - #11 )
+INFO  20:17:42,600 - #3 {
+INFO  20:17:42,600 - #46 i
+INFO  20:17:42,600 - #21 ++
+INFO  20:17:42,600 - #5 ;
+INFO  20:17:42,600 - #4 }
+INFO  20:17:42,600 - #4 }
+INFO  20:17:42,600 - #4 }
+INFO  20:17:42,609 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        DeclarationListVar(
+          VarDeclarationV(
+            VarType(
+              Type(
+               int
+              ) [Type]
+            ) [VarType]
+            VarDecl(
+              IdentArray(
+               niz
+              ) [IdentArray]
+            ) [VarDecl]
+          ) [VarDeclarationV]
+        ) [DeclarationListVar]
+      ) [DeclarationListDeclaration]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            IdentArray(
+             niz2
+            ) [IdentArray]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          Ident(
+           i
+          ) [Ident]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            StatementListStatement(
+              StatementListStatement(
+                StatementListStatement(
+                  StatementListStatement(
+                    NoStatementList(
+                    ) [NoStatementList]
+                    ErrorStatement(
+                    ) [ErrorStatement]
+                  ) [StatementListStatement]
+                  DesignatorStatementStatement(
+                    LeftDesignatorAssignExpression(
+                      LeftSideAssignVar(
+                        DesignatorOnly(
+                         niz
+                        ) [DesignatorOnly]
+                      ) [LeftSideAssignVar]
+                      AssignOpEqual(
+                        AssignOp(
+                        ) [AssignOp]
+                      ) [AssignOpEqual]
+                      ExpressionTermDef(
+                        OnlyTerm(
+                          TermFactor(
+                            FactorNewTypeExpression(
+                              Type(
+                               int
+                              ) [Type]
+                              ExpressionTermDef(
+                                OnlyTerm(
+                                  TermFactor(
+                                    FactorConst(
+                                      BoolConst(
+                                       1
+                                      ) [BoolConst]
+                                    ) [FactorConst]
+                                  ) [TermFactor]
+                                ) [OnlyTerm]
+                              ) [ExpressionTermDef]
+                            ) [FactorNewTypeExpression]
+                          ) [TermFactor]
+                        ) [OnlyTerm]
+                      ) [ExpressionTermDef]
+                    ) [LeftDesignatorAssignExpression]
+                  ) [DesignatorStatementStatement]
+                ) [StatementListStatement]
+                DesignatorStatementStatement(
+                  LeftDesignatorAssignExpression(
+                    LeftSideAssignVar(
+                      DesignatorOnly(
+                       niz2
+                      ) [DesignatorOnly]
+                    ) [LeftSideAssignVar]
+                    AssignOpEqual(
+                      AssignOp(
+                      ) [AssignOp]
+                    ) [AssignOpEqual]
+                    ExpressionTermDef(
+                      OnlyTerm(
+                        TermFactor(
+                          FactorDesignator(
+                            DesignatorOnly(
+                             null
+                            ) [DesignatorOnly]
+                          ) [FactorDesignator]
+                        ) [TermFactor]
+                      ) [OnlyTerm]
+                    ) [ExpressionTermDef]
+                  ) [LeftDesignatorAssignExpression]
+                ) [DesignatorStatementStatement]
+              ) [StatementListStatement]
+              DesignatorStatementStatement(
+                LeftDesignatorAssignExpression(
+                  LeftSideAssignVar(
+                    DesignatorOnly(
+                     niz2
+                    ) [DesignatorOnly]
+                  ) [LeftSideAssignVar]
+                  AssignOpEqual(
+                    AssignOp(
+                    ) [AssignOp]
+                  ) [AssignOpEqual]
+                  ExpressionTermDef(
+                    OnlyTerm(
+                      TermFactor(
+                        FactorDesignator(
+                          DesignatorOnly(
+                           niz
+                          ) [DesignatorOnly]
+                        ) [FactorDesignator]
+                      ) [TermFactor]
+                    ) [OnlyTerm]
+                  ) [ExpressionTermDef]
+                ) [LeftDesignatorAssignExpression]
+              ) [DesignatorStatementStatement]
+            ) [StatementListStatement]
+            ForStatement(
+              DesignatorStatementOnly(
+                LeftDesignatorAssignExpression(
+                  LeftSideAssignVar(
+                    DesignatorOnly(
+                     i
+                    ) [DesignatorOnly]
+                  ) [LeftSideAssignVar]
+                  AssignOpEqual(
+                    AssignOp(
+                    ) [AssignOp]
+                  ) [AssignOpEqual]
+                  ExpressionTermDef(
+                    OnlyTerm(
+                      TermFactor(
+                        FactorConst(
+                          NumberConst(
+                           0
+                          ) [NumberConst]
+                        ) [FactorConst]
+                      ) [TermFactor]
+                    ) [OnlyTerm]
+                  ) [ExpressionTermDef]
+                ) [LeftDesignatorAssignExpression]
+              ) [DesignatorStatementOnly]
+              ConditionOptionalCondition(
+                ConditionLastTerm(
+                  ConditionLastFact(
+                    ConditionFactList(
+                      ExpressionTermDef(
+                        OnlyTerm(
+                          TermFactor(
+                            FactorDesignator(
+                              DesignatorOnly(
+                               i
+                              ) [DesignatorOnly]
+                            ) [FactorDesignator]
+                          ) [TermFactor]
+                        ) [OnlyTerm]
+                      ) [ExpressionTermDef]
+                      RelOpLess(
+                      ) [RelOpLess]
+                      ExpressionTermDef(
+                        OnlyTerm(
+                          TermFactor(
+                            FactorConst(
+                              NumberConst(
+                               6
+                              ) [NumberConst]
+                            ) [FactorConst]
+                          ) [TermFactor]
+                        ) [OnlyTerm]
+                      ) [ExpressionTermDef]
+                    ) [ConditionFactList]
+                  ) [ConditionLastFact]
+                ) [ConditionLastTerm]
+              ) [ConditionOptionalCondition]
+              DesignatorStatementOnly(
+                DesignatorStatementIncrement(
+                  DesignatorOnly(
+                   i
+                  ) [DesignatorOnly]
+                ) [DesignatorStatementIncrement]
+              ) [DesignatorStatementOnly]
+              CurlyBraceStatement(
+                StatementListStatement(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  DesignatorStatementStatement(
+                    LeftDesignatorAssignExpression(
+                      LeftSideAssignVar(
+                        DesignatorArray(
+                         niz
+                          ExpressionTermDef(
+                            OnlyTerm(
+                              TermFactor(
+                                FactorDesignator(
+                                  DesignatorOnly(
+                                   i
+                                  ) [DesignatorOnly]
+                                ) [FactorDesignator]
+                              ) [TermFactor]
+                            ) [OnlyTerm]
+                          ) [ExpressionTermDef]
+                        ) [DesignatorArray]
+                      ) [LeftSideAssignVar]
+                      AssignOpEqual(
+                        AssignOp(
+                        ) [AssignOp]
+                      ) [AssignOpEqual]
+                      ExpressionTermDef(
+                        OnlyTerm(
+                          TermFactor(
+                            FactorDesignator(
+                              DesignatorArray(
+                               niz2
+                                ExpressionAddopLeftList(
+                                  ExpressionTermDef(
+                                    OnlyTerm(
+                                      TermFactor(
+                                        FactorDesignator(
+                                          DesignatorOnly(
+                                           i
+                                          ) [DesignatorOnly]
+                                        ) [FactorDesignator]
+                                      ) [TermFactor]
+                                    ) [OnlyTerm]
+                                  ) [ExpressionTermDef]
+                                  AddOpLeftPlus(
+                                  ) [AddOpLeftPlus]
+                                  TermFactor(
+                                    FactorConst(
+                                      NumberConst(
+                                       1
+                                      ) [NumberConst]
+                                    ) [FactorConst]
+                                  ) [TermFactor]
+                                ) [ExpressionAddopLeftList]
+                              ) [DesignatorArray]
+                            ) [FactorDesignator]
+                          ) [TermFactor]
+                        ) [OnlyTerm]
+                      ) [ExpressionTermDef]
+                    ) [LeftDesignatorAssignExpression]
+                  ) [DesignatorStatementStatement]
+                ) [StatementListStatement]
+              ) [CurlyBraceStatement]
+            ) [ForStatement]
+          ) [StatementListStatement]
+          ForeachStatement(
+           i
+            DesignatorOnly(
+             niz
+            ) [DesignatorOnly]
+            CurlyBraceStatement(
+              StatementListStatement(
+                NoStatementList(
+                ) [NoStatementList]
+                DesignatorStatementStatement(
+                  DesignatorStatementIncrement(
+                    DesignatorOnly(
+                     i
+                    ) [DesignatorOnly]
+                  ) [DesignatorStatementIncrement]
+                ) [DesignatorStatementStatement]
+              ) [StatementListStatement]
+            ) [CurlyBraceStatement]
+          ) [ForeachStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  20:17:42,610 - ===================================
+INFO  20:17:42,613 - Detektovan tip 1
+INFO  20:17:42,614 - Deklarisan niz niz na liniji 5
+INFO  20:17:42,614 - Detektovan tip 1
+INFO  20:17:42,614 - Deklarisan niz niz2 na liniji 6
+INFO  20:17:42,614 - Detektovan tip 1
+INFO  20:17:42,614 - Deklarisana promenljiva i na liniji 7
+INFO  20:17:42,614 - Obradjuje se funkcija main na liniji 10
+INFO  20:17:42,614 - Koriscenje  niz na liniji 14
+ERROR 20:17:42,614 - Greska na liniji 14 : izraz izmedju [] mora biti tipa int.
+INFO  20:17:42,615 - Koriscenje  niz2 na liniji 15
+INFO  20:17:42,615 - Koriscenje  null na liniji 15
+INFO  20:17:42,615 - Koriscenje  niz2 na liniji 16
+INFO  20:17:42,615 - Koriscenje  niz na liniji 16
+INFO  20:17:42,615 - Koriscenje  i na liniji 17
+INFO  20:17:42,615 - Koriscenje  i na liniji 17
+INFO  20:17:42,615 - Koriscenje  i na liniji 17
+INFO  20:17:42,615 - Pronadjeno inkrementiranje promenljive i na liniji 17
+INFO  20:17:42,615 - Koriscenje  i na liniji 19
+INFO  20:17:42,615 - Koriscenje  niza niz na liniji 19
+INFO  20:17:42,615 - Koriscenje  i na liniji 19
+INFO  20:17:42,615 - Koriscenje  niza niz2 na liniji 19
+INFO  20:17:42,615 - Koriscenje  niz na liniji 21
+INFO  20:17:42,615 - Koriscenje  i na liniji 22
+INFO  20:17:42,615 - Pronadjeno inkrementiranje promenljive i na liniji 22
+ERROR 20:17:42,616 - Parsiranje NIJE uspesno zavrseno!

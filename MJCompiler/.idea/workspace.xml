@@ -2,16 +2,167 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dec84fd-10f8-4a19-9feb-f5c5a0f855a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/util/TableVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/mjparser.cup" beforeDir="false" afterPath="$PROJECT_DIR$/spec/mjparser.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/mjparser_astbuild.cup" beforeDir="false" afterPath="$PROJECT_DIR$/spec/mjparser_astbuild.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CUP$MJParser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CUP$MJParser$actions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/CodeGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/MJParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/MJParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/RuleVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalyzerCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/Yylex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/Yylex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParamsExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParamsExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParamsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ActualParamsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpLeftMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpLeftMinus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpLeftPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpLeftPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpRightMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpRightMinus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpRightPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AddOpRightPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ArrayAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ArrayAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOpAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOpAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOpEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOpEqual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOpMul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOpMul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/AssignOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/BoolConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/BoolConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/BrakStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/BrakStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/CharConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/CharConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionFact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionFactExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionFactExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionFactList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionFactList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionLastFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionLastFact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionLastTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionLastTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionListFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionListFact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionListTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionListTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionOptional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionOptional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionOptionalCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionOptionalCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConditionTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDecl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationActual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationActual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationListComaActual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationListComaActual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationTypeListSemi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ConstDeclarationTypeListSemi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ContinueStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ContinueStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/CurlyBraceStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/CurlyBraceStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Declaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Declaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DeclarationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DeclarationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DeclarationListConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DeclarationListConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DeclarationListDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DeclarationListDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DeclarationListVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DeclarationListVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Designator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Designator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorOnly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorOnly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementDecrement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementDecrement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementIncrement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementIncrement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementMethodCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementMethodCall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementOnly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementOnly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/DesignatorStatementStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ElseStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ElseStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ElseStatementStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ElseStatementStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ErrorStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ErrorStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ExpressionAddopLeftList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ExpressionAddopLeftList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ExpressionTermDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ExpressionTermDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Factor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Factor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorDesignator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorDesignator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorMethodCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorMethodCall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorNewTypeExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorNewTypeExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorParenExoression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FactorParenExoression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ForStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ForStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ForStatementError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ForStatementError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ForeachStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ForeachStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamErrorComma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamErrorComma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamErrorParen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamErrorParen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamListActual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamListActual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/FormalParamsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Ident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Ident.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/IdentArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/IdentArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/IfStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/IfStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/LeftDesignatorAssignExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/LeftDesignatorAssignExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/LeftSideAssign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/LeftSideAssign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/LeftSideAssignAssignOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/LeftSideAssignAssignOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/LeftSideAssignVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/LeftSideAssignVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodCall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodCallActualParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodCallActualParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodCallNoParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodCallNoParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodDeclarationActual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodDeclarationActual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodDeclarationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodDeclarationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodDeclarationListMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodDeclarationListMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodTypeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodTypeName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodVoidName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MethodVoidName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MinusTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MinusTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpLeftDiv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpLeftDiv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpLeftMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpLeftMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpLeftMul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpLeftMul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpRightDiv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpRightDiv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpRightMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpRightMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpRightMul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/MulOpRightMul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoConditionOptional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoConditionOptional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoDeclarationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoDeclarationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoDesignatorStatementList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoDesignatorStatementList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoElseStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoElseStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoFormalParamsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoFormalParamsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoMethodDeclarationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoMethodDeclarationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoStatementList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NoStatementList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NumberConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/NumberConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/OnlyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/OnlyTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/PrintExpressionNumStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/PrintExpressionNumStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/PrintExpressionStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/PrintExpressionStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ProgName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ProgName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ReadStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ReadStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpEquals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpGreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpGreaterEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpGreaterEquals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpLess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpLess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpLessEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpLessEqual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpNotEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/RelOpNotEquals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ReturnStatementEmpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ReturnStatementEmpty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ReturnStatementExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/ReturnStatementExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Statement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/StatementList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/StatementList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/StatementListStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/StatementListStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/SyntaxNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/SyntaxNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Term.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/TermDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/TermDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/TermFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/TermFactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/TermMullOpLeftList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/TermMullOpLeftList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/TypeMethodDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/TypeMethodDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Var.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Var.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDecl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationListVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationListVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarDeclarationV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VarType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Visitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VisitorAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VisitorAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VoidMethodDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/ast/VoidMethodDeclaration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/sym.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/program.mj" beforeDir="false" afterPath="$PROJECT_DIR$/test/program.mj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rs/ac/bg/etf/pp1/MJTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +210,21 @@
       <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.run.sh (1)">
+  <component name="RunManager" selected="Application.Compiler">
+    <configuration name="Compiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rs.ac.bg.etf.pp1.Compiler" />
+      <module name="MJCompiler" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;$PROJECT_DIR$/test/program.mj&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rs.ac.bg.etf.pp1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MJParserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rs.ac.bg.etf.pp1.MJParserTest" />
       <module name="MJCompiler" />
@@ -95,14 +260,6 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="disasm.sh (1)" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/disasm.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="run.sh (1)" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
@@ -113,18 +270,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.MJParserTest" />
-      <item itemvalue="Shell Script.disasm.sh (1)" />
+      <item itemvalue="Application.MJTest" />
+      <item itemvalue="Application.Compiler" />
       <item itemvalue="Shell Script.run.sh (1)" />
       <item itemvalue="Shell Script.build.sh" />
-      <item itemvalue="Application.MJTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Compiler" />
+        <item itemvalue="Shell Script.build.sh" />
         <item itemvalue="Shell Script.run.sh (1)" />
         <item itemvalue="Application.MJParserTest" />
         <item itemvalue="Application.MJTest" />
-        <item itemvalue="Shell Script.disasm.sh (1)" />
-        <item itemvalue="Shell Script.build.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -165,18 +322,20 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="395" y="125" width="800" height="671" key="#Project_Structure/0.27.1600.873@0.27.1600.873" timestamp="1590581352100" />
-    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592767351229">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="348" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597696495716">
+      <screen x="0" y="27" width="1600" height="873" />
     </state>
+    <state x="348" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1600.873@0.27.1600.873" timestamp="1597696495716" />
     <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1592767351229" />
     <state x="599" y="318" width="573" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592751991421">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="499" y="268" width="607" height="385" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1600.873@0.27.1600.873" timestamp="1590606838137" />
     <state x="599" y="318" width="573" height="385" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1592751991421" />
-    <state x="743" y="261" width="424" height="578" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1592751467895">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="619" y="221" width="424" height="578" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1597696426386">
+      <screen x="0" y="27" width="1600" height="873" />
     </state>
+    <state x="619" y="221" key="#com.intellij.ide.macro.MacrosDialog/0.27.1600.873@0.27.1600.873" timestamp="1597696426386" />
     <state x="743" y="261" width="424" height="578" key="#com.intellij.ide.macro.MacrosDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1592751467895" />
     <state x="608" y="175" width="374" height="571" key="#com.intellij.ide.util.MemberChooser" timestamp="1597664982504">
       <screen x="0" y="27" width="1600" height="873" />
@@ -199,25 +358,25 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="430" y="203" width="884" height="466" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1591273574395" />
-    <state width="1554" height="152" key="GridCell.Tab.0.bottom" timestamp="1597672883206">
+    <state width="1554" height="56" key="GridCell.Tab.0.bottom" timestamp="1597698606744">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="152" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1597672883206" />
+    <state width="1554" height="56" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1597698606744" />
     <state width="1874" height="318" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1592776509739" />
-    <state width="1554" height="152" key="GridCell.Tab.0.center" timestamp="1597672883205">
+    <state width="1554" height="56" key="GridCell.Tab.0.center" timestamp="1597698606743">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="152" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1597672883205" />
+    <state width="1554" height="56" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1597698606743" />
     <state width="1874" height="318" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1592776509739" />
-    <state width="1554" height="152" key="GridCell.Tab.0.left" timestamp="1597672883204">
+    <state width="1554" height="56" key="GridCell.Tab.0.left" timestamp="1597698606742">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="152" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1597672883204" />
+    <state width="1554" height="56" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1597698606742" />
     <state width="1874" height="318" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1592776509738" />
-    <state width="1554" height="152" key="GridCell.Tab.0.right" timestamp="1597672883205">
+    <state width="1554" height="56" key="GridCell.Tab.0.right" timestamp="1597698606744">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="152" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1597672883205" />
+    <state width="1554" height="56" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1597698606744" />
     <state width="1874" height="318" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1592776509739" />
     <state width="1554" height="273" key="GridCell.Tab.1.bottom" timestamp="1597513180186">
       <screen x="0" y="27" width="1600" height="873" />
@@ -258,7 +417,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticPass.java</url>
+          <url>file://$PROJECT_DIR$/src/rs/ac/bg/etf/pp1/SemanticAnalyzer.java</url>
           <line>350</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>

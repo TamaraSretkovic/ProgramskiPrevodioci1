@@ -1,0 +1,296 @@
+INFO  22:58:26,246 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  22:58:26,283 - #2 program
+INFO  22:58:26,283 - #46 test301
+INFO  22:58:26,283 - #46 int
+INFO  22:58:26,284 - #46 x
+INFO  22:58:26,285 - #5 ;
+INFO  22:58:26,285 - #46 int
+INFO  22:58:26,286 - #46 y
+INFO  22:58:26,286 - #5 ;
+INFO  22:58:26,286 - #3 {
+INFO  22:58:26,286 - #46 int
+INFO  22:58:26,287 - #46 k
+INFO  22:58:26,287 - #12 (
+INFO  22:58:26,288 - #11 )
+INFO  22:58:26,288 - #46 int
+INFO  22:58:26,288 - #46 c
+INFO  22:58:26,289 - #5 ;
+INFO  22:58:26,289 - #3 {
+INFO  22:58:26,289 - #46 c
+INFO  22:58:26,289 - #23 =
+INFO  22:58:26,290 - #47 2
+INFO  22:58:26,290 - #5 ;
+INFO  22:58:26,291 - #20 return
+INFO  22:58:26,292 - #46 c
+INFO  22:58:26,292 - #32 +
+INFO  22:58:26,292 - #47 2
+INFO  22:58:26,293 - #5 ;
+INFO  22:58:26,293 - #4 }
+INFO  22:58:26,293 - #10 void
+INFO  22:58:26,294 - #46 main
+INFO  22:58:26,294 - #12 (
+INFO  22:58:26,295 - #11 )
+INFO  22:58:26,295 - #3 {
+INFO  22:58:26,295 - #46 x
+INFO  22:58:26,295 - #23 =
+INFO  22:58:26,295 - #47 3
+INFO  22:58:26,295 - #5 ;
+INFO  22:58:26,296 - #16 print
+INFO  22:58:26,296 - #12 (
+INFO  22:58:26,296 - #47 1
+INFO  22:58:26,296 - #11 )
+INFO  22:58:26,296 - #5 ;
+INFO  22:58:26,296 - #16 print
+INFO  22:58:26,296 - #12 (
+INFO  22:58:26,296 - #46 x
+INFO  22:58:26,297 - #11 )
+INFO  22:58:26,297 - #5 ;
+INFO  22:58:26,297 - #15 read
+INFO  22:58:26,297 - #12 (
+INFO  22:58:26,297 - #46 x
+INFO  22:58:26,297 - #11 )
+INFO  22:58:26,297 - #5 ;
+INFO  22:58:26,297 - #16 print
+INFO  22:58:26,297 - #12 (
+INFO  22:58:26,297 - #46 x
+INFO  22:58:26,298 - #11 )
+INFO  22:58:26,298 - #5 ;
+INFO  22:58:26,298 - #4 }
+INFO  22:58:26,298 - #4 }
+INFO  22:58:26,307 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            Ident(
+             x
+            ) [Ident]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          Ident(
+           y
+          ) [Ident]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    MethodDeclarationListMethod(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      TypeMethodDeclaration(
+        MethodTypeName(
+          Type(
+           int
+          ) [Type]
+         k
+        ) [MethodTypeName]
+        MethodDeclarationActual(
+          NoFormalParamsList(
+          ) [NoFormalParamsList]
+          DeclarationListDeclaration(
+            NoDeclarationList(
+            ) [NoDeclarationList]
+            DeclarationListVar(
+              VarDeclarationV(
+                VarType(
+                  Type(
+                   int
+                  ) [Type]
+                ) [VarType]
+                VarDecl(
+                  Ident(
+                   c
+                  ) [Ident]
+                ) [VarDecl]
+              ) [VarDeclarationV]
+            ) [DeclarationListVar]
+          ) [DeclarationListDeclaration]
+          StatementListStatement(
+            StatementListStatement(
+              NoStatementList(
+              ) [NoStatementList]
+              DesignatorStatementStatement(
+                LeftDesignatorAssignExpression(
+                  LeftSideAssignVar(
+                    DesignatorOnly(
+                     c
+                    ) [DesignatorOnly]
+                  ) [LeftSideAssignVar]
+                  AssignOpEqual(
+                    AssignOp(
+                    ) [AssignOp]
+                  ) [AssignOpEqual]
+                  ExpressionTermDef(
+                    OnlyTerm(
+                      TermFactor(
+                        FactorConst(
+                          NumberConst(
+                           2
+                          ) [NumberConst]
+                        ) [FactorConst]
+                      ) [TermFactor]
+                    ) [OnlyTerm]
+                  ) [ExpressionTermDef]
+                ) [LeftDesignatorAssignExpression]
+              ) [DesignatorStatementStatement]
+            ) [StatementListStatement]
+            ReturnStatementExpression(
+              ExpressionAddopLeftList(
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorOnly(
+                         c
+                        ) [DesignatorOnly]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+                AddOpLeftPlus(
+                ) [AddOpLeftPlus]
+                TermFactor(
+                  FactorConst(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [FactorConst]
+                ) [TermFactor]
+              ) [ExpressionAddopLeftList]
+            ) [ReturnStatementExpression]
+          ) [StatementListStatement]
+        ) [MethodDeclarationActual]
+      ) [TypeMethodDeclaration]
+    ) [MethodDeclarationListMethod]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            StatementListStatement(
+              StatementListStatement(
+                StatementListStatement(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  DesignatorStatementStatement(
+                    LeftDesignatorAssignExpression(
+                      LeftSideAssignVar(
+                        DesignatorOnly(
+                         x
+                        ) [DesignatorOnly]
+                      ) [LeftSideAssignVar]
+                      AssignOpEqual(
+                        AssignOp(
+                        ) [AssignOp]
+                      ) [AssignOpEqual]
+                      ExpressionTermDef(
+                        OnlyTerm(
+                          TermFactor(
+                            FactorConst(
+                              NumberConst(
+                               3
+                              ) [NumberConst]
+                            ) [FactorConst]
+                          ) [TermFactor]
+                        ) [OnlyTerm]
+                      ) [ExpressionTermDef]
+                    ) [LeftDesignatorAssignExpression]
+                  ) [DesignatorStatementStatement]
+                ) [StatementListStatement]
+                PrintExpressionStatement(
+                  ExpressionTermDef(
+                    OnlyTerm(
+                      TermFactor(
+                        FactorConst(
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [FactorConst]
+                      ) [TermFactor]
+                    ) [OnlyTerm]
+                  ) [ExpressionTermDef]
+                ) [PrintExpressionStatement]
+              ) [StatementListStatement]
+              PrintExpressionStatement(
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorOnly(
+                         x
+                        ) [DesignatorOnly]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+              ) [PrintExpressionStatement]
+            ) [StatementListStatement]
+            ReadStatement(
+              DesignatorOnly(
+               x
+              ) [DesignatorOnly]
+            ) [ReadStatement]
+          ) [StatementListStatement]
+          PrintExpressionStatement(
+            ExpressionTermDef(
+              OnlyTerm(
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorOnly(
+                     x
+                    ) [DesignatorOnly]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [OnlyTerm]
+            ) [ExpressionTermDef]
+          ) [PrintExpressionStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  22:58:26,307 - ===================================
+INFO  22:58:26,312 - Deklarisana promenljiva x na liniji 2
+INFO  22:58:26,319 - Deklarisana promenljiva y na liniji 2
+INFO  22:58:26,319 - Obradjuje se funkcija k na liniji 4
+INFO  22:58:26,319 - Deklarisana promenljiva c na liniji 4
+INFO  22:58:26,319 - Koriscenje  c na liniji 5
+INFO  22:58:26,320 - Koriscenje  c na liniji 6
+INFO  22:58:26,320 - Obradjuje se funkcija main na liniji 8
+INFO  22:58:26,320 - Koriscenje  x na liniji 10
+INFO  22:58:26,320 - Pronadjen poziv funkcije print na liniji 11
+INFO  22:58:26,320 - Koriscenje  x na liniji 12
+INFO  22:58:26,320 - Pronadjen poziv funkcije print na liniji 12
+INFO  22:58:26,320 - Koriscenje  x na liniji 13
+INFO  22:58:26,320 - Pronadjen poziv funkcije read na liniji 13
+INFO  22:58:26,320 - Koriscenje  x na liniji 14
+INFO  22:58:26,320 - Pronadjen poziv funkcije print na liniji 14
+INFO  22:58:26,321 - Parsiranje uspesno zavrseno!

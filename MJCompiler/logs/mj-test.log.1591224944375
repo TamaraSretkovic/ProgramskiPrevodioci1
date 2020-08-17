@@ -1,0 +1,98 @@
+INFO  00:53:50,290 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  00:53:50,323 - #2 program
+INFO  00:53:50,323 - #47 Program
+INFO  00:53:50,323 - #47 char
+INFO  00:53:50,324 - #47 a
+INFO  00:53:50,325 - #5 ;
+INFO  00:53:50,325 - #7 const
+INFO  00:53:50,326 - #47 int
+INFO  00:53:50,326 - #47 x
+INFO  00:53:50,326 - #24 =
+INFO  00:53:50,326 - #48 3
+INFO  00:53:50,327 - #5 ;
+INFO  00:53:50,328 - #3 {
+INFO  00:53:50,328 - #11 void
+INFO  00:53:50,329 - #47 main
+INFO  00:53:50,329 - #13 (
+INFO  00:53:50,329 - #12 )
+INFO  00:53:50,330 - #3 {
+INFO  00:53:50,330 - #14 if
+INFO  00:53:50,331 - #13 (
+INFO  00:53:50,331 - #47 x
+ERROR 00:53:50,331 - 
+Sintaksna greska na liniji 6
+INFO  00:53:50,331 - #30 >
+INFO  00:53:50,331 - #48 2
+INFO  00:53:50,331 - #12 )
+INFO  00:53:50,332 - #3 {
+INFO  00:53:50,332 - #4 }
+INFO  00:53:50,332 - #17 print
+INFO  00:53:50,333 - #13 (
+INFO  00:53:50,333 - #48 2
+INFO  00:53:50,333 - #12 )
+INFO  00:53:50,333 - #5 ;
+INFO  00:53:50,333 - #4 }
+INFO  00:53:50,333 - #4 }
+ERROR 00:53:50,333 - Uspesan oporavak od greske na liniji 11
+INFO  00:53:50,336 - Program(
+ Program
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListVar(
+        VarDeclarationV(
+          Type(
+           char
+          ) [Type]
+          VarDecl(
+            Ident(
+             a
+            ) [Ident]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListConst(
+      ConstDeclarationTypeListSemi(
+        Type(
+         int
+        ) [Type]
+        ConstDecl(
+          ConstDeclarationActual(
+            IdentAssignOp(
+             x
+              AssignOp(
+              ) [AssignOp]
+            ) [IdentAssignOp]
+            NumberConst(
+             3
+            ) [NumberConst]
+          ) [ConstDeclarationActual]
+        ) [ConstDecl]
+      ) [ConstDeclarationTypeListSemi]
+    ) [DeclarationListConst]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          ErrorStatement(
+          ) [ErrorStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  00:53:50,336 - ===================================
+INFO  00:53:50,339 -  Print count calls = 0
+INFO  00:53:50,339 -  Deklarisanih promenljivih ima = 1

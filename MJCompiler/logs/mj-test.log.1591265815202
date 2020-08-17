@@ -1,0 +1,97 @@
+INFO  12:16:09,067 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  12:16:09,103 - #2 program
+INFO  12:16:09,103 - #47 Program
+INFO  12:16:09,103 - #8 class
+INFO  12:16:09,104 - #47 A
+INFO  12:16:09,104 - #3 {
+INFO  12:16:09,104 - #47 int
+INFO  12:16:09,105 - #47 x
+INFO  12:16:09,105 - #6 ,
+INFO  12:16:09,106 - #47 y
+INFO  12:16:09,106 - #5 ;
+INFO  12:16:09,106 - #4 }
+INFO  12:16:09,107 - #7 const
+INFO  12:16:09,108 - #47 int
+INFO  12:16:09,108 - #47 pi
+INFO  12:16:09,108 - #24 =
+INFO  12:16:09,108 - #48 3
+INFO  12:16:09,114 - #6 ,
+INFO  12:16:09,115 - #47 e
+INFO  12:16:09,115 - #24 =
+INFO  12:16:09,115 - #48 2
+INFO  12:16:09,115 - #5 ;
+INFO  12:16:09,115 - #3 {
+INFO  12:16:09,116 - #4 }
+INFO  12:16:09,117 - Program(
+ Program
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListClass(
+        ClassDeclaration(
+         A
+          ClassDeclarationListVar(
+            NoClassDeclarationList(
+            ) [NoClassDeclarationList]
+            VarDeclarationV(
+              Type(
+               int
+              ) [Type]
+              VarDeclarationListVar(
+                VarDecl(
+                  Ident(
+                   x
+                  ) [Ident]
+                ) [VarDecl]
+                Ident(
+                 y
+                ) [Ident]
+              ) [VarDeclarationListVar]
+            ) [VarDeclarationV]
+          ) [ClassDeclarationListVar]
+          NoClassMethodDecl(
+          ) [NoClassMethodDecl]
+        ) [ClassDeclaration]
+      ) [DeclarationListClass]
+    ) [DeclarationListDeclaration]
+    DeclarationListConst(
+      ConstDeclarationTypeListSemi(
+        Type(
+         int
+        ) [Type]
+        ConstDeclarationListComaActual(
+          ConstDecl(
+            ConstDeclarationActual(
+              IdentAssignOp(
+               pi
+                AssignOp(
+                ) [AssignOp]
+              ) [IdentAssignOp]
+              NumberConst(
+               3
+              ) [NumberConst]
+            ) [ConstDeclarationActual]
+          ) [ConstDecl]
+          ConstDeclarationActual(
+            IdentAssignOp(
+             e
+              AssignOp(
+              ) [AssignOp]
+            ) [IdentAssignOp]
+            NumberConst(
+             2
+            ) [NumberConst]
+          ) [ConstDeclarationActual]
+        ) [ConstDeclarationListComaActual]
+      ) [ConstDeclarationTypeListSemi]
+    ) [DeclarationListConst]
+  ) [DeclarationListDeclaration]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  12:16:09,117 - ===================================
+INFO  12:16:09,120 -  Print count calls = 0
+INFO  12:16:09,120 -  Deklarisanih promenljivih ima = 2
+INFO  12:16:09,120 -  Deklarisanih konstanti ima = 2
+INFO  12:16:09,120 -  Deklarisanih clasa ima = 1

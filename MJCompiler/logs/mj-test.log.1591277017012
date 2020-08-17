@@ -1,0 +1,47 @@
+INFO  15:21:13,357 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  15:21:13,385 - #2 program
+INFO  15:21:13,385 - #47 P
+INFO  15:21:13,385 - #3 {
+INFO  15:21:13,385 - #11 void
+INFO  15:21:13,385 - #47 main
+INFO  15:21:13,386 - #13 (
+INFO  15:21:13,386 - #12 )
+INFO  15:21:13,386 - #3 {
+INFO  15:21:13,387 - #47 x
+INFO  15:21:13,387 - #24 =
+INFO  15:21:13,388 - #5 ;
+ERROR 15:21:13,388 - 
+Sintaksna greska na liniji 7
+INFO  15:21:13,388 - #4 }
+INFO  15:21:13,388 - #4 }
+ERROR 15:21:13,389 - Uspesan oporavak od greske na liniji 0u statement, do ; 
+INFO  15:21:13,392 - Program(
+ P
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          ErrorStatement(
+          ) [ErrorStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  15:21:13,392 - ===================================
+INFO  15:21:13,395 -  Print count calls = 0
+INFO  15:21:13,395 -  Deklarisanih promenljivih ima = 0
+INFO  15:21:13,395 -  Deklarisanih konstanti ima = 0
+INFO  15:21:13,395 -  Deklarisanih clasa ima = 0
+INFO  15:21:13,395 -  Poziva metoda ima = 0

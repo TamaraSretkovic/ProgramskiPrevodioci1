@@ -1,0 +1,93 @@
+INFO  16:07:35,564 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  16:07:35,604 - #2 program
+INFO  16:07:35,605 - #47 P
+INFO  16:07:35,605 - #3 {
+INFO  16:07:35,606 - #11 void
+INFO  16:07:35,606 - #47 main
+INFO  16:07:35,607 - #13 (
+INFO  16:07:35,607 - #12 )
+INFO  16:07:35,607 - #3 {
+INFO  16:07:35,608 - #47 x
+INFO  16:07:35,608 - #24 =
+INFO  16:07:35,608 - #48 3
+INFO  16:07:35,609 - #5 ;
+INFO  16:07:35,609 - #18 for
+INFO  16:07:35,609 - #13 (
+INFO  16:07:35,610 - #5 ;
+INFO  16:07:35,610 - #47 x
+INFO  16:07:35,610 - #30 >
+INFO  16:07:35,610 - #5 ;
+ERROR 16:07:35,610 - 
+Sintaksna greska na liniji 8
+INFO  16:07:35,610 - #12 )
+INFO  16:07:35,610 - #3 {
+INFO  16:07:35,610 - #4 }
+ERROR 16:07:35,611 - Uspesan oporavak od greske na liniji 8 logicki iskaz u for petlji, do ; 
+INFO  16:07:35,611 - #4 }
+INFO  16:07:35,611 - #4 }
+INFO  16:07:35,613 - Program(
+ P
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            DesignatorStatementStatement(
+              LeftDesignatorAssignExpression(
+                LeftSideAssignVar(
+                  DesignatorOnly(
+                   x
+                  ) [DesignatorOnly]
+                ) [LeftSideAssignVar]
+                AssignOpEqual(
+                  AssignOp(
+                  ) [AssignOp]
+                ) [AssignOpEqual]
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermFactor(
+                      FactorConst(
+                        NumberConst(
+                         3
+                        ) [NumberConst]
+                      ) [FactorConst]
+                    ) [TermFactor]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+              ) [LeftDesignatorAssignExpression]
+            ) [DesignatorStatementStatement]
+          ) [StatementListStatement]
+          ForStatement(
+            NoDesignatorStatementList(
+            ) [NoDesignatorStatementList]
+            ForStatementError(
+            ) [ForStatementError]
+            NoDesignatorStatementList(
+            ) [NoDesignatorStatementList]
+            CurlyBraceStatement(
+              NoStatementList(
+              ) [NoStatementList]
+            ) [CurlyBraceStatement]
+          ) [ForStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  16:07:35,613 - ===================================
+INFO  16:07:35,615 -  Print count calls = 0
+INFO  16:07:35,615 -  Deklarisanih promenljivih ima = 0
+INFO  16:07:35,615 -  Deklarisanih konstanti ima = 0
+INFO  16:07:35,615 -  Deklarisanih clasa ima = 0
+INFO  16:07:35,615 -  Poziva metoda ima = 0

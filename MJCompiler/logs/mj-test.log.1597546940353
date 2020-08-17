@@ -1,0 +1,164 @@
+INFO  05:01:57,188 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  05:01:57,225 - #2 program
+INFO  05:01:57,226 - #46 test301
+INFO  05:01:57,226 - #3 {
+INFO  05:01:57,227 - #10 void
+INFO  05:01:57,227 - #46 main
+INFO  05:01:57,227 - #12 (
+INFO  05:01:57,228 - #11 )
+INFO  05:01:57,228 - #46 int
+INFO  05:01:57,228 - #46 bodovi
+INFO  05:01:57,230 - #5 ;
+INFO  05:01:57,230 - #3 {
+INFO  05:01:57,231 - #46 bodovi
+INFO  05:01:57,231 - #23 =
+INFO  05:01:57,232 - #47 2
+INFO  05:01:57,232 - #5 ;
+INFO  05:01:57,233 - #16 print
+INFO  05:01:57,234 - #12 (
+INFO  05:01:57,234 - #46 bodovi
+INFO  05:01:57,234 - #11 )
+INFO  05:01:57,234 - #5 ;
+INFO  05:01:57,234 - #46 bodovi
+INFO  05:01:57,234 - #40 *=
+INFO  05:01:57,234 - #47 2
+INFO  05:01:57,235 - #5 ;
+INFO  05:01:57,235 - #16 print
+INFO  05:01:57,235 - #12 (
+INFO  05:01:57,235 - #46 bodovi
+INFO  05:01:57,236 - #11 )
+INFO  05:01:57,236 - #5 ;
+INFO  05:01:57,236 - #4 }
+INFO  05:01:57,236 - #4 }
+INFO  05:01:57,244 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        DeclarationListDeclaration(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          DeclarationListVar(
+            VarDeclarationV(
+              VarType(
+                Type(
+                 int
+                ) [Type]
+              ) [VarType]
+              VarDecl(
+                Ident(
+                 bodovi
+                ) [Ident]
+              ) [VarDecl]
+            ) [VarDeclarationV]
+          ) [DeclarationListVar]
+        ) [DeclarationListDeclaration]
+        StatementListStatement(
+          StatementListStatement(
+            StatementListStatement(
+              StatementListStatement(
+                NoStatementList(
+                ) [NoStatementList]
+                DesignatorStatementStatement(
+                  LeftDesignatorAssignExpression(
+                    LeftSideAssignVar(
+                      DesignatorOnly(
+                       bodovi
+                      ) [DesignatorOnly]
+                    ) [LeftSideAssignVar]
+                    AssignOpEqual(
+                      AssignOp(
+                      ) [AssignOp]
+                    ) [AssignOpEqual]
+                    ExpressionTermDef(
+                      OnlyTerm(
+                        TermFactor(
+                          FactorConst(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorConst]
+                        ) [TermFactor]
+                      ) [OnlyTerm]
+                    ) [ExpressionTermDef]
+                  ) [LeftDesignatorAssignExpression]
+                ) [DesignatorStatementStatement]
+              ) [StatementListStatement]
+              PrintExpressionStatement(
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorOnly(
+                         bodovi
+                        ) [DesignatorOnly]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+              ) [PrintExpressionStatement]
+            ) [StatementListStatement]
+            DesignatorStatementStatement(
+              LeftDesignatorAssignExpression(
+                LeftSideAssignVar(
+                  DesignatorOnly(
+                   bodovi
+                  ) [DesignatorOnly]
+                ) [LeftSideAssignVar]
+                AssignOpMul(
+                  MulOpRightMul(
+                  ) [MulOpRightMul]
+                ) [AssignOpMul]
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermFactor(
+                      FactorConst(
+                        NumberConst(
+                         2
+                        ) [NumberConst]
+                      ) [FactorConst]
+                    ) [TermFactor]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+              ) [LeftDesignatorAssignExpression]
+            ) [DesignatorStatementStatement]
+          ) [StatementListStatement]
+          PrintExpressionStatement(
+            ExpressionTermDef(
+              OnlyTerm(
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorOnly(
+                     bodovi
+                    ) [DesignatorOnly]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [OnlyTerm]
+            ) [ExpressionTermDef]
+          ) [PrintExpressionStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  05:01:57,245 - ===================================
+INFO  05:01:57,249 - Obradjuje se funkcija main na liniji 5
+INFO  05:01:57,249 - Deklarisana promenljiva bodovi na liniji 6
+INFO  05:01:57,249 - Koriscenje  bodovi na liniji 8
+INFO  05:01:57,250 - Koriscenje  bodovi na liniji 9
+INFO  05:01:57,250 - Pronadjen poziv funkcije print na liniji 9
+INFO  05:01:57,250 - Koriscenje  bodovi na liniji 10
+INFO  05:01:57,250 - Koriscenje  bodovi na liniji 11
+INFO  05:01:57,250 - Pronadjen poziv funkcije print na liniji 11
+INFO  05:01:57,251 - Parsiranje uspesno zavrseno!

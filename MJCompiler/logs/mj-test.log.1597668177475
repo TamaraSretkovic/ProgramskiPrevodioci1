@@ -1,0 +1,1370 @@
+INFO  14:40:16,111 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  14:40:16,144 - #2 program
+INFO  14:40:16,144 - #46 test301
+INFO  14:40:16,144 - #7 const
+INFO  14:40:16,145 - #46 int
+INFO  14:40:16,145 - #46 nula
+INFO  14:40:16,146 - #23 =
+INFO  14:40:16,146 - #47 0
+INFO  14:40:16,146 - #5 ;
+INFO  14:40:16,147 - #7 const
+INFO  14:40:16,148 - #46 int
+INFO  14:40:16,148 - #46 jedan
+INFO  14:40:16,148 - #23 =
+INFO  14:40:16,148 - #47 1
+INFO  14:40:16,148 - #5 ;
+INFO  14:40:16,148 - #7 const
+INFO  14:40:16,148 - #46 int
+INFO  14:40:16,149 - #46 pet
+INFO  14:40:16,149 - #23 =
+INFO  14:40:16,149 - #47 5
+INFO  14:40:16,149 - #5 ;
+INFO  14:40:16,149 - #46 int
+INFO  14:40:16,149 - #46 niz
+INFO  14:40:16,149 - #8 [
+INFO  14:40:16,149 - #9 ]
+INFO  14:40:16,149 - #5 ;
+INFO  14:40:16,149 - #46 char
+INFO  14:40:16,150 - #46 nizch
+INFO  14:40:16,150 - #8 [
+INFO  14:40:16,150 - #9 ]
+INFO  14:40:16,150 - #5 ;
+INFO  14:40:16,150 - #3 {
+INFO  14:40:16,150 - #10 void
+INFO  14:40:16,151 - #46 main
+INFO  14:40:16,151 - #12 (
+INFO  14:40:16,151 - #11 )
+INFO  14:40:16,152 - #46 int
+INFO  14:40:16,152 - #46 bodovi
+INFO  14:40:16,152 - #5 ;
+INFO  14:40:16,152 - #3 {
+INFO  14:40:16,152 - #46 bodovi
+INFO  14:40:16,153 - #23 =
+INFO  14:40:16,153 - #47 0
+INFO  14:40:16,154 - #5 ;
+INFO  14:40:16,155 - #46 bodovi
+INFO  14:40:16,155 - #21 ++
+INFO  14:40:16,155 - #5 ;
+INFO  14:40:16,155 - #46 bodovi
+INFO  14:40:16,156 - #23 =
+INFO  14:40:16,156 - #46 bodovi
+INFO  14:40:16,156 - #32 +
+INFO  14:40:16,156 - #46 jedan
+INFO  14:40:16,157 - #5 ;
+INFO  14:40:16,157 - #46 bodovi
+INFO  14:40:16,157 - #23 =
+INFO  14:40:16,157 - #46 bodovi
+INFO  14:40:16,158 - #34 *
+INFO  14:40:16,158 - #46 pet
+INFO  14:40:16,159 - #5 ;
+INFO  14:40:16,159 - #46 bodovi
+INFO  14:40:16,159 - #22 --
+INFO  14:40:16,159 - #5 ;
+INFO  14:40:16,169 - #16 print
+INFO  14:40:16,169 - #12 (
+INFO  14:40:16,169 - #46 bodovi
+INFO  14:40:16,169 - #11 )
+INFO  14:40:16,169 - #5 ;
+INFO  14:40:16,169 - #46 niz
+INFO  14:40:16,170 - #23 =
+INFO  14:40:16,170 - #36 new
+INFO  14:40:16,170 - #46 int
+INFO  14:40:16,170 - #8 [
+INFO  14:40:16,170 - #47 3
+INFO  14:40:16,170 - #9 ]
+INFO  14:40:16,170 - #5 ;
+INFO  14:40:16,171 - #46 niz
+INFO  14:40:16,171 - #8 [
+INFO  14:40:16,171 - #46 nula
+INFO  14:40:16,172 - #9 ]
+INFO  14:40:16,172 - #23 =
+INFO  14:40:16,172 - #46 jedan
+INFO  14:40:16,172 - #5 ;
+INFO  14:40:16,172 - #46 niz
+INFO  14:40:16,172 - #8 [
+INFO  14:40:16,172 - #47 1
+INFO  14:40:16,172 - #9 ]
+INFO  14:40:16,172 - #23 =
+INFO  14:40:16,173 - #47 2
+INFO  14:40:16,173 - #5 ;
+INFO  14:40:16,173 - #46 niz
+INFO  14:40:16,173 - #8 [
+INFO  14:40:16,173 - #46 niz
+INFO  14:40:16,173 - #8 [
+INFO  14:40:16,173 - #46 jedan
+INFO  14:40:16,173 - #9 ]
+INFO  14:40:16,173 - #9 ]
+INFO  14:40:16,173 - #23 =
+INFO  14:40:16,173 - #46 niz
+INFO  14:40:16,173 - #8 [
+INFO  14:40:16,174 - #46 niz
+INFO  14:40:16,174 - #8 [
+INFO  14:40:16,174 - #47 0
+INFO  14:40:16,174 - #9 ]
+INFO  14:40:16,174 - #9 ]
+INFO  14:40:16,174 - #34 *
+INFO  14:40:16,174 - #47 3
+INFO  14:40:16,174 - #5 ;
+INFO  14:40:16,174 - #46 bodovi
+INFO  14:40:16,174 - #23 =
+INFO  14:40:16,174 - #46 niz
+INFO  14:40:16,175 - #8 [
+INFO  14:40:16,175 - #47 2
+INFO  14:40:16,175 - #9 ]
+INFO  14:40:16,175 - #33 /
+INFO  14:40:16,175 - #46 niz
+INFO  14:40:16,175 - #8 [
+INFO  14:40:16,175 - #47 0
+INFO  14:40:16,176 - #9 ]
+INFO  14:40:16,176 - #5 ;
+INFO  14:40:16,176 - #16 print
+INFO  14:40:16,176 - #12 (
+INFO  14:40:16,176 - #46 bodovi
+INFO  14:40:16,176 - #11 )
+INFO  14:40:16,176 - #5 ;
+INFO  14:40:16,176 - #16 print
+INFO  14:40:16,176 - #12 (
+INFO  14:40:16,176 - #46 niz
+INFO  14:40:16,176 - #8 [
+INFO  14:40:16,177 - #47 2
+INFO  14:40:16,177 - #9 ]
+INFO  14:40:16,177 - #11 )
+INFO  14:40:16,177 - #5 ;
+INFO  14:40:16,177 - #15 read
+INFO  14:40:16,177 - #12 (
+INFO  14:40:16,177 - #46 bodovi
+INFO  14:40:16,177 - #11 )
+INFO  14:40:16,177 - #5 ;
+INFO  14:40:16,177 - #46 niz
+INFO  14:40:16,177 - #8 [
+INFO  14:40:16,177 - #47 2
+INFO  14:40:16,178 - #9 ]
+INFO  14:40:16,178 - #42 +=
+INFO  14:40:16,178 - #46 bodovi
+INFO  14:40:16,179 - #40 *=
+INFO  14:40:16,179 - #47 2
+INFO  14:40:16,180 - #5 ;
+INFO  14:40:16,180 - #46 niz
+INFO  14:40:16,180 - #8 [
+INFO  14:40:16,180 - #47 2
+INFO  14:40:16,180 - #9 ]
+INFO  14:40:16,180 - #21 ++
+INFO  14:40:16,180 - #5 ;
+INFO  14:40:16,180 - #16 print
+INFO  14:40:16,180 - #12 (
+INFO  14:40:16,180 - #46 niz
+INFO  14:40:16,181 - #8 [
+INFO  14:40:16,181 - #47 2
+INFO  14:40:16,181 - #9 ]
+INFO  14:40:16,181 - #11 )
+INFO  14:40:16,181 - #5 ;
+INFO  14:40:16,181 - #46 nizch
+INFO  14:40:16,181 - #23 =
+INFO  14:40:16,181 - #36 new
+INFO  14:40:16,181 - #46 char
+INFO  14:40:16,181 - #8 [
+INFO  14:40:16,181 - #47 3
+INFO  14:40:16,181 - #9 ]
+INFO  14:40:16,181 - #5 ;
+INFO  14:40:16,181 - #46 nizch
+INFO  14:40:16,181 - #8 [
+INFO  14:40:16,181 - #47 0
+INFO  14:40:16,181 - #9 ]
+INFO  14:40:16,182 - #23 =
+INFO  14:40:16,182 - #48 a
+INFO  14:40:16,182 - #5 ;
+INFO  14:40:16,182 - #46 nizch
+INFO  14:40:16,182 - #8 [
+INFO  14:40:16,182 - #46 jedan
+INFO  14:40:16,182 - #9 ]
+INFO  14:40:16,182 - #23 =
+INFO  14:40:16,182 - #48 b
+INFO  14:40:16,182 - #5 ;
+INFO  14:40:16,182 - #46 nizch
+INFO  14:40:16,182 - #8 [
+INFO  14:40:16,182 - #46 pet
+INFO  14:40:16,182 - #31 -
+INFO  14:40:16,182 - #47 3
+INFO  14:40:16,183 - #9 ]
+INFO  14:40:16,183 - #23 =
+INFO  14:40:16,183 - #48 c
+INFO  14:40:16,183 - #5 ;
+INFO  14:40:16,183 - #16 print
+INFO  14:40:16,183 - #12 (
+INFO  14:40:16,183 - #46 nizch
+INFO  14:40:16,183 - #8 [
+INFO  14:40:16,183 - #47 1
+INFO  14:40:16,183 - #9 ]
+INFO  14:40:16,183 - #11 )
+INFO  14:40:16,183 - #5 ;
+INFO  14:40:16,183 - #16 print
+INFO  14:40:16,183 - #12 (
+INFO  14:40:16,183 - #46 nizch
+INFO  14:40:16,184 - #8 [
+INFO  14:40:16,184 - #46 jedan
+INFO  14:40:16,184 - #34 *
+INFO  14:40:16,184 - #47 2
+INFO  14:40:16,184 - #9 ]
+INFO  14:40:16,184 - #11 )
+INFO  14:40:16,184 - #5 ;
+INFO  14:40:16,184 - #46 bodovi
+INFO  14:40:16,184 - #23 =
+INFO  14:40:16,184 - #46 bodovi
+INFO  14:40:16,184 - #32 +
+INFO  14:40:16,184 - #12 (
+INFO  14:40:16,184 - #46 pet
+INFO  14:40:16,184 - #34 *
+INFO  14:40:16,184 - #46 jedan
+INFO  14:40:16,184 - #31 -
+INFO  14:40:16,184 - #47 1
+INFO  14:40:16,184 - #11 )
+INFO  14:40:16,184 - #34 *
+INFO  14:40:16,184 - #46 bodovi
+INFO  14:40:16,184 - #31 -
+INFO  14:40:16,185 - #12 (
+INFO  14:40:16,185 - #47 3
+INFO  14:40:16,185 - #35 %
+INFO  14:40:16,185 - #47 2
+INFO  14:40:16,185 - #32 +
+INFO  14:40:16,185 - #47 3
+INFO  14:40:16,185 - #34 *
+INFO  14:40:16,185 - #47 2
+INFO  14:40:16,185 - #31 -
+INFO  14:40:16,185 - #47 3
+INFO  14:40:16,185 - #11 )
+INFO  14:40:16,185 - #5 ;
+INFO  14:40:16,185 - #16 print
+INFO  14:40:16,185 - #12 (
+INFO  14:40:16,186 - #46 bodovi
+INFO  14:40:16,186 - #11 )
+INFO  14:40:16,186 - #5 ;
+INFO  14:40:16,186 - #4 }
+INFO  14:40:16,186 - #4 }
+INFO  14:40:16,191 - ==================SINTAKSNO STABLO==================
+INFO  14:40:16,198 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        DeclarationListDeclaration(
+          DeclarationListDeclaration(
+            NoDeclarationList(
+            ) [NoDeclarationList]
+            DeclarationListConst(
+              ConstDeclarationTypeListSemi(
+                VarType(
+                  Type(
+                   int
+                  ) [Type]
+                ) [VarType]
+                ConstDecl(
+                  ConstDeclarationActual(
+                   nula
+                    AssignOp(
+                    ) [AssignOp]
+                    NumberConst(
+                     0
+                    ) [NumberConst]
+                  ) [ConstDeclarationActual]
+                ) [ConstDecl]
+              ) [ConstDeclarationTypeListSemi]
+            ) [DeclarationListConst]
+          ) [DeclarationListDeclaration]
+          DeclarationListConst(
+            ConstDeclarationTypeListSemi(
+              VarType(
+                Type(
+                 int
+                ) [Type]
+              ) [VarType]
+              ConstDecl(
+                ConstDeclarationActual(
+                 jedan
+                  AssignOp(
+                  ) [AssignOp]
+                  NumberConst(
+                   1
+                  ) [NumberConst]
+                ) [ConstDeclarationActual]
+              ) [ConstDecl]
+            ) [ConstDeclarationTypeListSemi]
+          ) [DeclarationListConst]
+        ) [DeclarationListDeclaration]
+        DeclarationListConst(
+          ConstDeclarationTypeListSemi(
+            VarType(
+              Type(
+               int
+              ) [Type]
+            ) [VarType]
+            ConstDecl(
+              ConstDeclarationActual(
+               pet
+                AssignOp(
+                ) [AssignOp]
+                NumberConst(
+                 5
+                ) [NumberConst]
+              ) [ConstDeclarationActual]
+            ) [ConstDecl]
+          ) [ConstDeclarationTypeListSemi]
+        ) [DeclarationListConst]
+      ) [DeclarationListDeclaration]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            IdentArray(
+             niz
+            ) [IdentArray]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           char
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          IdentArray(
+           nizch
+          ) [IdentArray]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        DeclarationListDeclaration(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          DeclarationListVar(
+            VarDeclarationV(
+              VarType(
+                Type(
+                 int
+                ) [Type]
+              ) [VarType]
+              VarDecl(
+                Ident(
+                 bodovi
+                ) [Ident]
+              ) [VarDecl]
+            ) [VarDeclarationV]
+          ) [DeclarationListVar]
+        ) [DeclarationListDeclaration]
+        StatementListStatement(
+          StatementListStatement(
+            StatementListStatement(
+              StatementListStatement(
+                StatementListStatement(
+                  StatementListStatement(
+                    StatementListStatement(
+                      StatementListStatement(
+                        StatementListStatement(
+                          StatementListStatement(
+                            StatementListStatement(
+                              StatementListStatement(
+                                StatementListStatement(
+                                  StatementListStatement(
+                                    StatementListStatement(
+                                      StatementListStatement(
+                                        StatementListStatement(
+                                          StatementListStatement(
+                                            StatementListStatement(
+                                              StatementListStatement(
+                                                StatementListStatement(
+                                                  StatementListStatement(
+                                                    StatementListStatement(
+                                                      StatementListStatement(
+                                                        StatementListStatement(
+                                                          NoStatementList(
+                                                          ) [NoStatementList]
+                                                          DesignatorStatementStatement(
+                                                            LeftDesignatorAssignExpression(
+                                                              LeftSideAssignVar(
+                                                                DesignatorOnly(
+                                                                 bodovi
+                                                                ) [DesignatorOnly]
+                                                              ) [LeftSideAssignVar]
+                                                              AssignOpEqual(
+                                                                AssignOp(
+                                                                ) [AssignOp]
+                                                              ) [AssignOpEqual]
+                                                              ExpressionTermDef(
+                                                                OnlyTerm(
+                                                                  TermFactor(
+                                                                    FactorConst(
+                                                                      NumberConst(
+                                                                       0
+                                                                      ) [NumberConst]
+                                                                    ) [FactorConst]
+                                                                  ) [TermFactor]
+                                                                ) [OnlyTerm]
+                                                              ) [ExpressionTermDef]
+                                                            ) [LeftDesignatorAssignExpression]
+                                                          ) [DesignatorStatementStatement]
+                                                        ) [StatementListStatement]
+                                                        DesignatorStatementStatement(
+                                                          DesignatorStatementIncrement(
+                                                            DesignatorOnly(
+                                                             bodovi
+                                                            ) [DesignatorOnly]
+                                                          ) [DesignatorStatementIncrement]
+                                                        ) [DesignatorStatementStatement]
+                                                      ) [StatementListStatement]
+                                                      DesignatorStatementStatement(
+                                                        LeftDesignatorAssignExpression(
+                                                          LeftSideAssignVar(
+                                                            DesignatorOnly(
+                                                             bodovi
+                                                            ) [DesignatorOnly]
+                                                          ) [LeftSideAssignVar]
+                                                          AssignOpEqual(
+                                                            AssignOp(
+                                                            ) [AssignOp]
+                                                          ) [AssignOpEqual]
+                                                          ExpressionAddopLeftList(
+                                                            ExpressionTermDef(
+                                                              OnlyTerm(
+                                                                TermFactor(
+                                                                  FactorDesignator(
+                                                                    DesignatorOnly(
+                                                                     bodovi
+                                                                    ) [DesignatorOnly]
+                                                                  ) [FactorDesignator]
+                                                                ) [TermFactor]
+                                                              ) [OnlyTerm]
+                                                            ) [ExpressionTermDef]
+                                                            AddOpLeftPlus(
+                                                            ) [AddOpLeftPlus]
+                                                            TermFactor(
+                                                              FactorDesignator(
+                                                                DesignatorOnly(
+                                                                 jedan
+                                                                ) [DesignatorOnly]
+                                                              ) [FactorDesignator]
+                                                            ) [TermFactor]
+                                                          ) [ExpressionAddopLeftList]
+                                                        ) [LeftDesignatorAssignExpression]
+                                                      ) [DesignatorStatementStatement]
+                                                    ) [StatementListStatement]
+                                                    DesignatorStatementStatement(
+                                                      LeftDesignatorAssignExpression(
+                                                        LeftSideAssignVar(
+                                                          DesignatorOnly(
+                                                           bodovi
+                                                          ) [DesignatorOnly]
+                                                        ) [LeftSideAssignVar]
+                                                        AssignOpEqual(
+                                                          AssignOp(
+                                                          ) [AssignOp]
+                                                        ) [AssignOpEqual]
+                                                        ExpressionTermDef(
+                                                          OnlyTerm(
+                                                            TermMullOpLeftList(
+                                                              TermFactor(
+                                                                FactorDesignator(
+                                                                  DesignatorOnly(
+                                                                   bodovi
+                                                                  ) [DesignatorOnly]
+                                                                ) [FactorDesignator]
+                                                              ) [TermFactor]
+                                                              MulOpLeftMul(
+                                                              ) [MulOpLeftMul]
+                                                              FactorDesignator(
+                                                                DesignatorOnly(
+                                                                 pet
+                                                                ) [DesignatorOnly]
+                                                              ) [FactorDesignator]
+                                                            ) [TermMullOpLeftList]
+                                                          ) [OnlyTerm]
+                                                        ) [ExpressionTermDef]
+                                                      ) [LeftDesignatorAssignExpression]
+                                                    ) [DesignatorStatementStatement]
+                                                  ) [StatementListStatement]
+                                                  DesignatorStatementStatement(
+                                                    DesignatorStatementDecrement(
+                                                      DesignatorOnly(
+                                                       bodovi
+                                                      ) [DesignatorOnly]
+                                                    ) [DesignatorStatementDecrement]
+                                                  ) [DesignatorStatementStatement]
+                                                ) [StatementListStatement]
+                                                PrintExpressionStatement(
+                                                  ExpressionTermDef(
+                                                    OnlyTerm(
+                                                      TermFactor(
+                                                        FactorDesignator(
+                                                          DesignatorOnly(
+                                                           bodovi
+                                                          ) [DesignatorOnly]
+                                                        ) [FactorDesignator]
+                                                      ) [TermFactor]
+                                                    ) [OnlyTerm]
+                                                  ) [ExpressionTermDef]
+                                                ) [PrintExpressionStatement]
+                                              ) [StatementListStatement]
+                                              DesignatorStatementStatement(
+                                                LeftDesignatorAssignExpression(
+                                                  LeftSideAssignVar(
+                                                    DesignatorOnly(
+                                                     niz
+                                                    ) [DesignatorOnly]
+                                                  ) [LeftSideAssignVar]
+                                                  AssignOpEqual(
+                                                    AssignOp(
+                                                    ) [AssignOp]
+                                                  ) [AssignOpEqual]
+                                                  ExpressionTermDef(
+                                                    OnlyTerm(
+                                                      TermFactor(
+                                                        FactorNewTypeExpression(
+                                                          Type(
+                                                           int
+                                                          ) [Type]
+                                                          ExpressionTermDef(
+                                                            OnlyTerm(
+                                                              TermFactor(
+                                                                FactorConst(
+                                                                  NumberConst(
+                                                                   3
+                                                                  ) [NumberConst]
+                                                                ) [FactorConst]
+                                                              ) [TermFactor]
+                                                            ) [OnlyTerm]
+                                                          ) [ExpressionTermDef]
+                                                        ) [FactorNewTypeExpression]
+                                                      ) [TermFactor]
+                                                    ) [OnlyTerm]
+                                                  ) [ExpressionTermDef]
+                                                ) [LeftDesignatorAssignExpression]
+                                              ) [DesignatorStatementStatement]
+                                            ) [StatementListStatement]
+                                            DesignatorStatementStatement(
+                                              LeftDesignatorAssignExpression(
+                                                LeftSideAssignVar(
+                                                  DesignatorArray(
+                                                    ArrayAccess(
+                                                     niz
+                                                    ) [ArrayAccess]
+                                                    ExpressionTermDef(
+                                                      OnlyTerm(
+                                                        TermFactor(
+                                                          FactorDesignator(
+                                                            DesignatorOnly(
+                                                             nula
+                                                            ) [DesignatorOnly]
+                                                          ) [FactorDesignator]
+                                                        ) [TermFactor]
+                                                      ) [OnlyTerm]
+                                                    ) [ExpressionTermDef]
+                                                  ) [DesignatorArray]
+                                                ) [LeftSideAssignVar]
+                                                AssignOpEqual(
+                                                  AssignOp(
+                                                  ) [AssignOp]
+                                                ) [AssignOpEqual]
+                                                ExpressionTermDef(
+                                                  OnlyTerm(
+                                                    TermFactor(
+                                                      FactorDesignator(
+                                                        DesignatorOnly(
+                                                         jedan
+                                                        ) [DesignatorOnly]
+                                                      ) [FactorDesignator]
+                                                    ) [TermFactor]
+                                                  ) [OnlyTerm]
+                                                ) [ExpressionTermDef]
+                                              ) [LeftDesignatorAssignExpression]
+                                            ) [DesignatorStatementStatement]
+                                          ) [StatementListStatement]
+                                          DesignatorStatementStatement(
+                                            LeftDesignatorAssignExpression(
+                                              LeftSideAssignVar(
+                                                DesignatorArray(
+                                                  ArrayAccess(
+                                                   niz
+                                                  ) [ArrayAccess]
+                                                  ExpressionTermDef(
+                                                    OnlyTerm(
+                                                      TermFactor(
+                                                        FactorConst(
+                                                          NumberConst(
+                                                           1
+                                                          ) [NumberConst]
+                                                        ) [FactorConst]
+                                                      ) [TermFactor]
+                                                    ) [OnlyTerm]
+                                                  ) [ExpressionTermDef]
+                                                ) [DesignatorArray]
+                                              ) [LeftSideAssignVar]
+                                              AssignOpEqual(
+                                                AssignOp(
+                                                ) [AssignOp]
+                                              ) [AssignOpEqual]
+                                              ExpressionTermDef(
+                                                OnlyTerm(
+                                                  TermFactor(
+                                                    FactorConst(
+                                                      NumberConst(
+                                                       2
+                                                      ) [NumberConst]
+                                                    ) [FactorConst]
+                                                  ) [TermFactor]
+                                                ) [OnlyTerm]
+                                              ) [ExpressionTermDef]
+                                            ) [LeftDesignatorAssignExpression]
+                                          ) [DesignatorStatementStatement]
+                                        ) [StatementListStatement]
+                                        DesignatorStatementStatement(
+                                          LeftDesignatorAssignExpression(
+                                            LeftSideAssignVar(
+                                              DesignatorArray(
+                                                ArrayAccess(
+                                                 niz
+                                                ) [ArrayAccess]
+                                                ExpressionTermDef(
+                                                  OnlyTerm(
+                                                    TermFactor(
+                                                      FactorDesignator(
+                                                        DesignatorArray(
+                                                          ArrayAccess(
+                                                           niz
+                                                          ) [ArrayAccess]
+                                                          ExpressionTermDef(
+                                                            OnlyTerm(
+                                                              TermFactor(
+                                                                FactorDesignator(
+                                                                  DesignatorOnly(
+                                                                   jedan
+                                                                  ) [DesignatorOnly]
+                                                                ) [FactorDesignator]
+                                                              ) [TermFactor]
+                                                            ) [OnlyTerm]
+                                                          ) [ExpressionTermDef]
+                                                        ) [DesignatorArray]
+                                                      ) [FactorDesignator]
+                                                    ) [TermFactor]
+                                                  ) [OnlyTerm]
+                                                ) [ExpressionTermDef]
+                                              ) [DesignatorArray]
+                                            ) [LeftSideAssignVar]
+                                            AssignOpEqual(
+                                              AssignOp(
+                                              ) [AssignOp]
+                                            ) [AssignOpEqual]
+                                            ExpressionTermDef(
+                                              OnlyTerm(
+                                                TermMullOpLeftList(
+                                                  TermFactor(
+                                                    FactorDesignator(
+                                                      DesignatorArray(
+                                                        ArrayAccess(
+                                                         niz
+                                                        ) [ArrayAccess]
+                                                        ExpressionTermDef(
+                                                          OnlyTerm(
+                                                            TermFactor(
+                                                              FactorDesignator(
+                                                                DesignatorArray(
+                                                                  ArrayAccess(
+                                                                   niz
+                                                                  ) [ArrayAccess]
+                                                                  ExpressionTermDef(
+                                                                    OnlyTerm(
+                                                                      TermFactor(
+                                                                        FactorConst(
+                                                                          NumberConst(
+                                                                           0
+                                                                          ) [NumberConst]
+                                                                        ) [FactorConst]
+                                                                      ) [TermFactor]
+                                                                    ) [OnlyTerm]
+                                                                  ) [ExpressionTermDef]
+                                                                ) [DesignatorArray]
+                                                              ) [FactorDesignator]
+                                                            ) [TermFactor]
+                                                          ) [OnlyTerm]
+                                                        ) [ExpressionTermDef]
+                                                      ) [DesignatorArray]
+                                                    ) [FactorDesignator]
+                                                  ) [TermFactor]
+                                                  MulOpLeftMul(
+                                                  ) [MulOpLeftMul]
+                                                  FactorConst(
+                                                    NumberConst(
+                                                     3
+                                                    ) [NumberConst]
+                                                  ) [FactorConst]
+                                                ) [TermMullOpLeftList]
+                                              ) [OnlyTerm]
+                                            ) [ExpressionTermDef]
+                                          ) [LeftDesignatorAssignExpression]
+                                        ) [DesignatorStatementStatement]
+                                      ) [StatementListStatement]
+                                      DesignatorStatementStatement(
+                                        LeftDesignatorAssignExpression(
+                                          LeftSideAssignVar(
+                                            DesignatorOnly(
+                                             bodovi
+                                            ) [DesignatorOnly]
+                                          ) [LeftSideAssignVar]
+                                          AssignOpEqual(
+                                            AssignOp(
+                                            ) [AssignOp]
+                                          ) [AssignOpEqual]
+                                          ExpressionTermDef(
+                                            OnlyTerm(
+                                              TermMullOpLeftList(
+                                                TermFactor(
+                                                  FactorDesignator(
+                                                    DesignatorArray(
+                                                      ArrayAccess(
+                                                       niz
+                                                      ) [ArrayAccess]
+                                                      ExpressionTermDef(
+                                                        OnlyTerm(
+                                                          TermFactor(
+                                                            FactorConst(
+                                                              NumberConst(
+                                                               2
+                                                              ) [NumberConst]
+                                                            ) [FactorConst]
+                                                          ) [TermFactor]
+                                                        ) [OnlyTerm]
+                                                      ) [ExpressionTermDef]
+                                                    ) [DesignatorArray]
+                                                  ) [FactorDesignator]
+                                                ) [TermFactor]
+                                                MulOpLeftDiv(
+                                                ) [MulOpLeftDiv]
+                                                FactorDesignator(
+                                                  DesignatorArray(
+                                                    ArrayAccess(
+                                                     niz
+                                                    ) [ArrayAccess]
+                                                    ExpressionTermDef(
+                                                      OnlyTerm(
+                                                        TermFactor(
+                                                          FactorConst(
+                                                            NumberConst(
+                                                             0
+                                                            ) [NumberConst]
+                                                          ) [FactorConst]
+                                                        ) [TermFactor]
+                                                      ) [OnlyTerm]
+                                                    ) [ExpressionTermDef]
+                                                  ) [DesignatorArray]
+                                                ) [FactorDesignator]
+                                              ) [TermMullOpLeftList]
+                                            ) [OnlyTerm]
+                                          ) [ExpressionTermDef]
+                                        ) [LeftDesignatorAssignExpression]
+                                      ) [DesignatorStatementStatement]
+                                    ) [StatementListStatement]
+                                    PrintExpressionStatement(
+                                      ExpressionTermDef(
+                                        OnlyTerm(
+                                          TermFactor(
+                                            FactorDesignator(
+                                              DesignatorOnly(
+                                               bodovi
+                                              ) [DesignatorOnly]
+                                            ) [FactorDesignator]
+                                          ) [TermFactor]
+                                        ) [OnlyTerm]
+                                      ) [ExpressionTermDef]
+                                    ) [PrintExpressionStatement]
+                                  ) [StatementListStatement]
+                                  PrintExpressionStatement(
+                                    ExpressionTermDef(
+                                      OnlyTerm(
+                                        TermFactor(
+                                          FactorDesignator(
+                                            DesignatorArray(
+                                              ArrayAccess(
+                                               niz
+                                              ) [ArrayAccess]
+                                              ExpressionTermDef(
+                                                OnlyTerm(
+                                                  TermFactor(
+                                                    FactorConst(
+                                                      NumberConst(
+                                                       2
+                                                      ) [NumberConst]
+                                                    ) [FactorConst]
+                                                  ) [TermFactor]
+                                                ) [OnlyTerm]
+                                              ) [ExpressionTermDef]
+                                            ) [DesignatorArray]
+                                          ) [FactorDesignator]
+                                        ) [TermFactor]
+                                      ) [OnlyTerm]
+                                    ) [ExpressionTermDef]
+                                  ) [PrintExpressionStatement]
+                                ) [StatementListStatement]
+                                ReadStatement(
+                                  DesignatorOnly(
+                                   bodovi
+                                  ) [DesignatorOnly]
+                                ) [ReadStatement]
+                              ) [StatementListStatement]
+                              DesignatorStatementStatement(
+                                LeftDesignatorAssignExpression(
+                                  LeftSideAssignAssignOps(
+                                    LeftSideAssignVar(
+                                      DesignatorArray(
+                                        ArrayAccess(
+                                         niz
+                                        ) [ArrayAccess]
+                                        ExpressionTermDef(
+                                          OnlyTerm(
+                                            TermFactor(
+                                              FactorConst(
+                                                NumberConst(
+                                                 2
+                                                ) [NumberConst]
+                                              ) [FactorConst]
+                                            ) [TermFactor]
+                                          ) [OnlyTerm]
+                                        ) [ExpressionTermDef]
+                                      ) [DesignatorArray]
+                                    ) [LeftSideAssignVar]
+                                    AssignOpAdd(
+                                      AddOpRightPlus(
+                                      ) [AddOpRightPlus]
+                                    ) [AssignOpAdd]
+                                    DesignatorOnly(
+                                     bodovi
+                                    ) [DesignatorOnly]
+                                  ) [LeftSideAssignAssignOps]
+                                  AssignOpMul(
+                                    MulOpRightMul(
+                                    ) [MulOpRightMul]
+                                  ) [AssignOpMul]
+                                  ExpressionTermDef(
+                                    OnlyTerm(
+                                      TermFactor(
+                                        FactorConst(
+                                          NumberConst(
+                                           2
+                                          ) [NumberConst]
+                                        ) [FactorConst]
+                                      ) [TermFactor]
+                                    ) [OnlyTerm]
+                                  ) [ExpressionTermDef]
+                                ) [LeftDesignatorAssignExpression]
+                              ) [DesignatorStatementStatement]
+                            ) [StatementListStatement]
+                            DesignatorStatementStatement(
+                              DesignatorStatementIncrement(
+                                DesignatorArray(
+                                  ArrayAccess(
+                                   niz
+                                  ) [ArrayAccess]
+                                  ExpressionTermDef(
+                                    OnlyTerm(
+                                      TermFactor(
+                                        FactorConst(
+                                          NumberConst(
+                                           2
+                                          ) [NumberConst]
+                                        ) [FactorConst]
+                                      ) [TermFactor]
+                                    ) [OnlyTerm]
+                                  ) [ExpressionTermDef]
+                                ) [DesignatorArray]
+                              ) [DesignatorStatementIncrement]
+                            ) [DesignatorStatementStatement]
+                          ) [StatementListStatement]
+                          PrintExpressionStatement(
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermFactor(
+                                  FactorDesignator(
+                                    DesignatorArray(
+                                      ArrayAccess(
+                                       niz
+                                      ) [ArrayAccess]
+                                      ExpressionTermDef(
+                                        OnlyTerm(
+                                          TermFactor(
+                                            FactorConst(
+                                              NumberConst(
+                                               2
+                                              ) [NumberConst]
+                                            ) [FactorConst]
+                                          ) [TermFactor]
+                                        ) [OnlyTerm]
+                                      ) [ExpressionTermDef]
+                                    ) [DesignatorArray]
+                                  ) [FactorDesignator]
+                                ) [TermFactor]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                          ) [PrintExpressionStatement]
+                        ) [StatementListStatement]
+                        DesignatorStatementStatement(
+                          LeftDesignatorAssignExpression(
+                            LeftSideAssignVar(
+                              DesignatorOnly(
+                               nizch
+                              ) [DesignatorOnly]
+                            ) [LeftSideAssignVar]
+                            AssignOpEqual(
+                              AssignOp(
+                              ) [AssignOp]
+                            ) [AssignOpEqual]
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermFactor(
+                                  FactorNewTypeExpression(
+                                    Type(
+                                     char
+                                    ) [Type]
+                                    ExpressionTermDef(
+                                      OnlyTerm(
+                                        TermFactor(
+                                          FactorConst(
+                                            NumberConst(
+                                             3
+                                            ) [NumberConst]
+                                          ) [FactorConst]
+                                        ) [TermFactor]
+                                      ) [OnlyTerm]
+                                    ) [ExpressionTermDef]
+                                  ) [FactorNewTypeExpression]
+                                ) [TermFactor]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                          ) [LeftDesignatorAssignExpression]
+                        ) [DesignatorStatementStatement]
+                      ) [StatementListStatement]
+                      DesignatorStatementStatement(
+                        LeftDesignatorAssignExpression(
+                          LeftSideAssignVar(
+                            DesignatorArray(
+                              ArrayAccess(
+                               nizch
+                              ) [ArrayAccess]
+                              ExpressionTermDef(
+                                OnlyTerm(
+                                  TermFactor(
+                                    FactorConst(
+                                      NumberConst(
+                                       0
+                                      ) [NumberConst]
+                                    ) [FactorConst]
+                                  ) [TermFactor]
+                                ) [OnlyTerm]
+                              ) [ExpressionTermDef]
+                            ) [DesignatorArray]
+                          ) [LeftSideAssignVar]
+                          AssignOpEqual(
+                            AssignOp(
+                            ) [AssignOp]
+                          ) [AssignOpEqual]
+                          ExpressionTermDef(
+                            OnlyTerm(
+                              TermFactor(
+                                FactorConst(
+                                  CharConst(
+                                   a
+                                  ) [CharConst]
+                                ) [FactorConst]
+                              ) [TermFactor]
+                            ) [OnlyTerm]
+                          ) [ExpressionTermDef]
+                        ) [LeftDesignatorAssignExpression]
+                      ) [DesignatorStatementStatement]
+                    ) [StatementListStatement]
+                    DesignatorStatementStatement(
+                      LeftDesignatorAssignExpression(
+                        LeftSideAssignVar(
+                          DesignatorArray(
+                            ArrayAccess(
+                             nizch
+                            ) [ArrayAccess]
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermFactor(
+                                  FactorDesignator(
+                                    DesignatorOnly(
+                                     jedan
+                                    ) [DesignatorOnly]
+                                  ) [FactorDesignator]
+                                ) [TermFactor]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                          ) [DesignatorArray]
+                        ) [LeftSideAssignVar]
+                        AssignOpEqual(
+                          AssignOp(
+                          ) [AssignOp]
+                        ) [AssignOpEqual]
+                        ExpressionTermDef(
+                          OnlyTerm(
+                            TermFactor(
+                              FactorConst(
+                                CharConst(
+                                 b
+                                ) [CharConst]
+                              ) [FactorConst]
+                            ) [TermFactor]
+                          ) [OnlyTerm]
+                        ) [ExpressionTermDef]
+                      ) [LeftDesignatorAssignExpression]
+                    ) [DesignatorStatementStatement]
+                  ) [StatementListStatement]
+                  DesignatorStatementStatement(
+                    LeftDesignatorAssignExpression(
+                      LeftSideAssignVar(
+                        DesignatorArray(
+                          ArrayAccess(
+                           nizch
+                          ) [ArrayAccess]
+                          ExpressionAddopLeftList(
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermFactor(
+                                  FactorDesignator(
+                                    DesignatorOnly(
+                                     pet
+                                    ) [DesignatorOnly]
+                                  ) [FactorDesignator]
+                                ) [TermFactor]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                            AddOpLeftMinus(
+                            ) [AddOpLeftMinus]
+                            TermFactor(
+                              FactorConst(
+                                NumberConst(
+                                 3
+                                ) [NumberConst]
+                              ) [FactorConst]
+                            ) [TermFactor]
+                          ) [ExpressionAddopLeftList]
+                        ) [DesignatorArray]
+                      ) [LeftSideAssignVar]
+                      AssignOpEqual(
+                        AssignOp(
+                        ) [AssignOp]
+                      ) [AssignOpEqual]
+                      ExpressionTermDef(
+                        OnlyTerm(
+                          TermFactor(
+                            FactorConst(
+                              CharConst(
+                               c
+                              ) [CharConst]
+                            ) [FactorConst]
+                          ) [TermFactor]
+                        ) [OnlyTerm]
+                      ) [ExpressionTermDef]
+                    ) [LeftDesignatorAssignExpression]
+                  ) [DesignatorStatementStatement]
+                ) [StatementListStatement]
+                PrintExpressionStatement(
+                  ExpressionTermDef(
+                    OnlyTerm(
+                      TermFactor(
+                        FactorDesignator(
+                          DesignatorArray(
+                            ArrayAccess(
+                             nizch
+                            ) [ArrayAccess]
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermFactor(
+                                  FactorConst(
+                                    NumberConst(
+                                     1
+                                    ) [NumberConst]
+                                  ) [FactorConst]
+                                ) [TermFactor]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                          ) [DesignatorArray]
+                        ) [FactorDesignator]
+                      ) [TermFactor]
+                    ) [OnlyTerm]
+                  ) [ExpressionTermDef]
+                ) [PrintExpressionStatement]
+              ) [StatementListStatement]
+              PrintExpressionStatement(
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorArray(
+                          ArrayAccess(
+                           nizch
+                          ) [ArrayAccess]
+                          ExpressionTermDef(
+                            OnlyTerm(
+                              TermMullOpLeftList(
+                                TermFactor(
+                                  FactorDesignator(
+                                    DesignatorOnly(
+                                     jedan
+                                    ) [DesignatorOnly]
+                                  ) [FactorDesignator]
+                                ) [TermFactor]
+                                MulOpLeftMul(
+                                ) [MulOpLeftMul]
+                                FactorConst(
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
+                                ) [FactorConst]
+                              ) [TermMullOpLeftList]
+                            ) [OnlyTerm]
+                          ) [ExpressionTermDef]
+                        ) [DesignatorArray]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+              ) [PrintExpressionStatement]
+            ) [StatementListStatement]
+            DesignatorStatementStatement(
+              LeftDesignatorAssignExpression(
+                LeftSideAssignVar(
+                  DesignatorOnly(
+                   bodovi
+                  ) [DesignatorOnly]
+                ) [LeftSideAssignVar]
+                AssignOpEqual(
+                  AssignOp(
+                  ) [AssignOp]
+                ) [AssignOpEqual]
+                ExpressionAddopLeftList(
+                  ExpressionAddopLeftList(
+                    ExpressionTermDef(
+                      OnlyTerm(
+                        TermFactor(
+                          FactorDesignator(
+                            DesignatorOnly(
+                             bodovi
+                            ) [DesignatorOnly]
+                          ) [FactorDesignator]
+                        ) [TermFactor]
+                      ) [OnlyTerm]
+                    ) [ExpressionTermDef]
+                    AddOpLeftPlus(
+                    ) [AddOpLeftPlus]
+                    TermMullOpLeftList(
+                      TermFactor(
+                        FactorParenExoression(
+                          ExpressionAddopLeftList(
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermMullOpLeftList(
+                                  TermFactor(
+                                    FactorDesignator(
+                                      DesignatorOnly(
+                                       pet
+                                      ) [DesignatorOnly]
+                                    ) [FactorDesignator]
+                                  ) [TermFactor]
+                                  MulOpLeftMul(
+                                  ) [MulOpLeftMul]
+                                  FactorDesignator(
+                                    DesignatorOnly(
+                                     jedan
+                                    ) [DesignatorOnly]
+                                  ) [FactorDesignator]
+                                ) [TermMullOpLeftList]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                            AddOpLeftMinus(
+                            ) [AddOpLeftMinus]
+                            TermFactor(
+                              FactorConst(
+                                NumberConst(
+                                 1
+                                ) [NumberConst]
+                              ) [FactorConst]
+                            ) [TermFactor]
+                          ) [ExpressionAddopLeftList]
+                        ) [FactorParenExoression]
+                      ) [TermFactor]
+                      MulOpLeftMul(
+                      ) [MulOpLeftMul]
+                      FactorDesignator(
+                        DesignatorOnly(
+                         bodovi
+                        ) [DesignatorOnly]
+                      ) [FactorDesignator]
+                    ) [TermMullOpLeftList]
+                  ) [ExpressionAddopLeftList]
+                  AddOpLeftMinus(
+                  ) [AddOpLeftMinus]
+                  TermFactor(
+                    FactorParenExoression(
+                      ExpressionAddopLeftList(
+                        ExpressionAddopLeftList(
+                          ExpressionTermDef(
+                            OnlyTerm(
+                              TermMullOpLeftList(
+                                TermFactor(
+                                  FactorConst(
+                                    NumberConst(
+                                     3
+                                    ) [NumberConst]
+                                  ) [FactorConst]
+                                ) [TermFactor]
+                                MulOpLeftMod(
+                                ) [MulOpLeftMod]
+                                FactorConst(
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
+                                ) [FactorConst]
+                              ) [TermMullOpLeftList]
+                            ) [OnlyTerm]
+                          ) [ExpressionTermDef]
+                          AddOpLeftPlus(
+                          ) [AddOpLeftPlus]
+                          TermMullOpLeftList(
+                            TermFactor(
+                              FactorConst(
+                                NumberConst(
+                                 3
+                                ) [NumberConst]
+                              ) [FactorConst]
+                            ) [TermFactor]
+                            MulOpLeftMul(
+                            ) [MulOpLeftMul]
+                            FactorConst(
+                              NumberConst(
+                               2
+                              ) [NumberConst]
+                            ) [FactorConst]
+                          ) [TermMullOpLeftList]
+                        ) [ExpressionAddopLeftList]
+                        AddOpLeftMinus(
+                        ) [AddOpLeftMinus]
+                        TermFactor(
+                          FactorConst(
+                            NumberConst(
+                             3
+                            ) [NumberConst]
+                          ) [FactorConst]
+                        ) [TermFactor]
+                      ) [ExpressionAddopLeftList]
+                    ) [FactorParenExoression]
+                  ) [TermFactor]
+                ) [ExpressionAddopLeftList]
+              ) [LeftDesignatorAssignExpression]
+            ) [DesignatorStatementStatement]
+          ) [StatementListStatement]
+          PrintExpressionStatement(
+            ExpressionTermDef(
+              OnlyTerm(
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorOnly(
+                     bodovi
+                    ) [DesignatorOnly]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [OnlyTerm]
+            ) [ExpressionTermDef]
+          ) [PrintExpressionStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  14:40:16,200 - ==================SEMANTICKA OBRADA==================
+INFO  14:40:16,204 - Deklarisana konstanta nula na liniji 5
+INFO  14:40:16,204 - Deklarisana konstanta jedan na liniji 6
+INFO  14:40:16,204 - Deklarisana konstanta pet na liniji 7
+INFO  14:40:16,204 - Deklarisan niz niz na liniji 9
+INFO  14:40:16,204 - Deklarisan niz nizch na liniji 10
+INFO  14:40:16,205 - Obradjuje se funkcija main na liniji 13
+INFO  14:40:16,205 - Deklarisana promenljiva bodovi na liniji 14
+INFO  14:40:16,205 - Koriscenje  bodovi na liniji 16
+INFO  14:40:16,205 - Koriscenje  bodovi na liniji 17
+INFO  14:40:16,205 - Pronadjeno inkrementiranje promenljive bodovi na liniji 17
+INFO  14:40:16,205 - Koriscenje  bodovi na liniji 18
+INFO  14:40:16,205 - Koriscenje  bodovi na liniji 18
+INFO  14:40:16,206 - Koriscenje  jedan na liniji 18
+INFO  14:40:16,206 - Koriscenje  bodovi na liniji 19
+INFO  14:40:16,206 - Koriscenje  bodovi na liniji 19
+INFO  14:40:16,206 - Koriscenje  pet na liniji 19
+INFO  14:40:16,206 - Koriscenje  bodovi na liniji 20
+INFO  14:40:16,206 - Pronadjeno dekrementiranje promenljive bodovi na liniji 20
+INFO  14:40:16,206 - Koriscenje  bodovi na liniji 21
+INFO  14:40:16,206 - Pronadjen poziv funkcije print na liniji 21
+INFO  14:40:16,206 - Koriscenje  niz na liniji 24
+INFO  14:40:16,206 - Koriscenje  nula na liniji 25
+INFO  14:40:16,206 - Koriscenje  niza niz na liniji 25
+INFO  14:40:16,206 - Koriscenje  jedan na liniji 25
+INFO  14:40:16,206 - Koriscenje  niza niz na liniji 26
+INFO  14:40:16,207 - Koriscenje  jedan na liniji 27
+INFO  14:40:16,207 - Koriscenje  niza niz na liniji 27
+INFO  14:40:16,207 - Koriscenje  niza niz na liniji 27
+INFO  14:40:16,207 - Koriscenje  niza niz na liniji 27
+INFO  14:40:16,207 - Koriscenje  niza niz na liniji 27
+INFO  14:40:16,207 - Koriscenje  bodovi na liniji 28
+INFO  14:40:16,207 - Koriscenje  niza niz na liniji 28
+INFO  14:40:16,207 - Koriscenje  niza niz na liniji 28
+INFO  14:40:16,207 - Koriscenje  bodovi na liniji 29
+INFO  14:40:16,207 - Pronadjen poziv funkcije print na liniji 29
+INFO  14:40:16,207 - Koriscenje  niza niz na liniji 30
+INFO  14:40:16,207 - Pronadjen poziv funkcije print na liniji 30
+INFO  14:40:16,207 - Koriscenje  bodovi na liniji 32
+INFO  14:40:16,207 - Pronadjen poziv funkcije read na liniji 32
+INFO  14:40:16,207 - Koriscenje  niza niz na liniji 33
+INFO  14:40:16,207 - Koriscenje  bodovi na liniji 33
+INFO  14:40:16,208 - Koriscenje  niza niz na liniji 34
+INFO  14:40:16,208 - Pronadjeno inkrementiranje promenljive niz na liniji 34
+INFO  14:40:16,208 - Koriscenje  niza niz na liniji 35
+INFO  14:40:16,208 - Pronadjen poziv funkcije print na liniji 35
+INFO  14:40:16,208 - Koriscenje  nizch na liniji 38
+INFO  14:40:16,208 - Koriscenje  niza nizch na liniji 39
+INFO  14:40:16,208 - Koriscenje  jedan na liniji 40
+INFO  14:40:16,208 - Koriscenje  niza nizch na liniji 40
+INFO  14:40:16,208 - Koriscenje  pet na liniji 41
+INFO  14:40:16,208 - Koriscenje  niza nizch na liniji 41
+INFO  14:40:16,208 - Koriscenje  niza nizch na liniji 42
+INFO  14:40:16,208 - Pronadjen poziv funkcije print na liniji 42
+INFO  14:40:16,208 - Koriscenje  jedan na liniji 43
+INFO  14:40:16,208 - Koriscenje  niza nizch na liniji 43
+INFO  14:40:16,208 - Pronadjen poziv funkcije print na liniji 43
+INFO  14:40:16,208 - Koriscenje  bodovi na liniji 46
+INFO  14:40:16,208 - Koriscenje  bodovi na liniji 46
+INFO  14:40:16,209 - Koriscenje  pet na liniji 46
+INFO  14:40:16,209 - Koriscenje  jedan na liniji 46
+INFO  14:40:16,209 - Koriscenje  bodovi na liniji 46
+INFO  14:40:16,209 - Koriscenje  bodovi na liniji 47
+INFO  14:40:16,209 - Pronadjen poziv funkcije print na liniji 47
+INFO  14:40:16,209 - ==================SEMANTICKA ANALIZA==============
+INFO  14:40:16,210 - 1  methods in the program
+INFO  14:40:16,210 - 0  global variables
+INFO  14:40:16,210 - 3  global constants
+INFO  14:40:16,210 - 2  global arrays
+INFO  14:40:16,210 - 0  local variables in main
+INFO  14:40:16,210 - 25  statements in main
+INFO  14:40:16,211 - Parsiranje uspesno zavrseno!

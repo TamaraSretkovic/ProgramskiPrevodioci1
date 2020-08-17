@@ -1,0 +1,303 @@
+INFO  22:39:42,992 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  22:39:43,031 - #2 program
+INFO  22:39:43,031 - #46 test302
+INFO  22:39:43,031 - #46 int
+INFO  22:39:43,033 - #46 niz
+INFO  22:39:43,034 - #8 [
+INFO  22:39:43,034 - #9 ]
+INFO  22:39:43,034 - #5 ;
+INFO  22:39:43,034 - #46 int
+INFO  22:39:43,035 - #46 niz2
+INFO  22:39:43,035 - #8 [
+INFO  22:39:43,035 - #9 ]
+INFO  22:39:43,035 - #5 ;
+INFO  22:39:43,035 - #46 int
+INFO  22:39:43,035 - #46 i
+INFO  22:39:43,035 - #5 ;
+INFO  22:39:43,036 - #3 {
+INFO  22:39:43,036 - #10 void
+INFO  22:39:43,036 - #46 main
+INFO  22:39:43,036 - #12 (
+INFO  22:39:43,037 - #11 )
+INFO  22:39:43,037 - #3 {
+INFO  22:39:43,037 - #46 niz
+INFO  22:39:43,038 - #23 =
+INFO  22:39:43,038 - #36 new
+INFO  22:39:43,038 - #46 niz
+INFO  22:39:43,038 - #8 [
+INFO  22:39:43,039 - #47 2
+INFO  22:39:43,039 - #9 ]
+INFO  22:39:43,039 - #5 ;
+INFO  22:39:43,039 - #46 niz2
+INFO  22:39:43,040 - #23 =
+INFO  22:39:43,040 - #46 niz
+INFO  22:39:43,040 - #8 [
+INFO  22:39:43,040 - #47 2
+INFO  22:39:43,040 - #9 ]
+INFO  22:39:43,040 - #5 ;
+INFO  22:39:43,041 - #46 niz2
+INFO  22:39:43,041 - #23 =
+INFO  22:39:43,041 - #46 niz
+INFO  22:39:43,041 - #5 ;
+INFO  22:39:43,041 - #46 niz
+INFO  22:39:43,041 - #8 [
+INFO  22:39:43,041 - #46 i
+INFO  22:39:43,041 - #9 ]
+INFO  22:39:43,041 - #23 =
+INFO  22:39:43,041 - #46 niz2
+INFO  22:39:43,042 - #8 [
+INFO  22:39:43,042 - #46 i
+INFO  22:39:43,042 - #32 +
+INFO  22:39:43,042 - #47 1
+INFO  22:39:43,043 - #9 ]
+INFO  22:39:43,043 - #5 ;
+INFO  22:39:43,043 - #4 }
+INFO  22:39:43,043 - #4 }
+INFO  22:39:43,054 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        DeclarationListVar(
+          VarDeclarationV(
+            VarType(
+              Type(
+               int
+              ) [Type]
+            ) [VarType]
+            VarDecl(
+              IdentArray(
+               niz
+              ) [IdentArray]
+            ) [VarDecl]
+          ) [VarDeclarationV]
+        ) [DeclarationListVar]
+      ) [DeclarationListDeclaration]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            IdentArray(
+             niz2
+            ) [IdentArray]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          Ident(
+           i
+          ) [Ident]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            StatementListStatement(
+              StatementListStatement(
+                NoStatementList(
+                ) [NoStatementList]
+                DesignatorStatementStatement(
+                  LeftDesignatorAssignExpression(
+                    LeftSideAssignVar(
+                      DesignatorOnly(
+                       niz
+                      ) [DesignatorOnly]
+                    ) [LeftSideAssignVar]
+                    AssignOpEqual(
+                      AssignOp(
+                      ) [AssignOp]
+                    ) [AssignOpEqual]
+                    ExpressionTermDef(
+                      OnlyTerm(
+                        TermFactor(
+                          FactorNewTypeExpression(
+                            Type(
+                             niz
+                            ) [Type]
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermFactor(
+                                  FactorConst(
+                                    NumberConst(
+                                     2
+                                    ) [NumberConst]
+                                  ) [FactorConst]
+                                ) [TermFactor]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                          ) [FactorNewTypeExpression]
+                        ) [TermFactor]
+                      ) [OnlyTerm]
+                    ) [ExpressionTermDef]
+                  ) [LeftDesignatorAssignExpression]
+                ) [DesignatorStatementStatement]
+              ) [StatementListStatement]
+              DesignatorStatementStatement(
+                LeftDesignatorAssignExpression(
+                  LeftSideAssignVar(
+                    DesignatorOnly(
+                     niz2
+                    ) [DesignatorOnly]
+                  ) [LeftSideAssignVar]
+                  AssignOpEqual(
+                    AssignOp(
+                    ) [AssignOp]
+                  ) [AssignOpEqual]
+                  ExpressionTermDef(
+                    OnlyTerm(
+                      TermFactor(
+                        FactorDesignator(
+                          DesignatorArray(
+                           niz
+                            ExpressionTermDef(
+                              OnlyTerm(
+                                TermFactor(
+                                  FactorConst(
+                                    NumberConst(
+                                     2
+                                    ) [NumberConst]
+                                  ) [FactorConst]
+                                ) [TermFactor]
+                              ) [OnlyTerm]
+                            ) [ExpressionTermDef]
+                          ) [DesignatorArray]
+                        ) [FactorDesignator]
+                      ) [TermFactor]
+                    ) [OnlyTerm]
+                  ) [ExpressionTermDef]
+                ) [LeftDesignatorAssignExpression]
+              ) [DesignatorStatementStatement]
+            ) [StatementListStatement]
+            DesignatorStatementStatement(
+              LeftDesignatorAssignExpression(
+                LeftSideAssignVar(
+                  DesignatorOnly(
+                   niz2
+                  ) [DesignatorOnly]
+                ) [LeftSideAssignVar]
+                AssignOpEqual(
+                  AssignOp(
+                  ) [AssignOp]
+                ) [AssignOpEqual]
+                ExpressionTermDef(
+                  OnlyTerm(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorOnly(
+                         niz
+                        ) [DesignatorOnly]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [OnlyTerm]
+                ) [ExpressionTermDef]
+              ) [LeftDesignatorAssignExpression]
+            ) [DesignatorStatementStatement]
+          ) [StatementListStatement]
+          DesignatorStatementStatement(
+            LeftDesignatorAssignExpression(
+              LeftSideAssignVar(
+                DesignatorArray(
+                 niz
+                  ExpressionTermDef(
+                    OnlyTerm(
+                      TermFactor(
+                        FactorDesignator(
+                          DesignatorOnly(
+                           i
+                          ) [DesignatorOnly]
+                        ) [FactorDesignator]
+                      ) [TermFactor]
+                    ) [OnlyTerm]
+                  ) [ExpressionTermDef]
+                ) [DesignatorArray]
+              ) [LeftSideAssignVar]
+              AssignOpEqual(
+                AssignOp(
+                ) [AssignOp]
+              ) [AssignOpEqual]
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorArray(
+                       niz2
+                        ExpressionAddopLeftList(
+                          ExpressionTermDef(
+                            OnlyTerm(
+                              TermFactor(
+                                FactorDesignator(
+                                  DesignatorOnly(
+                                   i
+                                  ) [DesignatorOnly]
+                                ) [FactorDesignator]
+                              ) [TermFactor]
+                            ) [OnlyTerm]
+                          ) [ExpressionTermDef]
+                          AddOpLeftPlus(
+                          ) [AddOpLeftPlus]
+                          TermFactor(
+                            FactorConst(
+                              NumberConst(
+                               1
+                              ) [NumberConst]
+                            ) [FactorConst]
+                          ) [TermFactor]
+                        ) [ExpressionAddopLeftList]
+                      ) [DesignatorArray]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [LeftDesignatorAssignExpression]
+          ) [DesignatorStatementStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  22:39:43,055 - ===================================
+INFO  22:39:43,059 - Deklarisan niz niz na liniji 5
+INFO  22:39:43,059 - Deklarisan niz niz2 na liniji 6
+INFO  22:39:43,059 - Deklarisana promenljiva i na liniji 7
+INFO  22:39:43,059 - Obradjuje se funkcija main na liniji 10
+INFO  22:39:43,059 - Koriscenje  niz na liniji 12
+ERROR 22:39:43,060 - Greska: Ime niz ne predstavlja tip! na liniji 12
+ERROR 22:39:43,068 - Greska na liniji 12 : nije moguca dodela2!
+INFO  22:39:43,068 - Koriscenje  niz2 na liniji 13
+INFO  22:39:43,068 - Koriscenje  niza niz na liniji 13
+INFO  22:39:43,068 - Koriscenje  niz2 na liniji 14
+INFO  22:39:43,068 - Koriscenje  niz na liniji 14
+INFO  22:39:43,068 - Koriscenje  i na liniji 15
+INFO  22:39:43,068 - Koriscenje  niza niz na liniji 15
+INFO  22:39:43,068 - Koriscenje  i na liniji 15
+INFO  22:39:43,068 - Koriscenje  niza niz2 na liniji 15
+ERROR 22:39:43,069 - Parsiranje NIJE uspesno zavrseno!

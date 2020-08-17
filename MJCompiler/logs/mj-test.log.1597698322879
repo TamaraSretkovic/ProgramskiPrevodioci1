@@ -1,0 +1,253 @@
+INFO  23:03:45,199 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  23:03:45,292 - #2 program
+INFO  23:03:45,293 - #46 test301
+INFO  23:03:45,293 - #7 const
+INFO  23:03:45,295 - #46 int
+INFO  23:03:45,295 - #46 nula
+INFO  23:03:45,297 - #23 =
+INFO  23:03:45,306 - #47 0
+INFO  23:03:45,307 - #5 ;
+INFO  23:03:45,309 - #7 const
+INFO  23:03:45,310 - #46 int
+INFO  23:03:45,310 - #46 jedan
+INFO  23:03:45,310 - #23 =
+INFO  23:03:45,310 - #47 1
+INFO  23:03:45,310 - #5 ;
+INFO  23:03:45,310 - #7 const
+INFO  23:03:45,311 - #46 int
+INFO  23:03:45,311 - #46 pet
+INFO  23:03:45,311 - #23 =
+INFO  23:03:45,311 - #47 5
+INFO  23:03:45,311 - #5 ;
+INFO  23:03:45,311 - #46 int
+INFO  23:03:45,312 - #46 niz
+INFO  23:03:45,312 - #8 [
+INFO  23:03:45,312 - #9 ]
+INFO  23:03:45,312 - #5 ;
+INFO  23:03:45,313 - #46 char
+INFO  23:03:45,313 - #46 nizch
+INFO  23:03:45,314 - #8 [
+INFO  23:03:45,314 - #9 ]
+INFO  23:03:45,314 - #5 ;
+INFO  23:03:45,314 - #46 int
+INFO  23:03:45,314 - #46 lele
+INFO  23:03:45,314 - #5 ;
+INFO  23:03:45,315 - #3 {
+INFO  23:03:45,315 - #10 void
+INFO  23:03:45,316 - #46 main
+INFO  23:03:45,317 - #12 (
+INFO  23:03:45,321 - #11 )
+INFO  23:03:45,322 - #46 int
+INFO  23:03:45,322 - #46 bodovi
+INFO  23:03:45,323 - #5 ;
+INFO  23:03:45,323 - #3 {
+INFO  23:03:45,323 - #46 bodovi
+INFO  23:03:45,326 - #23 =
+INFO  23:03:45,326 - #46 bodovi
+INFO  23:03:45,327 - #34 *
+INFO  23:03:45,327 - #47 5
+INFO  23:03:45,330 - #23 =
+ERROR 23:03:45,330 - 
+Sintaksna greska na liniji 17
+INFO  23:03:45,330 - #47 5
+INFO  23:03:45,330 - #5 ;
+INFO  23:03:45,331 - #16 print
+INFO  23:03:45,332 - #12 (
+INFO  23:03:45,332 - #46 bodovi
+ERROR 23:03:45,335 - Uspesan oporavak od greske pri dodeli na liniji 1 u statement, do ; 
+INFO  23:03:45,337 - #11 )
+INFO  23:03:45,338 - #5 ;
+INFO  23:03:45,338 - #4 }
+INFO  23:03:45,344 - #4 }
+INFO  23:03:45,354 - ==================SINTAKSNO STABLO==================
+INFO  23:03:45,356 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      DeclarationListDeclaration(
+        DeclarationListDeclaration(
+          DeclarationListDeclaration(
+            DeclarationListDeclaration(
+              NoDeclarationList(
+              ) [NoDeclarationList]
+              DeclarationListConst(
+                ConstDeclarationTypeListSemi(
+                  VarType(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [VarType]
+                  ConstDecl(
+                    ConstDeclarationActual(
+                     nula
+                      AssignOp(
+                      ) [AssignOp]
+                      NumberConst(
+                       0
+                      ) [NumberConst]
+                    ) [ConstDeclarationActual]
+                  ) [ConstDecl]
+                ) [ConstDeclarationTypeListSemi]
+              ) [DeclarationListConst]
+            ) [DeclarationListDeclaration]
+            DeclarationListConst(
+              ConstDeclarationTypeListSemi(
+                VarType(
+                  Type(
+                   int
+                  ) [Type]
+                ) [VarType]
+                ConstDecl(
+                  ConstDeclarationActual(
+                   jedan
+                    AssignOp(
+                    ) [AssignOp]
+                    NumberConst(
+                     1
+                    ) [NumberConst]
+                  ) [ConstDeclarationActual]
+                ) [ConstDecl]
+              ) [ConstDeclarationTypeListSemi]
+            ) [DeclarationListConst]
+          ) [DeclarationListDeclaration]
+          DeclarationListConst(
+            ConstDeclarationTypeListSemi(
+              VarType(
+                Type(
+                 int
+                ) [Type]
+              ) [VarType]
+              ConstDecl(
+                ConstDeclarationActual(
+                 pet
+                  AssignOp(
+                  ) [AssignOp]
+                  NumberConst(
+                   5
+                  ) [NumberConst]
+                ) [ConstDeclarationActual]
+              ) [ConstDecl]
+            ) [ConstDeclarationTypeListSemi]
+          ) [DeclarationListConst]
+        ) [DeclarationListDeclaration]
+        DeclarationListVar(
+          VarDeclarationV(
+            VarType(
+              Type(
+               int
+              ) [Type]
+            ) [VarType]
+            VarDecl(
+              IdentArray(
+               niz
+              ) [IdentArray]
+            ) [VarDecl]
+          ) [VarDeclarationV]
+        ) [DeclarationListVar]
+      ) [DeclarationListDeclaration]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             char
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            IdentArray(
+             nizch
+            ) [IdentArray]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListVar(
+      VarDeclarationV(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDecl(
+          Ident(
+           lele
+          ) [Ident]
+        ) [VarDecl]
+      ) [VarDeclarationV]
+    ) [DeclarationListVar]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        DeclarationListDeclaration(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          DeclarationListVar(
+            VarDeclarationV(
+              VarType(
+                Type(
+                 int
+                ) [Type]
+              ) [VarType]
+              VarDecl(
+                Ident(
+                 bodovi
+                ) [Ident]
+              ) [VarDecl]
+            ) [VarDeclarationV]
+          ) [DeclarationListVar]
+        ) [DeclarationListDeclaration]
+        StatementListStatement(
+          StatementListStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            DesignatorStatementStatement(
+              LeftSideAssignExpressionError(
+              ) [LeftSideAssignExpressionError]
+            ) [DesignatorStatementStatement]
+          ) [StatementListStatement]
+          PrintExpressionStatement(
+            ExpressionTermDef(
+              OnlyTerm(
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorOnly(
+                     bodovi
+                    ) [DesignatorOnly]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [OnlyTerm]
+            ) [ExpressionTermDef]
+          ) [PrintExpressionStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  23:03:45,372 - ==================SEMANTICKA OBRADA==================
+INFO  23:03:45,377 - Deklarisana konstanta nula(Con nula: int, 0, 0 ) na liniji 5
+INFO  23:03:45,377 - Deklarisana konstanta jedan(Con jedan: int, 1, 0 ) na liniji 6
+INFO  23:03:45,377 - Deklarisana konstanta pet(Con pet: int, 5, 0 ) na liniji 7
+INFO  23:03:45,378 - Deklarisan niz niz(Var niz: array, 0, 0 ) na liniji 9
+INFO  23:03:45,378 - Deklarisan niz nizch(Var nizch: array, 1, 0 ) na liniji 10
+INFO  23:03:45,378 - Deklarisana promenljiva lele(Var lele: int, 2, 0 ) na liniji 11
+INFO  23:03:45,378 - Obradjuje se funkcija main(Meth main: none, 0, 0 ) na liniji 14
+INFO  23:03:45,378 - Deklarisana promenljiva bodovi(Var bodovi: int, 0, 1 ) na liniji 15
+INFO  23:03:45,379 - Koriscenje  bodovi(Var bodovi: int, 0, 1 ) na liniji 18
+INFO  23:03:45,379 - Pronadjen poziv funkcije print na liniji 18
+INFO  23:03:45,379 - ==================SEMANTICKA ANALIZA==============
+INFO  23:03:45,380 - 1  methods in the program
+INFO  23:03:45,381 - 1  global variables
+INFO  23:03:45,381 - 3  global constants
+INFO  23:03:45,381 - 2  global arrays
+INFO  23:03:45,381 - 1  local variables in main
+INFO  23:03:45,381 - 2  statements in main
+INFO  23:03:45,383 - Parsiranje uspesno zavrseno!

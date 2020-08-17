@@ -1,0 +1,136 @@
+INFO  12:16:55,205 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  12:16:55,240 - #2 program
+INFO  12:16:55,241 - #47 Program
+INFO  12:16:55,241 - #8 class
+INFO  12:16:55,241 - #47 A
+INFO  12:16:55,241 - #3 {
+INFO  12:16:55,242 - #47 int
+INFO  12:16:55,242 - #47 x
+INFO  12:16:55,243 - #6 ,
+INFO  12:16:55,243 - #47 y
+INFO  12:16:55,243 - #5 ;
+INFO  12:16:55,243 - #4 }
+INFO  12:16:55,244 - #7 const
+INFO  12:16:55,245 - #47 int
+INFO  12:16:55,245 - #47 pi
+INFO  12:16:55,245 - #24 =
+INFO  12:16:55,245 - #48 3
+INFO  12:16:55,246 - #6 ,
+INFO  12:16:55,247 - #47 e
+INFO  12:16:55,247 - #24 =
+INFO  12:16:55,247 - #48 2
+INFO  12:16:55,247 - #5 ;
+INFO  12:16:55,247 - #3 {
+INFO  12:16:55,247 - #11 void
+INFO  12:16:55,248 - #47 main
+INFO  12:16:55,248 - #13 (
+INFO  12:16:55,248 - #12 )
+INFO  12:16:55,248 - #3 {
+INFO  12:16:55,249 - #17 print
+INFO  12:16:55,249 - #13 (
+INFO  12:16:55,249 - #48 2
+INFO  12:16:55,249 - #12 )
+INFO  12:16:55,250 - #5 ;
+INFO  12:16:55,250 - #4 }
+INFO  12:16:55,251 - #4 }
+INFO  12:16:55,253 - Program(
+ Program
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListClass(
+        ClassDeclaration(
+         A
+          ClassDeclarationListVar(
+            NoClassDeclarationList(
+            ) [NoClassDeclarationList]
+            VarDeclarationV(
+              Type(
+               int
+              ) [Type]
+              VarDeclarationListVar(
+                VarDecl(
+                  Ident(
+                   x
+                  ) [Ident]
+                ) [VarDecl]
+                Ident(
+                 y
+                ) [Ident]
+              ) [VarDeclarationListVar]
+            ) [VarDeclarationV]
+          ) [ClassDeclarationListVar]
+          NoClassMethodDecl(
+          ) [NoClassMethodDecl]
+        ) [ClassDeclaration]
+      ) [DeclarationListClass]
+    ) [DeclarationListDeclaration]
+    DeclarationListConst(
+      ConstDeclarationTypeListSemi(
+        Type(
+         int
+        ) [Type]
+        ConstDeclarationListComaActual(
+          ConstDecl(
+            ConstDeclarationActual(
+              IdentAssignOp(
+               pi
+                AssignOp(
+                ) [AssignOp]
+              ) [IdentAssignOp]
+              NumberConst(
+               3
+              ) [NumberConst]
+            ) [ConstDeclarationActual]
+          ) [ConstDecl]
+          ConstDeclarationActual(
+            IdentAssignOp(
+             e
+              AssignOp(
+              ) [AssignOp]
+            ) [IdentAssignOp]
+            NumberConst(
+             2
+            ) [NumberConst]
+          ) [ConstDeclarationActual]
+        ) [ConstDeclarationListComaActual]
+      ) [ConstDeclarationTypeListSemi]
+    ) [DeclarationListConst]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          PrintExpressionStatement(
+            ExpressionTermDef(
+              OnlyTerm(
+                TermFactor(
+                  FactorConst(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [FactorConst]
+                ) [TermFactor]
+              ) [OnlyTerm]
+            ) [ExpressionTermDef]
+          ) [PrintExpressionStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  12:16:55,254 - ===================================
+INFO  12:16:55,257 -  Print count calls = 1
+INFO  12:16:55,257 -  Deklarisanih promenljivih ima = 2
+INFO  12:16:55,257 -  Deklarisanih konstanti ima = 2
+INFO  12:16:55,257 -  Deklarisanih clasa ima = 1

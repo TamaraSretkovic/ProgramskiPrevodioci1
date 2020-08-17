@@ -1,0 +1,16 @@
+INFO  16:35:50,503 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  16:35:50,537 - #2 program
+INFO  16:35:50,538 - #47 P
+INFO  16:35:50,538 - #3 {
+INFO  16:35:50,538 - #11 void
+INFO  16:35:50,540 - #47 main
+INFO  16:35:50,540 - #3 {
+ERROR 16:35:50,540 - 
+Sintaksna greska na liniji 3
+INFO  16:35:50,540 - #47 x
+INFO  16:35:50,540 - #43 +=
+INFO  16:35:50,540 - #48 2
+INFO  16:35:50,541 - #5 ;
+INFO  16:35:50,541 - #4 }
+INFO  16:35:50,542 - #4 }
+ERROR 16:35:50,542 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

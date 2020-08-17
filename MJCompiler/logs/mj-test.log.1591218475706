@@ -1,0 +1,54 @@
+INFO  23:03:22,756 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  23:03:22,785 - #2 program
+INFO  23:03:22,786 - #47 Program
+INFO  23:03:22,786 - #3 {
+INFO  23:03:22,786 - #11 void
+INFO  23:03:22,787 - #47 main
+INFO  23:03:22,787 - #13 (
+INFO  23:03:22,787 - #12 )
+INFO  23:03:22,788 - #3 {
+INFO  23:03:22,788 - #14 if
+INFO  23:03:22,789 - #13 (
+INFO  23:03:22,789 - #47 x
+ERROR 23:03:22,789 - 
+Sintaksna greska na liniji 5
+INFO  23:03:22,789 - #30 >
+INFO  23:03:22,790 - #48 2
+INFO  23:03:22,790 - #12 )
+INFO  23:03:22,790 - #3 {
+INFO  23:03:22,790 - #4 }
+INFO  23:03:22,791 - #17 print
+INFO  23:03:22,791 - #13 (
+INFO  23:03:22,791 - #48 2
+INFO  23:03:22,791 - #12 )
+INFO  23:03:22,791 - #5 ;
+INFO  23:03:22,791 - #4 }
+INFO  23:03:22,791 - #4 }
+ERROR 23:03:22,791 - Uspesan oporavak od greske na liniji 11
+INFO  23:03:22,794 - Program(
+ Program
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodDeclarationActual(
+       main
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoClassDeclarationList(
+        ) [NoClassDeclarationList]
+        StatementListStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          ErrorStatement(
+          ) [ErrorStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  23:03:22,794 - ===================================
+INFO  23:03:22,796 -  Print count calls = 0
+INFO  23:03:22,797 -  Deklarisanih promenljivih ima = 0

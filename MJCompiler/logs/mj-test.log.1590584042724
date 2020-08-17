@@ -1,0 +1,16 @@
+INFO  14:52:23,183 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program.mj
+INFO  14:52:23,194 - #1 program
+INFO  14:52:23,194 - #16 MJProgram
+INFO  14:52:23,194 - #11 int
+INFO  14:52:23,194 - #16 x
+INFO  14:52:23,194 - #34 ,
+INFO  14:52:23,194 - #16 y
+INFO  14:52:23,194 - #35 ;
+INFO  14:52:23,194 - #40 {
+INFO  14:52:23,194 - #14 void
+INFO  14:52:23,194 - #16 main
+INFO  14:52:23,194 - #36 (
+INFO  14:52:23,194 - #37 )
+INFO  14:52:23,194 - #40 {
+INFO  14:52:23,195 - #41 }
+INFO  14:52:23,195 - #41 }
