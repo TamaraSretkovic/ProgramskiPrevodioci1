@@ -1,0 +1,17 @@
+//	Semantika test 
+//  - designator dekrementiranja mora biti var ili elem
+//	- designator dekrementiranja mora biti tipa int
+
+program test302
+	int a;
+	const int b = 2;
+	char ch;
+{
+	void main() {
+		a = 0;
+		ch = 'a';
+		a--;
+		b--;
+		ch--;
+	}
+}

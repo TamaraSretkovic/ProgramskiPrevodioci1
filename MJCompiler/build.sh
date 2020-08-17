@@ -24,4 +24,4 @@ echo
 echo  ${brown} Compiling with javac ${red}
 echo
 
-javac -cp .:src:config:lib/cup_v10k.jar:lib/mj-runtime-1.1.jar:lib/symboltable-1-1.jar:lib/log4j-1.2.17.jar:lib/JFlex.jar -Xdiags:verbose src/rs/ac/bg/etf/pp1/*.java src/rs/ac/bg/etf/pp1/util/*.java
+javac -cp .:src:config:lib/cup_v10k.jar:lib/mj-runtime-1.1.jar:lib/symboltable-1-1.jar:lib/log4j-1.2.17.jar:lib/JFlex.jar -Xdiags:verbose src/rs/ac/bg/etf/pp1/*.java src/rs/ac/bg/etf/pp1/util/*.java test/rs/ac/bg/etf/pp1/*.java

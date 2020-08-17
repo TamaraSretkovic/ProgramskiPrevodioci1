@@ -1,0 +1,170 @@
+INFO  00:13:47,397 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program4.mj
+INFO  00:13:47,422 - #2 program
+INFO  00:13:47,422 - #46 test302
+INFO  00:13:47,422 - #7 const
+INFO  00:13:47,423 - #46 int
+INFO  00:13:47,423 - #46 a
+INFO  00:13:47,423 - #23 =
+INFO  00:13:47,423 - #48 a
+INFO  00:13:47,424 - #5 ;
+INFO  00:13:47,424 - #7 const
+INFO  00:13:47,425 - #46 char
+INFO  00:13:47,425 - #46 b
+INFO  00:13:47,425 - #23 =
+INFO  00:13:47,425 - #47 1
+INFO  00:13:47,425 - #5 ;
+INFO  00:13:47,425 - #3 {
+INFO  00:13:47,425 - #10 void
+INFO  00:13:47,425 - #46 main
+INFO  00:13:47,425 - #12 (
+INFO  00:13:47,426 - #11 )
+INFO  00:13:47,426 - #3 {
+INFO  00:13:47,426 - #16 print
+INFO  00:13:47,427 - #12 (
+INFO  00:13:47,427 - #46 a
+INFO  00:13:47,427 - #11 )
+INFO  00:13:47,427 - #5 ;
+INFO  00:13:47,427 - #16 print
+INFO  00:13:47,427 - #12 (
+INFO  00:13:47,427 - #46 b
+INFO  00:13:47,428 - #11 )
+INFO  00:13:47,428 - #5 ;
+INFO  00:13:47,428 - #4 }
+INFO  00:13:47,428 - #4 }
+INFO  00:13:47,432 - ==================SINTAKSNO STABLO==================
+INFO  00:13:47,433 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListConst(
+        ConstDeclarationTypeListSemi(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          ConstDecl(
+            ConstDeclarationActual(
+             a
+              AssignOp(
+              ) [AssignOp]
+              CharConst(
+               a
+              ) [CharConst]
+            ) [ConstDeclarationActual]
+          ) [ConstDecl]
+        ) [ConstDeclarationTypeListSemi]
+      ) [DeclarationListConst]
+    ) [DeclarationListDeclaration]
+    DeclarationListConst(
+      ConstDeclarationTypeListSemi(
+        VarType(
+          Type(
+           char
+          ) [Type]
+        ) [VarType]
+        ConstDecl(
+          ConstDeclarationActual(
+           b
+            AssignOp(
+            ) [AssignOp]
+            NumberConst(
+             1
+            ) [NumberConst]
+          ) [ConstDeclarationActual]
+        ) [ConstDecl]
+      ) [ConstDeclarationTypeListSemi]
+    ) [DeclarationListConst]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            PrintExpressionStatement(
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorOnly(
+                       a
+                      ) [DesignatorOnly]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [PrintExpressionStatement]
+          ) [StatementListStatement]
+          PrintExpressionStatement(
+            ExpressionTermDef(
+              OnlyTerm(
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorOnly(
+                     b
+                    ) [DesignatorOnly]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [OnlyTerm]
+            ) [ExpressionTermDef]
+          ) [PrintExpressionStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  00:13:47,433 - ==================SEMANTICKA OBRADA==================
+ERROR 00:13:47,435 - Tip identifikatora konstante i tip izraza koji se dodeljuje se ne poklapaju
+INFO  00:13:47,435 - Deklarisana konstanta a(Con a: int, 0, 0 ) na liniji 4
+ERROR 00:13:47,435 - Tip identifikatora konstante i tip izraza koji se dodeljuje se ne poklapaju
+INFO  00:13:47,436 - Deklarisana konstanta b(Con b: char, 97, 0 ) na liniji 5
+INFO  00:13:47,436 - Obradjuje se funkcija main(Meth main: none, 0, 0 ) na liniji 7
+INFO  00:13:47,436 - Koriscenje  a(Con a: int, 0, 0 ) na liniji 8
+INFO  00:13:47,436 - Pronadjen poziv funkcije print na liniji 8
+INFO  00:13:47,436 - Koriscenje  b(Con b: char, 97, 0 ) na liniji 9
+INFO  00:13:47,436 - Pronadjen poziv funkcije print na liniji 9
+INFO  00:13:47,436 - ==================SEMANTICKA ANALIZA==============
+INFO  00:13:47,437 - 1  methods in the program
+INFO  00:13:47,437 - 0  global variables
+INFO  00:13:47,437 - 2  global constants
+INFO  00:13:47,437 - 0  global arrays
+INFO  00:13:47,437 - 0  local variables in main
+INFO  00:13:47,437 - 2  statements in main
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, 0, 1 
+Prog test302: notype, 0, 1 
+   Con a: int, 0, 0 
+   Con b: char, 97, 0 
+   Meth main: notype, 0, 0 
+
+
+
+ERROR 00:13:47,438 - Program nije semanticki ispravan!

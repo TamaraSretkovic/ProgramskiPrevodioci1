@@ -1,0 +1,10 @@
+//	Semantika test 
+//  - nedefinisan tip bla
+
+program test302
+	int niz[];
+{
+	void main() {
+		int = bla;
+	}
+}

@@ -1,0 +1,22 @@
+//	Semantika test 
+//  - Provera expressiona u new operatoru pri pravljenju niza
+
+program test302
+    int d;
+    const char c = 'a';
+    const bool cond = true;
+    char niz1[];
+    char niz2[];
+{
+    void func(int a, char c) {
+
+    }
+
+	void main() {
+		niz1 = new char[true];
+        niz1 = new char['c'];
+        niz1 = new char[5 + 3 + 2];
+	}
+}
+
+

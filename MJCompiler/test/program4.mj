@@ -1,0 +1,12 @@
+//	Semantika test - neodgovarajuci tip konstante pri deklarisanju
+
+program test302
+	const int a = 'a';
+	const char b = 1;
+{
+	void main() {
+		print(a);
+		print(b);
+	}
+}
+

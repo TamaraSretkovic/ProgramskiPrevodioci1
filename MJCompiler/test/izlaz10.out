@@ -1,0 +1,196 @@
+INFO  00:13:49,463 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program10.mj
+INFO  00:13:49,502 - #2 program
+INFO  00:13:49,502 - #46 test302
+INFO  00:13:49,502 - #46 int
+INFO  00:13:49,503 - #46 d
+INFO  00:13:49,504 - #5 ;
+INFO  00:13:49,505 - #7 const
+INFO  00:13:49,505 - #46 char
+INFO  00:13:49,505 - #46 c
+INFO  00:13:49,505 - #23 =
+INFO  00:13:49,506 - #48 a
+INFO  00:13:49,506 - #5 ;
+INFO  00:13:49,507 - #3 {
+INFO  00:13:49,507 - #10 void
+INFO  00:13:49,508 - #46 func
+INFO  00:13:49,508 - #12 (
+INFO  00:13:49,509 - #11 )
+INFO  00:13:49,509 - #3 {
+INFO  00:13:49,510 - #4 }
+INFO  00:13:49,510 - #10 void
+INFO  00:13:49,512 - #46 main
+INFO  00:13:49,512 - #12 (
+INFO  00:13:49,512 - #11 )
+INFO  00:13:49,512 - #3 {
+INFO  00:13:49,512 - #16 print
+INFO  00:13:49,512 - #12 (
+INFO  00:13:49,512 - #46 func
+INFO  00:13:49,513 - #11 )
+INFO  00:13:49,513 - #5 ;
+INFO  00:13:49,514 - #16 print
+INFO  00:13:49,514 - #12 (
+INFO  00:13:49,514 - #46 c
+INFO  00:13:49,514 - #11 )
+INFO  00:13:49,515 - #5 ;
+INFO  00:13:49,515 - #4 }
+INFO  00:13:49,515 - #4 }
+INFO  00:13:49,520 - ==================SINTAKSNO STABLO==================
+INFO  00:13:49,522 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            Ident(
+             d
+            ) [Ident]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListConst(
+      ConstDeclarationTypeListSemi(
+        VarType(
+          Type(
+           char
+          ) [Type]
+        ) [VarType]
+        ConstDecl(
+          ConstDeclarationActual(
+           c
+            AssignOp(
+            ) [AssignOp]
+            CharConst(
+             a
+            ) [CharConst]
+          ) [ConstDeclarationActual]
+        ) [ConstDecl]
+      ) [ConstDeclarationTypeListSemi]
+    ) [DeclarationListConst]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    MethodDeclarationListMethod(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      VoidMethodDeclaration(
+        MethodVoidName(
+         func
+        ) [MethodVoidName]
+        MethodDeclarationActual(
+          NoFormalParamsList(
+          ) [NoFormalParamsList]
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          NoStatementList(
+          ) [NoStatementList]
+        ) [MethodDeclarationActual]
+      ) [VoidMethodDeclaration]
+    ) [MethodDeclarationListMethod]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            PrintExpressionStatement(
+              ExpressionTermDef(
+                OnlyTerm(
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorOnly(
+                       func
+                      ) [DesignatorOnly]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [OnlyTerm]
+              ) [ExpressionTermDef]
+            ) [PrintExpressionStatement]
+          ) [StatementListStatement]
+          PrintExpressionStatement(
+            ExpressionTermDef(
+              OnlyTerm(
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorOnly(
+                     c
+                    ) [DesignatorOnly]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [OnlyTerm]
+            ) [ExpressionTermDef]
+          ) [PrintExpressionStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  00:13:49,522 - ==================SEMANTICKA OBRADA==================
+INFO  00:13:49,525 - Deklarisana promenljiva d(Var d: int, 0, 0 ) na liniji 5
+INFO  00:13:49,526 - Deklarisana konstanta c(Con c: char, 97, 0 ) na liniji 6
+INFO  00:13:49,526 - Obradjuje se funkcija func(Meth func: none, 0, 0 ) na liniji 8
+INFO  00:13:49,526 - Obradjuje se funkcija main(Meth main: none, 0, 0 ) na liniji 12
+INFO  00:13:49,526 - Koriscenje  func(Meth func: none, 0, 0 ) na liniji 13
+ERROR 00:13:49,526 - Greska na liniji 13 : izraz PrintExpressionStatement(
+  ExpressionTermDef(
+    OnlyTerm(
+      TermFactor(
+        FactorDesignator(
+          DesignatorOnly(
+           func
+          ) [DesignatorOnly]
+        ) [FactorDesignator]
+      ) [TermFactor]
+    ) [OnlyTerm]
+  ) [ExpressionTermDef]
+) [PrintExpressionStatement] nije odgovarajuceg tipa!
+INFO  00:13:49,526 - Koriscenje  c(Con c: char, 97, 0 ) na liniji 14
+INFO  00:13:49,526 - Pronadjen poziv funkcije print na liniji 14
+INFO  00:13:49,526 - ==================SEMANTICKA ANALIZA==============
+INFO  00:13:49,527 - 2  methods in the program
+INFO  00:13:49,527 - 1  global variables
+INFO  00:13:49,527 - 1  global constants
+INFO  00:13:49,527 - 0  global arrays
+INFO  00:13:49,527 - 0  local variables in main
+INFO  00:13:49,527 - 2  statements in main
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, 0, 1 
+Prog test302: notype, 0, 1 
+   Var d: int, 0, 0 
+   Con c: char, 97, 0 
+   Meth func: notype, 0, 0 
+
+   Meth main: notype, 0, 0 
+
+
+
+ERROR 00:13:49,528 - Program nije semanticki ispravan!

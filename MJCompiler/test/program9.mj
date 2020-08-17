@@ -1,0 +1,18 @@
+//	Semantika test 
+//  - designator read fje moze biti var ili elem
+//  - designator mora biti int, char ili bool
+
+program test302
+    int d;
+    const char c = 'a';
+{
+    void func() {
+
+    }
+
+	void main() {
+		read(func);
+        read(c);
+	}
+}
+

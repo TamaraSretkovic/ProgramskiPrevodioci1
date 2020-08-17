@@ -1,0 +1,20 @@
+INFO  00:13:46,504 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program1.mj
+INFO  00:13:46,528 - #2 program
+INFO  00:13:46,529 - #46 test302
+INFO  00:13:46,529 - #46 int
+INFO  00:13:46,529 - #46 aa
+INFO  00:13:46,530 - #6 ,
+INFO  00:13:46,530 - #47 123
+ERROR 00:13:46,530 - 
+Sintaksna greska na liniji 4
+INFO  00:13:46,530 - #5 ;
+INFO  00:13:46,530 - #3 {
+INFO  00:13:46,530 - #10 void
+INFO  00:13:46,531 - #46 main
+ERROR 00:13:46,531 - Uspesan oporavak od greske na liniji 4 pri deklarisanju varijable do , ili ;
+INFO  00:13:46,532 - #12 (
+INFO  00:13:46,532 - #11 )
+INFO  00:13:46,533 - #3 {
+INFO  00:13:46,533 - #4 }
+INFO  00:13:46,533 - #4 }
+ERROR 00:13:46,535 - Parsiranje NIJE uspesno zavrseno!

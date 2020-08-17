@@ -101,7 +101,7 @@ VarDeclarationList ::=     (VarDeclarationListVar) VarDeclarationList COMMA Var
                       |    (VarDeclError) error:e
                             {:
                                 parser.report_error("Uspesan oporavak od greske na liniji " + eleft +
-                                     " pri deklarisanju varijable do ,", null);
+                                     " pri deklarisanju varijable do , ili ;", null);
                             :};
 
 Var ::=    (Ident) IDENT:name

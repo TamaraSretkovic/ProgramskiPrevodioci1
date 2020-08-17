@@ -1,0 +1,10 @@
+//	Oporavak od greske iskaz dodele
+
+program test302
+    int aa, c;
+{
+	void main() {
+		aa = 5 + ;
+	}
+}
+

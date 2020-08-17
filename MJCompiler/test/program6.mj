@@ -1,0 +1,16 @@
+//	Semantika test 
+//  - designator dodele nije var ili elem
+//  - kompatibilnost reference sa dodelom null
+//  - nekompatibilnost tipova pri dodeli
+
+program test302
+	int niz[];
+{
+	void main() {
+		int = niz;
+        niz = 'c';
+        niz = null;
+        niz = new int[5];
+	}
+}
+

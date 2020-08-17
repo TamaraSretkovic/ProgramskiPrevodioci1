@@ -1,0 +1,18 @@
+//	Semantika test 
+//  - Expr = -Term; Term mora biti int.
+
+program test302
+    int d;
+    const char c = 'a';
+    const bool cond = true;
+    int niz1[];
+    int niz2[];
+{
+    void func(int a, char c) {
+
+    }
+
+	void main() {
+		d = -c;
+	}
+}

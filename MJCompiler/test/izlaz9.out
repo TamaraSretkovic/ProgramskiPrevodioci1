@@ -1,0 +1,168 @@
+INFO  00:13:49,039 - Compiling source file: /home/tamarica/Documents/tamara/velika skola/8 semestar/PP1/projekat/projecat_2019_2020/MJCompiler/test/program9.mj
+INFO  00:13:49,063 - #2 program
+INFO  00:13:49,064 - #46 test302
+INFO  00:13:49,064 - #46 int
+INFO  00:13:49,064 - #46 d
+INFO  00:13:49,065 - #5 ;
+INFO  00:13:49,065 - #7 const
+INFO  00:13:49,066 - #46 char
+INFO  00:13:49,066 - #46 c
+INFO  00:13:49,066 - #23 =
+INFO  00:13:49,066 - #48 a
+INFO  00:13:49,066 - #5 ;
+INFO  00:13:49,067 - #3 {
+INFO  00:13:49,067 - #10 void
+INFO  00:13:49,067 - #46 func
+INFO  00:13:49,067 - #12 (
+INFO  00:13:49,068 - #11 )
+INFO  00:13:49,068 - #3 {
+INFO  00:13:49,068 - #4 }
+INFO  00:13:49,068 - #10 void
+INFO  00:13:49,069 - #46 main
+INFO  00:13:49,069 - #12 (
+INFO  00:13:49,069 - #11 )
+INFO  00:13:49,070 - #3 {
+INFO  00:13:49,070 - #15 read
+INFO  00:13:49,070 - #12 (
+INFO  00:13:49,070 - #46 func
+INFO  00:13:49,070 - #11 )
+INFO  00:13:49,070 - #5 ;
+INFO  00:13:49,070 - #15 read
+INFO  00:13:49,070 - #12 (
+INFO  00:13:49,071 - #46 c
+INFO  00:13:49,071 - #11 )
+INFO  00:13:49,071 - #5 ;
+INFO  00:13:49,071 - #4 }
+INFO  00:13:49,071 - #4 }
+INFO  00:13:49,075 - ==================SINTAKSNO STABLO==================
+INFO  00:13:49,075 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationListDeclaration(
+    DeclarationListDeclaration(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      DeclarationListVar(
+        VarDeclarationV(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDecl(
+            Ident(
+             d
+            ) [Ident]
+          ) [VarDecl]
+        ) [VarDeclarationV]
+      ) [DeclarationListVar]
+    ) [DeclarationListDeclaration]
+    DeclarationListConst(
+      ConstDeclarationTypeListSemi(
+        VarType(
+          Type(
+           char
+          ) [Type]
+        ) [VarType]
+        ConstDecl(
+          ConstDeclarationActual(
+           c
+            AssignOp(
+            ) [AssignOp]
+            CharConst(
+             a
+            ) [CharConst]
+          ) [ConstDeclarationActual]
+        ) [ConstDecl]
+      ) [ConstDeclarationTypeListSemi]
+    ) [DeclarationListConst]
+  ) [DeclarationListDeclaration]
+  MethodDeclarationListMethod(
+    MethodDeclarationListMethod(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      VoidMethodDeclaration(
+        MethodVoidName(
+         func
+        ) [MethodVoidName]
+        MethodDeclarationActual(
+          NoFormalParamsList(
+          ) [NoFormalParamsList]
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          NoStatementList(
+          ) [NoStatementList]
+        ) [MethodDeclarationActual]
+      ) [VoidMethodDeclaration]
+    ) [MethodDeclarationListMethod]
+    VoidMethodDeclaration(
+      MethodVoidName(
+       main
+      ) [MethodVoidName]
+      MethodDeclarationActual(
+        NoFormalParamsList(
+        ) [NoFormalParamsList]
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        StatementListStatement(
+          StatementListStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            ReadStatement(
+              DesignatorOnly(
+               func
+              ) [DesignatorOnly]
+            ) [ReadStatement]
+          ) [StatementListStatement]
+          ReadStatement(
+            DesignatorOnly(
+             c
+            ) [DesignatorOnly]
+          ) [ReadStatement]
+        ) [StatementListStatement]
+      ) [MethodDeclarationActual]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarationListMethod]
+) [Program]
+INFO  00:13:49,075 - ==================SEMANTICKA OBRADA==================
+INFO  00:13:49,078 - Deklarisana promenljiva d(Var d: int, 0, 0 ) na liniji 6
+INFO  00:13:49,078 - Deklarisana konstanta c(Con c: char, 97, 0 ) na liniji 7
+INFO  00:13:49,078 - Obradjuje se funkcija func(Meth func: none, 0, 0 ) na liniji 9
+INFO  00:13:49,078 - Obradjuje se funkcija main(Meth main: none, 0, 0 ) na liniji 13
+INFO  00:13:49,078 - Koriscenje  func(Meth func: none, 0, 0 ) na liniji 14
+ERROR 00:13:49,078 - Greska na liniji 14 : promenljiva func nije odgovarajuceg tipa!
+INFO  00:13:49,078 - Koriscenje  c(Con c: char, 97, 0 ) na liniji 15
+ERROR 00:13:49,078 - Greska na liniji 15 : designator c nije promenljiva ili element niza!
+INFO  00:13:49,078 - ==================SEMANTICKA ANALIZA==============
+INFO  00:13:49,079 - 2  methods in the program
+INFO  00:13:49,079 - 1  global variables
+INFO  00:13:49,079 - 1  global constants
+INFO  00:13:49,079 - 0  global arrays
+INFO  00:13:49,079 - 0  local variables in main
+INFO  00:13:49,079 - 2  statements in main
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, 0, 1 
+Prog test302: notype, 0, 1 
+   Var d: int, 0, 0 
+   Con c: char, 97, 0 
+   Meth func: notype, 0, 0 
+
+   Meth main: notype, 0, 0 
+
+
+
+ERROR 00:13:49,080 - Program nije semanticki ispravan!

@@ -1,0 +1,20 @@
+//	Semantika test 
+//  - Expr = Expr Addop Term. Expr i Term moraju biti int, i medjusobno kompatibilni
+
+program test302
+    int d;
+    const char c = 'a';
+    const bool cond = true;
+    int niz1[];
+    int niz2[];
+{
+    void func(int a, char c) {
+
+    }
+
+	void main() {
+		d = c + c;
+		d = true + true;
+		d = true + 'd';
+	}
+}
